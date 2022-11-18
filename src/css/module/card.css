@@ -1,0 +1,197 @@
+/* CARD PRODUCT */
+
+.card-product {
+    position:relative;
+    background-color: var(--app-color-bg-1);
+    border-radius: 10px;
+    height: 200px;
+    min-width: 320px;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    position:absolute;
+	z-index:1;
+	top: -5.5rem;
+    width: 100%;
+}
+
+.product-image img {
+    width: 75%;
+    max-width: 275px;
+   
+}
+
+.card-product .product-text {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    left: 0;
+}
+
+.card-product .product-text .text-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.card-product .product-text .text-description {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    color: var(--app-color-text-5);
+    padding: 0 5px;
+}
+
+/* CARD IMAGE */
+.card-image .image  {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image .image img {
+   width: auto;
+   max-width: 150px;
+   max-height: 7rem;
+}
+
+.card-image .image img.lg {
+    max-width: inherit;
+    width: 100%;
+}
+
+.card-image .image img.circle {
+  border-radius: 50%;
+}
+
+.card-image .image img.sm {
+  width: 35%;
+  max-width: 75px;
+}
+
+.card-image .image img.ssm {
+  width: 25%;
+  max-width: 35px;
+}
+
+.card-image .content-title {
+    padding-top: 1rem;
+    color: #3A3A3A;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.card-image .content-title--extra {
+    color: #939393;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.card-image .content-description {
+    padding-top: 1rem;
+    color: var(--app-color-text-5);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+
+/* CARD STATISTIC */
+.card-statistic {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-statistic .card-statistic--image {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-statistic .card-statistic--content {
+    width: 80%;
+}
+
+.card-statistic .card-statistic--image img {
+    max-width: 4.65rem;
+    max-height: 4.65rem;
+}
+
+.card-statistic .card-statistic--title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 38px;
+    color: #000000;
+}
+
+.card-statistic .card-statistic--description {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 29px;
+    color: var(--app-color-text-4);
+}
+
+/* CARD NEWS */
+.card-news--title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 38px;
+    color: var(--app-color-primary-dark);
+}
+
+.card-news--description {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    color: var(--app-color-text-5);
+    padding-top: 0.5rem;
+}
+
+/* CARD MEMBER */
+.card-member--content {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.card-member--name {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 22px;
+    color: var(--app-color-primary-dark);
+}
+
+.card-member--position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--app-color-text-2);
+}
+
+/* CARD ICON */
+.card-icon img {
+    max-width: 50px;
+}
+
+.card-icon .card-icon--title {
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--app-color-primary-dark);
+    margin: 0;
+}
+
+.card-icon .card-icon--title .strong-title {
+    font-weight: 700;
+}
