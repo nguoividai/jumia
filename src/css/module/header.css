@@ -1,7 +1,7 @@
 .app-header {
     height: 64px;
-    background-color: var(--app-color-text-2);
-    color: var(--app-color-primary-white);
+    background-color: var(--app-color-primary-white);
+    color: var(--app-color-text-1);
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -29,6 +29,25 @@
 
 .app-header .side-nav-icon {
     display: none;
+}
+
+.app-header .open {
+    color: #16A34A;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.app-header .open .ellipse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #16A34A;
+    margin-right: 6px;
 }
 
 
