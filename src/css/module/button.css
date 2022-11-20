@@ -55,3 +55,16 @@ button.button.lg {
     padding: 15px 69px;
     font-size: 20px;
 }
+
+.cart {
+    padding: 0.1rem 0.5rem;
+    left: 1308px;
+    top: 24px;
+    background: #334155;
+    border-radius: 16px;
+    color: #fff;
+}
+
+.cart:hover {
+    color: var(--app-color-primary-orange);
+}

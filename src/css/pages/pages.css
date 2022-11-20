@@ -24,6 +24,11 @@
 }
 
 /* homepage */
+.hompage-banner {
+    margin: -24px -36px;
+}
+
+
 .hompage-banner .slick-dots {
     display: block;
     bottom: 50px;

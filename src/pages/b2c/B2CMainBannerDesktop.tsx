@@ -1,11 +1,12 @@
 import React from 'react';
 import SliderSimple from 'src/components/slider/SliderSimple';
 import rectangle from 'src/assets/images/jumia/Rectangle 1.jpg';
+import banner from 'src/assets/images/jumia/banner.jpg';
 
 const B2CMainBanner = () => {
   return (
     <SliderSimple
-      className="hompage-banner"
+      className="d-none d-md-block d-lg-block d-xl-block hompage-banner"
       settings={{
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -16,16 +17,16 @@ const B2CMainBanner = () => {
       }}
     >
       <div>
-        <img src={rectangle} alt="banner" />
+        <img src={banner} alt="banner" />
       </div>
       <div>
-        <img src={rectangle} alt="banner" />
+        <img src={banner} alt="banner" />
       </div>
       <div>
-        <img src={rectangle} alt="banner" />
+        <img src={banner} alt="banner" />
       </div>
       <div>
-        <img src={rectangle} alt="banner" />
+        <img src={banner} alt="banner" />
       </div>
     </SliderSimple>
   );

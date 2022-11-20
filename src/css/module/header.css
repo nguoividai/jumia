@@ -49,6 +49,7 @@
     border-radius: 50%;
     background: #16A34A;
     margin-right: 6px;
+    display: inline-block;
 }
 
 .app-header .logo {
@@ -57,6 +58,22 @@
     align-items: center;
 }
 
+.list-header.list.list-horizontal .list-item.open-hour {
+    display: block;
+    padding-left: 3rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 18px;
+    color: #52525B;
+}
+
+.list-header.list.list-horizontal .list-item.open-hour .open-text {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #15803D;
+    padding-bottom: 0.1rem
+}
 
 @media screen and (max-width: 576px) {
     .app-header {
@@ -117,6 +134,8 @@
     .app-header .nav-link {
         width: 65%;
     }
+    
+    
 }
 
 @media screen and (min-width: 1200px)  {
@@ -125,12 +144,26 @@
     }
     
     .app-header .action {
-        width: 30%;
+        width: 10%;
     }
     
     .app-header .nav-link {
-        width: 60%;
+        width: 80%;
     }
+
+    .list-header.list.list-horizontal {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-header.list.list-horizontal .list-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px
+    }
+
+   
 }
 
 
