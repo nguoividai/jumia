@@ -4,7 +4,6 @@ const DefaultReact = React.lazy(() => import('./pages/test/DefaultReact'));
 const Login = React.lazy(() => import('./pages/login/Login'));
 const ForgotPassword = React.lazy(() => import('./pages/forgotPassword/ForgotPassword'));
 const CreateAccount = React.lazy(() => import('./pages/createAccount/CreateAccount'));
-const HomePage = React.lazy(() => import('./pages/b2c/HomePage'));
 const JHomePage = React.lazy(() => import('./pages/jumia/JHomePage'));
 
 const routes = [
