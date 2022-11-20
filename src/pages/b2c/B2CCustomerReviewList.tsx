@@ -49,7 +49,7 @@ const B2CCustomerReviewList = () => {
         <div className="row d-flex row-gap-1">
           <div className="col-12">
             <CardReview
-              username="Pedro Alexander:"
+              username="Pedro Alexander"
               reviewText="customer reviews the paid versions let you create customizable review invitations, share ratings and reviews . "
               rate={1.5}
             />
@@ -58,7 +58,7 @@ const B2CCustomerReviewList = () => {
         <div className="row d-flex row-gap-1">
           <div className="col-12">
             <CardReview
-              username="Pedro Alexander:"
+              username="Pedro Alexander"
               reviewText="customer reviews the paid versions let you create customizable review invitations, share ratings and reviews . "
               rate={1.5}
             />
@@ -67,7 +67,7 @@ const B2CCustomerReviewList = () => {
         <div className="row d-flex row-gap-1">
           <div className="col-12">
             <CardReview
-              username="Pedro Alexander:"
+              username="Pedro Alexander"
               reviewText="customer reviews the paid versions let you create customizable review invitations, share ratings and reviews . "
               rate={1.5}
             />
