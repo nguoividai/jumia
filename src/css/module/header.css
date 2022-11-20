@@ -12,6 +12,7 @@
     right: 0;
     top: 0;
     z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .app-header .nav-link {
@@ -50,6 +51,12 @@
     margin-right: 6px;
 }
 
+.app-header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media screen and (max-width: 576px) {
     .app-header {
@@ -62,11 +69,11 @@
     }
 
     .app-header .logo {
-        width: 90%;
+        width: 80%;
     }
     
     .app-header .action {
-        display: none;
+        width: 10%;
     }
     
     .app-header .nav-link {
@@ -86,11 +93,11 @@
     }
 
     .app-header .logo {
-        width: 25%;
+        width: 85%;
     }
     
     .app-header .action {
-        width: 70%;
+        width: 10%;
     }
     
     .app-header .nav-link {
