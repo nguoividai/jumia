@@ -5,6 +5,7 @@ import SliderSimple from 'src/components/slider/SliderSimple';
 const B2CPromotionList = () => {
   return (
     <SliderSimple
+      className="container"
       settings={{
         speed: 500,
         autoplay: true,
@@ -20,7 +21,7 @@ const B2CPromotionList = () => {
               slidesToShow: 2,
               slidesToScroll: 2,
               centerMode: true,
-              centerPadding: '15px',
+              centerPadding: '5px',
             },
           },
           {
@@ -29,7 +30,16 @@ const B2CPromotionList = () => {
               slidesToShow: 2,
               slidesToScroll: 2,
               centerMode: true,
-              centerPadding: '120px',
+              centerPadding: '30px',
+            },
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              centerMode: true,
+              centerPadding: '30px',
             },
           },
         ],

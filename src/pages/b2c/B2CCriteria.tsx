@@ -5,6 +5,7 @@ import SliderSimple from 'src/components/slider/SliderSimple';
 const B2CCriteria = () => {
   return (
     <SliderSimple
+      className="container"
       settings={{
         speed: 500,
         autoplay: true,
@@ -20,7 +21,7 @@ const B2CCriteria = () => {
               slidesToShow: 1,
               slidesToScroll: 1,
               centerMode: true,
-              centerPadding: '120px',
+              centerPadding: '80px',
             },
           },
           {
@@ -29,7 +30,7 @@ const B2CCriteria = () => {
               slidesToShow: 2,
               slidesToScroll: 2,
               centerMode: true,
-              centerPadding: '120px',
+              centerPadding: '40px',
             },
           },
         ],
