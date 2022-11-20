@@ -1,49 +1,77 @@
 /* CARD PRODUCT */
 
 .card-product {
-    position:relative;
-    background-color: var(--app-color-bg-1);
-    border-radius: 10px;
-    height: 200px;
-    min-width: 320px;
-}
-
-.product-image {
+    gap: 12px;
     display: flex;
-    justify-content: center;
-    position:absolute;
-	z-index:1;
-	top: -5.5rem;
-    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 12px;
+    width: 304px;
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
 }
 
-.product-image img {
-    width: 75%;
-    max-width: 275px;
-   
+.card-product .product-image {
+    width: 30%;
+    max-width: 100px;
+    border-radius: 14px;
 }
 
 .card-product .product-text {
-    text-align: center;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 1rem;
-    right: 0;
-    left: 0;
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%
 }
 
 .card-product .product-text .text-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 38px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #27272A;
 }
 
 .card-product .product-text .text-description {
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 140%;
-    color: var(--app-color-text-5);
-    padding: 0 5px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #71717A;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card-product .product-text .text-review {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-product .product-text .text-review .text-price {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3F3F46;
+}
+
+.card-product .product-text .text-review .text-like {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-product .product-text .text-review .text-like i {
+    color: #DC2626;
+    font-size: 18px;
 }
 
 /* CARD IMAGE */
@@ -194,4 +222,160 @@
 
 .card-icon .card-icon--title .strong-title {
     font-weight: 700;
+}
+
+/* CARD DESCRIPTION */
+
+.card-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 204px;
+    height: 44px;
+}
+
+.card-description i {
+   font-size: 24px;
+}
+
+.card-description--content {
+    color: #27272A;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card-description--title {
+    font-weight: 800;
+}
+
+.card-description--subtitle {
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+/* Card Promotion */
+
+.card-promotion {
+    width: 199px;
+    height: 206px;
+    border-radius: 16px;
+    border: 1px dashed #CBD5E1;
+    position: relative;
+}
+
+.card-promotion::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 20px;
+    height: 20.29px;
+    left: 187px;
+    top: 76.43px;
+    border: 1px dashed #CBD5E1;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(45deg);
+
+}
+
+.card-promotion--top {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px dashed #CBD5E1;
+}
+
+.card-promotion--content {
+    font-weight: 800;
+
+}
+
+.card-promotion--title {
+    font-size: 34px;
+    line-height: 42px;
+    color: var(--app-color-primary-orange);
+}
+
+.card-promotion--name {
+    font-size: 16px;
+}
+
+.card-promotion--bottom {
+    padding: 12px;
+    position: relative;
+    
+}
+
+.card-promotion--condition {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1E293B;
+}
+
+.card-promotion--button {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    display: flex;
+    align-items: center;
+}
+
+
+.card-promotion--button span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card-promotion--button i {
+    font-size: 34px;
+    color: var(--app-color-primary-orange);
+}
+
+/* CARD REVIEWS */
+.card-review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px;
+    width: 287px;
+    height: 113px;
+    background: #FAFAFA;
+    border-radius: 16px;
+}
+
+.card-review .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.card-review .header .username {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #0F172A;
+}
+
+.card-review .review-content {
+    width: 100%;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4B5563;
+    text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
 }

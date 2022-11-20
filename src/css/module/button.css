@@ -31,17 +31,23 @@ button.button.link {
 }
 
 button.button.primary {
-    background: #005888;
+    background: var(--app-color-primary-orange);
 }
 
 button.button.white {
     background: #fff;
-    color: #005888;
+    color:  var(--app-color-primary-orange);
+    border: 1px solid var(--app-color-primary-orange);
 }
 
 button.button.grey {
     background: #F2F2F2;
     color: #005888;
+}
+
+button.button.md {
+    padding: 12px 30px;
+    font-size: 16px;
 }
 
 button.button.lg {
