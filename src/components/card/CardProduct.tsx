@@ -16,7 +16,7 @@ const CardProduct: React.FC<CardProductProps> = (props) => {
         <div className="text-title">{title}</div>
         <div className="text-description">{description}</div>
         <div className="text-review">
-          <div className="text-price">{price}$</div>
+          <div className="text-price">€ {price}</div>
           <div className="text-like">
             <i className="icofont-heart"></i>
             <span>{likeNumber} LIKES</span>

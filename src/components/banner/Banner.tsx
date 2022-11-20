@@ -36,11 +36,7 @@ const BannerText: React.FC<BannerTextProps> = (props) => {
 const BannerImage: React.FC<BannerImageProps> = (props) => {
   return (
     <div className="banner-image">
-      <img
-        {...props}
-        alt="banner"
-        src="https://v1hubstorage.blob.core.windows.net/banner/Printer%201-02ea994a-89cd-4cee-9778-824c1d3ebdca.png"
-      />
+      <img {...props} alt="banner" />
     </div>
   );
 };

@@ -18,10 +18,11 @@ const AppHeader = () => {
 
       <div className="nav-link">
         <List layout="horizontal">
-          <List.ListItem>3D Printing</List.ListItem>
-          <List.ListItem>Materials</List.ListItem>
-          <List.ListItem>Resources</List.ListItem>
-          <List.ListItem>Company</List.ListItem>
+          <List.ListItem>Home</List.ListItem>
+          <List.ListItem>Login</List.ListItem>
+          <List.ListItem>Delivery Menu</List.ListItem>
+          <List.ListItem>Collection Menu</List.ListItem>
+          <List.ListItem>Coupons</List.ListItem>
         </List>
       </div>
       <div className="action">

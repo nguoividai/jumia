@@ -11,23 +11,24 @@ import SliderSimple from 'src/components/slider/SliderSimple';
 const AppContent = () => {
   return (
     <div className="app-content">
+      <Outlet />
       {/* Slider */}
-      <SliderSimple>
+      {/* <SliderSimple>
         {Array.from(new Array(5)).map((item, index) => (
           <div className="w-full" key={index}>
             <img src={require('../assets/images/panorama.jpg')} alt="banner" />
           </div>
         ))}
-      </SliderSimple>
+      </SliderSimple> */}
       {/* Card */}
-      <List title="" layout="horizontal">
+      {/* <List title="" layout="horizontal">
         <CardDescription icon="icofont-telegram" title="top" subTitle="top123" />
         <CardDescription icon="icofont-telegram" title="top" subTitle="top123" />
         <CardDescription icon="icofont-telegram" title="top" subTitle="top123" />
         <CardDescription icon="icofont-telegram" title="top" subTitle="top123" />
-      </List>
+      </List> */}
       {/* Promotion */}
-      <CardPromotion
+      {/* <CardPromotion
         title="20% off"
         name="all orders"
         conditionText="20$20$20$20$20$20$ 20$20$20$"
@@ -45,7 +46,7 @@ const AppContent = () => {
         price={30}
         likeNumber={90}
       ></CardProduct>
-      <CardReview username="top" reviewText="Order" rate={1.5} />
+      <CardReview username="top" reviewText="Order" rate={1.5} /> */}
     </div>
   );
 };

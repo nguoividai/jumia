@@ -1,9 +1,9 @@
 import React from 'react';
 
 type CardPromotionProps = {
-  title: string;
-  name: string;
-  conditionText: string;
+  title?: string;
+  name?: string;
+  conditionText?: string;
 };
 
 const CardPromotion: React.FC<CardPromotionProps> = (props) => {

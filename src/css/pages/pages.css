@@ -24,19 +24,70 @@
 }
 
 /* homepage */
+.hompage-banner .slick-dots {
+    display: block;
+    bottom: 50px;
+    width: auto;
+    left: 50px;
+   
+}
 
-@media screen and (max-width: 992px) {
-    .home-product .container  {
-        max-width: 500px;
-        justify-content: center;
-    }
-    
-    .home-v1hub-works .container  {
-        max-width: 500px;
-    }
 
-    .companies, .members  {
-        padding: 4rem
-    }
+.hompage-banner .slick-dots button {
+    outline: none;
+    margin: 0 !important;
+}
 
+.hompage-banner .slick-dots button::after {
+    color: #E5E7EB;
+   
+}
+
+.hompage-banner .slick-dots li {
+   margin: 0;
+   
+}
+
+.hompage-banner .slick-dots li.slick-active {
+   margin: 0 5px;
+   
+}
+
+
+.slick-dots li.slick-active button {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    margin-right:  5px;
+    margin-left:  5px;
+    padding: 0;
+    cursor: pointer;
+    background: #F4894A;
+    border-radius: 8px;
+    height: 8px;
+}
+
+
+.hompage-banner .slick-dots .slick-active button::before {
+    display: none;
+}
+
+.hompage-banner  .slick-dots li button:before {
+    color: #E5E7EB;
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+}
+
+
+/* side bar */
+.sidebar-list.list .list-item {
+    padding: 1rem 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.sidebar-list.list .list-item.active {
+    color: #F4894A;
 }

@@ -1,6 +1,7 @@
 .app-content {
     min-height: calc(100vh - 64px);
-    padding: 64px 0px 0px 0px !important;
+    padding: 64px 12px 0px 12px !important;
+    background: #fafafa;
 }
 
 .text-center {
@@ -53,3 +54,4 @@
 .row-gap-5 {
     row-gap: 5rem;
 }
+

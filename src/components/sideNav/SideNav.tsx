@@ -27,16 +27,18 @@ const SideNav: React.FC<SideNavProps> = (props) => {
             style={{ width }}
           >
             {!hideClose && (
-              <a
-                href="#/"
-                className="closebtn"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onClose?.();
-                }}
-              >
-                &times;
-              </a>
+              <div>
+                <a
+                  href="#/"
+                  className="closebtn"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onClose?.();
+                  }}
+                >
+                  &times;
+                </a>
+              </div>
             )}
             <div className="sidenav-content">{children}</div>
           </div>

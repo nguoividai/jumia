@@ -16,12 +16,21 @@ const SideNavToggle = () => {
           setVisible(false);
         }}
       >
-        <List style={{ fontSize: '1.25rem' }}>
-          <List.ListItem>3D Printing</List.ListItem>
-          <List.ListItem>Materials</List.ListItem>
-          <List.ListItem>Resources</List.ListItem>
-          <List.ListItem>Company</List.ListItem>
+        <List className="sidebar-list">
+          <List.ListItem className="active">Home</List.ListItem>
+          <List.ListItem>Login</List.ListItem>
+          <List.ListItem>Delivery Menu</List.ListItem>
+          <List.ListItem>Collection Menu</List.ListItem>
+          <List.ListItem>Coupons</List.ListItem>
         </List>
+
+        <div className="sidenav-footer">
+          <List>
+            <List.ListItem className="active">Contact</List.ListItem>
+            <List.ListItem>Terms & Conditions</List.ListItem>
+            <List.ListItem>Privacy Policy</List.ListItem>
+          </List>
+        </div>
       </SideNav>
     </>
   );

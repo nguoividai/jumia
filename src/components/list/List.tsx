@@ -5,6 +5,7 @@ type ListProps = {
   layout?: 'vertical' | 'horizontal';
   children?: React.ReactNode;
   style?: React.CSSProperties;
+  className?: string;
 };
 type ListItemProps = { children?: React.ReactNode; className?: string };
 type ListDescriptionProps = { title?: string; information?: string; active?: boolean };
@@ -25,11 +26,11 @@ const ListDescription: React.FC<ListDescriptionProps> = (props) => {
 };
 
 const List: React.FC<ListProps> = (props) => {
-  const { title, layout, children, style } = props;
+  const { title, layout, children, style, className } = props;
   return (
     <>
       {title && <h4 className="list-title">{title}</h4>}
-      <ul className={`list list-${layout || 'vertical'}`} style={style}>
+      <ul className={`list list-${layout || 'vertical'} ${className || ''}`} style={style}>
         {children}
       </ul>
     </>

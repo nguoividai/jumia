@@ -108,7 +108,7 @@ font-family: Inter, InterBold;
 
 body {
 font-family: Inter;
-font-size: 18px;
+font-size: 14px;
 }
 
 body:has(.backdrop), html:has(.backdrop) {
@@ -147,6 +147,7 @@ a:hover {
 /* CUSTOM LIBRARY REACT_SLICK */
 .slick-slider .slick-arrow::after, .slick-slider .slick-arrow::before{
   color: var(--app-color-text-2);
+  display: none;
 }
 
 .slick-initialized .slick-slide {

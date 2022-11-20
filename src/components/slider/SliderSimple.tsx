@@ -4,15 +4,20 @@ import Slider, { Settings } from 'react-slick';
 type SimpleSliderProps = {
   children?: React.ReactNode;
   settings?: Settings;
+  className?: string;
 };
 
+/**
+ *
+ * link tham khảo: http://kenwheeler.github.io/slick/
+ */
 const SimpleSlider: React.FC<SimpleSliderProps> = (props) => {
-  const { children, settings } = props;
+  const { children, settings, className } = props;
 
   const defaultSettings = settings
     ? settings
     : {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -24,7 +29,7 @@ const SimpleSlider: React.FC<SimpleSliderProps> = (props) => {
               slidesToShow: 3,
               slidesToScroll: 3,
               infinite: true,
-              dots: true,
+              dots: false,
             },
           },
           {
@@ -32,6 +37,7 @@ const SimpleSlider: React.FC<SimpleSliderProps> = (props) => {
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
+              dots: false,
             },
           },
           {
@@ -39,12 +45,17 @@ const SimpleSlider: React.FC<SimpleSliderProps> = (props) => {
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
+              dots: false,
             },
           },
         ],
       };
 
-  return <Slider {...defaultSettings}>{children}</Slider>;
+  return (
+    <Slider className={className || ''} {...defaultSettings}>
+      {children}
+    </Slider>
+  );
 };
 
 export default React.memo(SimpleSlider);
