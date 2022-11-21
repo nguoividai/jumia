@@ -2,7 +2,7 @@
     font-weight: 800;
     font-size: 1.25rem;
     line-height: 26px;
-    color: #18181B;
+    color: #27272A;
 }
 
 .section .extra {
@@ -21,8 +21,6 @@
     .section .title {
         padding: 1.5rem 0 0rem 0;
     }
-
-   
 }
 
 @media screen and (max-width: 768px) {

@@ -38,9 +38,9 @@ const AppHeader = () => {
         </List>
       </div>
       <div className="action">
-        <div className="d-none d-md-block d-lg-none d-sm-block open">
+        <div className="d-flex d-xs-flex d-sm-flex d-md-flex d-lg-none open">
           <div className="ellipse"></div>
-          <span>Open</span>
+          <span>OPEN</span>
         </div>
         <a className="d-none d-lg-block cart" href="#/">
           <i className="icofont-cart-alt"></i> 2

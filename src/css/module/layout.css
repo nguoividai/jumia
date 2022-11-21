@@ -55,3 +55,7 @@
     row-gap: 5rem;
 }
 
+.float-right {
+    float:right
+}
+

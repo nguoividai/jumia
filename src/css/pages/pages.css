@@ -59,7 +59,7 @@
 }
 
 
-.slick-dots li.slick-active button {
+.hompage-banner .slick-dots li.slick-active button {
     position: relative;
     display: inline-block;
     width: 24px;
@@ -96,3 +96,26 @@
 .sidebar-list.list .list-item.active {
     color: #F4894A;
 }
+
+/* icon */
+.icon {
+    width: 20px;
+}
+
+
+/* TAB FOOTER */
+.tab-footer {
+    position: fixed;
+    padding: 1rem;
+    bottom: 0px;
+    background: #fff;
+    height: 75px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
+}
+
