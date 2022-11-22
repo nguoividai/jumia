@@ -22,24 +22,28 @@ const tabs = [
           title="Peperoni Pizza"
           description="Hot beef with fry"
           price={30}
+          type="vertical"
         />
         <CardProductToAdd
           src={hamburger}
           title="Peperoni Pizza"
           description="Hot beef with fry"
           price={30}
+          type="vertical"
         />
         <CardProductToAdd
           src={hamburger}
           title="Peperoni Pizza"
           description="Hot beef with fry"
           price={30}
+          type="vertical"
         />
         <CardProductToAdd
           src={hamburger}
           title="Peperoni Pizza"
           description="Hot beef with fry"
           price={30}
+          type="vertical"
         />
       </>
     ),
