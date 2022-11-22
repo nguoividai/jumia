@@ -353,6 +353,113 @@
     color: var(--app-color-primary-orange);
 }
 
+.card-promotion--horizontal {
+}
+
+.card-promotion--horizontal .information {
+    background: rgba(255, 109, 16, 0.11);
+    border-radius: 16px;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.card-promotion--horizontal .information::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -11px;
+    top: -8px;
+    z-index: 999;
+}
+
+.card-promotion--horizontal .information::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -11px;
+    bottom: -8px;
+    z-index: 999;
+}
+
+.card-promotion--horizontal .information .information-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--app-color-primary-orange);
+}
+
+.card-promotion--horizontal .information .information-name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F172A;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card-promotion--horizontal .information .information-condition {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #475569;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card-promotion--horizontal .information .information-footer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1E293B;
+    align-items: center;
+}
+
+.card-promotion--horizontal .information .information-footer img {
+    width: 100%;
+}
+
+.card-promotion--horizontal .icon {
+    background: var(--app-color-primary-orange);
+    color: var(--app-color-primary-white);
+    border-radius: 0px 16px 16px 0px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px dashed #F8FAFC;
+}
+
+.card-promotion--horizontal .icon::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -12px;
+    top: 44%;
+    z-index: 999;
+}
+
 /* CARD REVIEWS */
 .card-review {
     display: flex;
