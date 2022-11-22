@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import Section from 'src/components/section/Section';
 import pizza from 'src/assets/images/jumia/pizza-vector.png';
 import SliderSimple from 'src/components/slider/SliderSimple';
-import { Button, ButtonGroup } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import ButtonGroupSelect from 'src/components/button/ButtonGroupSelect';
+import Switch from 'src/components/switch/Switch';
+import ListCart from 'src/components/list/ListCart';
 
 const sizes = [
   {
@@ -152,7 +154,52 @@ const JChooseSizeMobile = () => {
                 </div>
               </div>
             )}
-            {currentStep === 3 && <div className="step-item"></div>}
+            {currentStep === 3 && (
+              <div className="step-item">
+                <div className="list-extra">
+                  <div className="list-extra--title">choose salad</div>
+                  {[...Array(3)].map((e, idx) => (
+                    <div key={idx} className="list-extra--item">
+                      <div className="list-item--title">ketchup</div>
+                      <div className="list-item--action">
+                        <span className="price">€6.80</span>
+                        <span className="toggle">
+                          <Switch />
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="list-extra">
+                  <div className="list-extra--title">choose salad</div>
+                  {[...Array(5)].map((e, idx) => (
+                    <div key={idx} className="list-extra--item">
+                      <div className="list-item--title">ketchup</div>
+                      <div className="list-item--action">
+                        <span className="price">€6.80</span>
+                        <span className="toggle">
+                          <Switch />
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="action">
+                  <Button
+                    className="col-12 jumia-primary"
+                    onClick={() => setCurrentStep((prev) => prev + 1)}
+                  >
+                    Add to cart <i className="icofont-rounded-right"></i>
+                  </Button>
+                </div>
+              </div>
+            )}
+
+            {currentStep === 4 && (
+              <div className="step-item">
+                <ListCart />
+              </div>
+            )}
           </div>
         </div>
       </Section>

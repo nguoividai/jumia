@@ -115,3 +115,77 @@ ul.list.list-item {
 .product-tabs .tab-pane {
     padding: 0.5rem;
 }
+
+.list-extra .list-extra--title {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #52525B;
+    margin:  1rem 0;
+}
+
+.list-extra .list-extra--item {
+    display: flex;
+    align-items: center;
+}
+
+.list-extra .list-extra--item .list-item--title {
+    width: 80%;
+}
+
+.list-extra .list-extra--item .list-item--action {
+    width: 20%;
+    display: flex;
+    gap: 1rem;
+}
+
+.list-extra .list-extra--item {
+    padding:  0.5rem 0;
+}
+
+/* LIST CART */
+.list-cart .list-cart-item {
+    display: flex;
+    gap: 1rem;
+    min-height: 100px;
+}
+
+.list-cart .list-cart-item .list-cart-item--image {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.list-cart .list-cart-item .list-cart-item--content {
+    width: 80%;
+}
+
+.list-cart .list-cart-item .list-cart-item--image img {
+    max-width: 75px;
+}
+
+
+.list-cart .list-cart-item .list-cart-item--content .list-item--title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #18181B;
+}
+
+.list-cart .list-cart-item .list-cart-item--content .list-item--title .price {
+    float: right;
+}
+
+.list-cart .list-cart-item .list-cart-item--content .list-item--extra {
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 18px;
+    color: #A1A1AA;
+}
+
+.list-cart .list-cart-item .list-cart-item--content .list-item--action {
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+}
