@@ -126,3 +126,10 @@
 .modal-product .product-image img{
     width: auto;
 }
+
+.modal-product .modal-footer .total {
+    position: absolute;
+    left: 1rem;
+    line-height: 22px;
+    color: #3F3F46;
+}

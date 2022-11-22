@@ -35,9 +35,22 @@ button.button.link {
     font-size: 24px;
 }
 
-button.button.primary {
+button.button.primary, button.jumia-primary {
     background: var(--app-color-primary-orange);
+    border: 0;
 }
+
+button.jumia-primary:hover {
+    background: var(--app-color-primary-orange);
+    border: 0;
+    opacity: 0.9;
+}
+
+button.jumia-primary:active {
+    background: var(--app-color-primary-orange) !important;
+    opacity: 0.6;
+}
+
 
 button.button.white {
     background: #fff;
@@ -113,4 +126,83 @@ button.button.lg {
 .button-quantity .button:hover {
     background: #fafafa !important;
     color: #94a3b8 !important;
+}
+
+
+/* CHOOSE BUTTON GROUP */
+.choose-button-group button {
+    /* Basic/White */
+    background: #FFFFFF;
+    /* Neutral/300 */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #CBD5E1;
+    border-radius: 0;
+    color: #475569;
+    min-height: 50px;
+}
+
+.choose-button-group .group-item:nth-child(2n + 1) button {
+    border-right: 0;
+}
+
+.choose-button-group .group-item:nth-child(2n) button {
+    border-right: 0;
+}
+
+.choose-button-group .group-item:first-child button {
+    border-radius: 8px 0 0 8px;
+}
+
+.choose-button-group .group-item:last-child button {
+    border-radius: 0px 8px 8px 0px !important;
+    
+}
+
+.choose-button-group .group-item:last-child button:not(.active) {
+    border-right: 1px solid #CBD5E1 !important;
+}
+
+.choose-button-group button:hover, .choose-button-group button:active, .choose-button-group button:focus-visible,
+.choose-button-group button:focus  {
+    /* Basic/White */
+    background: #fafafa !important;
+    border-color:  #CBD5E1 !important;
+    outline: none !important;
+}
+
+.choose-button-group button.active {
+    background: rgba(255, 109, 16, 0.11);
+    color: #F4894A !important;
+    border: 1px solid #F4894A !important;
+}
+
+.choose-button-group button.active {
+    background: rgba(255, 109, 16, 0.11);
+    color: #F4894A !important;
+    border: 1px solid #F4894A !important;
+}
+
+.choose-button-group button.active span {
+    color: #F4894A !important;
+}
+
+.choose-button-group button .main-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 15px;
+    color: #475569;
+    display: block;
+}
+
+.choose-button-group button .extra {
+    font-size: 0.75rem;
+    line-height: 18px;
+    text-align: center;
+    color: #374151;
+}
+
+.choose-button-group .group-item .price {
+    display: block;
+    margin-top: 0.5rem;
 }

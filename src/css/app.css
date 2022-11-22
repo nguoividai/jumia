@@ -115,7 +115,7 @@ font-family: Inter;
 font-size: 14px;
 }
 
-body:has(.backdrop), html:has(.backdrop) {
+body:has(.backdrop), html:has(.backdrop), html:has(.modal-backdrop.show)  {
 overflow: hidden;
 }
 
@@ -156,4 +156,22 @@ a:hover {
 
 .slick-initialized .slick-slide {
   padding: 1.5rem
+}
+
+.back-btn {
+  padding: 4px;
+  text-decoration: none;
+  color: #818181 !important;
+  transition: 0.3s;
+  margin: 0.5rem;
+  width: auto;
+  display: flex;
+  height: auto;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background: #F8FAFC !important;
+  border-color: #F8FAFC !important;
+  border-radius: 8px;
 }

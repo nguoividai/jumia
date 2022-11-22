@@ -43,6 +43,32 @@
     color: #DC2626;
 }
 
-.jumia-list-size .list-group-item {
+.jumia-list .list-group-item {
     padding: 0.75rem;
+}
+
+.jumia-list .select-checkbox {
+    display: flex;
+}
+
+.jumia-list .price {
+    position: absolute;
+    right: 1rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 20px;
+    color: #4B5563;
+}
+
+.extra-list-item {
+    display: flex;
+    width: 100%;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.extra-list-item img {
+    width: 15%;
+    margin-right: 10px;
+    max-width: 50px;
 }

@@ -119,3 +119,39 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
 }
 
+
+/* J CHOOSE SIZE MOBILE */
+.app-content:has(.choose-addon) {
+    position: relative;
+}
+
+.choose-addon .product-price {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 36px;
+    text-align: center;
+    color: #F4894A;
+}
+
+.choose-addon .title-type {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 24px;
+    color: #3F3F46;
+}
+
+.choose-addon .choose-item {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.choose-addon .action {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+
+

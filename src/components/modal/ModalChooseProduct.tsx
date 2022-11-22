@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import pizzaVector from 'src/assets/images/jumia/pizza-vector.png';
+import Button from '../button/Button';
 import JumiaTab from '../tab/JumiaTab';
 
 const ModalChooseProduct = () => {
@@ -11,9 +12,7 @@ const ModalChooseProduct = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
+      <Button onClick={handleShow}>Launch demo modal</Button>
 
       <Modal className="modal-product" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -31,11 +30,9 @@ const ModalChooseProduct = () => {
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
+          <span className="total">Total : €22.23</span>
+          <Button color="primary" onClick={handleClose}>
+            Add To Cart
           </Button>
         </Modal.Footer>
       </Modal>

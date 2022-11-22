@@ -29,12 +29,12 @@ const AppContent = () => {
         conditionText="When you order $20 or over When you order $20 or over"
         code="AAA-98765-123"
       /> */}
-      <ModalCoupon
+      {/* <ModalCoupon
         name="voucher RM 10"
         description="incentive warehouse pahing for shoppingat at JUMIA"
         validDate="2022/12/05"
         code="FE CREDIT"
-      />
+      /> */}
       {/* Slider */}
       {/* <SliderSimple>
         {Array.from(new Array(5)).map((item, index) => (
