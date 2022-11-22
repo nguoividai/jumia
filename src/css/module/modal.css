@@ -89,4 +89,38 @@
     font-size: 12px;
     line-height: 18px;
     color: #9CA3AF;
+.modal-product .modal-header {
+   border: 0;
+   padding-bottom: 0;
+}
+
+.modal-product .modal-header .modal-title {
+   border: 0;
+   padding-bottom: 0;
+   font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #18181B;
+}
+
+.modal-product .modal-footer {
+    background: #FFFFFF;
+    box-shadow: 0px -2px 13px rgba(0, 0, 0, 0.08);
+    padding: 0.25rem;
+}
+
+.modal-product .product-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #52525B;
+}
+
+.modal-product .product-image{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.modal-product .product-image img{
+    width: auto;
 }
