@@ -1,0 +1,92 @@
+/* MODAL COUPON  */
+
+.modal-coupon {
+    padding: 16px;
+    position: relative;
+}
+
+.modal-coupon::after {
+    content: '\25CF';
+    display: block;
+    color: #7d7d7d;
+    font-size: 60px;
+    position: absolute;
+    right: -18px;
+    top: 28%;
+    z-index: 9999;
+}
+
+.modal-coupon::before {
+    content: '\25CF';
+    display: block;
+    color: #7d7d7d;
+    font-size: 60px;
+    position: absolute;
+    left: -18px;
+    top: 28%;
+    z-index: 9999;
+}
+
+.modal-coupon .header {
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #E2E8F0;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.modal-coupon .header img {
+    width: 40px;
+}
+
+.modal-coupon .header .name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #475569;
+}
+
+.modal-coupon .header .valid-date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #94A3B8;
+}
+
+.modal-coupon .body {
+    padding: 12px 20px;
+}
+
+.modal-coupon .body .description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #64748B;
+}
+
+.modal-coupon .body .coupon-wrap {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding: 8px;
+}
+
+.modal-coupon .body .coupon-wrap .code {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.modal-coupon .body .coupon-wrap .copy-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #9CA3AF;
+}

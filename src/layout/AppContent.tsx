@@ -8,6 +8,7 @@ import CardPromotionCanCopy from 'src/components/card/CardPromotionCanCopy';
 import CardReview from 'src/components/card/CardReview';
 import List from 'src/components/list/List';
 import SliderSimple from 'src/components/slider/SliderSimple';
+import ModalCoupon from './../components/modal/ModalCoupon';
 
 const AppContent = () => {
   return (
@@ -22,11 +23,17 @@ const AppContent = () => {
       >
         Delivery
       </Button> */}
-      <CardPromotionCanCopy
+      {/* <CardPromotionCanCopy
         title="Free"
         name="Garlic bread pizza asd as das as asd asd asdasda s dasd asd asdas"
         conditionText="When you order $20 or over When you order $20 or over"
         code="AAA-98765-123"
+      /> */}
+      <ModalCoupon
+        name="voucher RM 10"
+        description="incentive warehouse pahing for shoppingat at JUMIA"
+        validDate="2022/12/05"
+        code="FE CREDIT"
       />
       {/* Slider */}
       {/* <SliderSimple>
