@@ -29,7 +29,7 @@ const CardPromotionCanCopy: React.FC<CardPromotionCanCopyProps> = (props) => {
             </Col>
           </Row>
         </Col>
-        <Col xs={3} sm={3} md={3} lg={3} xl={3} className="icon">
+        <Col xs={3} sm={3} md={3} lg={3} xl={3} className="icon" onClick={() => console.log(123)}>
           <img src={require('../../assets/images/coupon.png')} alt="coupon" />
           Copy
         </Col>

@@ -445,6 +445,7 @@
     align-items: center;
     justify-content: center;
     border-left: 2px dashed #F8FAFC;
+    cursor: pointer;
 }
 
 .card-promotion--horizontal .icon::after {
