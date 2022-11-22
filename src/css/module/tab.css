@@ -1,0 +1,22 @@
+
+.jumia-tab.nav-tabs .nav-item.show .nav-link, .jumia-tab.nav-tabs .nav-link.active {
+    /* color: var(--bs-nav-tabs-link-active-color); */
+    background-color: transparent !important;
+    border: 0;
+    border-bottom: 2px solid var(--app-color-primary-orange);
+    color: var(--app-color-primary-orange) !important;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.jumia-tab.nav-tabs .nav-item .nav-link {
+    color: var(--bs-nav-tabs-link-active-color);
+    transition: 0s;
+    font-size: 14px;
+}
+
+.jumia-tab.nav-tabs .nav-item:not(.show) .nav-link:focus-visible, .jumia-tab.nav-tabs .nav-item:not(.show) .nav-link:hover  {
+    border: 0;
+    color: var(--app-color-primary-orange) !important;
+}

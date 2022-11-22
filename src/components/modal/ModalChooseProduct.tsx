@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
+import pizzaVector from 'src/assets/images/jumia/pizza-vector.png';
+import JumiaTab from '../tab/JumiaTab';
 
 const ModalChooseProduct = () => {
   const [show, setShow] = useState<boolean>(false);
@@ -13,11 +15,21 @@ const ModalChooseProduct = () => {
         Launch demo modal
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal className="modal-product" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Peperoni Pizza</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, youre reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+          <div className="product-description">
+            A classic favorite Tender beef and fresh broccli in ginger soy sauce.
+          </div>
+          <div className="product-image">
+            <img alt="product" src={pizzaVector} />
+          </div>
+          <div className="product-body">
+            <JumiaTab />
+          </div>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close

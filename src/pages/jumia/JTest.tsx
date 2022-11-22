@@ -4,6 +4,7 @@ import CardProductToAdd from 'src/components/card/CardProductToAdd';
 import hamburger from 'src/assets/images/jumia/hamburger.png';
 import pizza from 'src/assets/images/jumia/pizza-product.png';
 import ModalChooseProduct from 'src/components/modal/ModalChooseProduct';
+import JumiaTab from 'src/components/tab/JumiaTab';
 
 const JTest = () => {
   return (
@@ -60,6 +61,10 @@ const JTest = () => {
 
       <div className="mt-2">
         <ModalChooseProduct />
+      </div>
+
+      <div className="mt-2">
+        <JumiaTab />
       </div>
     </>
   );

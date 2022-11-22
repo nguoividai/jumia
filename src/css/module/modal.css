@@ -1,0 +1,29 @@
+.modal-product .modal-header {
+   border: 0;
+   padding-bottom: 0;
+}
+
+.modal-product .modal-header .modal-title {
+   border: 0;
+   padding-bottom: 0;
+   font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #18181B;
+}
+
+.modal-product .product-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #52525B;
+}
+
+.modal-product .product-image{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.modal-product .product-image img{
+    width: auto;
+}
