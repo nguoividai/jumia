@@ -4,6 +4,7 @@ import Button from 'src/components/button/Button';
 import CardDescription from 'src/components/card/CardDescription';
 import CardProduct from 'src/components/card/CardProduct';
 import CardPromotion from 'src/components/card/CardPromotion';
+import CardPromotionCanCopy from 'src/components/card/CardPromotionCanCopy';
 import CardReview from 'src/components/card/CardReview';
 import List from 'src/components/list/List';
 import SliderSimple from 'src/components/slider/SliderSimple';
@@ -12,6 +13,21 @@ const AppContent = () => {
   return (
     <div className="app-content">
       <Outlet />
+      {/* <Button
+        shape="normal"
+        color="white"
+        size="md"
+        textColor="black"
+        startIcon={<i className="icofont-bag"></i>}
+      >
+        Delivery
+      </Button> */}
+      <CardPromotionCanCopy
+        title="Free"
+        name="Garlic bread pizza asd as das as asd asd asdasda s dasd asd asdas"
+        conditionText="When you order $20 or over When you order $20 or over"
+        code="AAA-98765-123"
+      />
       {/* Slider */}
       {/* <SliderSimple>
         {Array.from(new Array(5)).map((item, index) => (

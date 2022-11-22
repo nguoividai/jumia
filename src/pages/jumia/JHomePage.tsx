@@ -48,7 +48,7 @@ const JHomePage = () => {
           <Button color="primary" shape="normal" size="md">
             Order Delivery
           </Button>
-          <Button color="white" shape="normal" size="md">
+          <Button color="white" shape="normal" size="md" textColor="orange">
             Order Delivery
           </Button>
         </div>

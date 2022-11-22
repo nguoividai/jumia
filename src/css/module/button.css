@@ -36,8 +36,16 @@ button.button.primary {
 
 button.button.white {
     background: #fff;
+}
+
+button.button.white.orange {
     color:  var(--app-color-primary-orange);
     border: 1px solid var(--app-color-primary-orange);
+}
+
+button.button.white.black {
+    color:  #000;
+    border: 1px solid #000;
 }
 
 button.button.grey {
