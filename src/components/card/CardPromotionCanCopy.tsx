@@ -12,7 +12,7 @@ const CardPromotionCanCopy: React.FC<CardPromotionCanCopyProps> = (props) => {
   const { title, name, conditionText, code } = props;
   return (
     <Container>
-      <Row className="card-promotion--horizontal">
+      <Row className="card-promotion--can-copy">
         <Col xs={9} sm={9} md={9} lg={9} xl={9} className="information">
           <div className="information-title">{title}</div>
           <div className="information-name">{name}</div>
