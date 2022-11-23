@@ -12,20 +12,14 @@ type CardProductToAddProps = {
 
 const CardProductToAdd: React.FC<CardProductToAddProps> = (props) => {
   const { src, title, description, price, type } = props;
-  return type === 'horizontal' ? (
+  return type === 'vertical' ? (
     <div className="card-product card-product-to-add-horizontal">
-      <div className="icon">
-        <span className="icon float-right text-center">
-          <i className="d-block icofont-heart"></i>
-          12
-        </span>
-      </div>
-      <div className="product-image">
-        <img src={src} alt="product" />
-      </div>
       <div className="product-content">
         <div className="product-title">{title}</div>
         <div className="product-description">{description}</div>
+      </div>
+      <div className="product-image">
+        <img src={src} alt="product" />
       </div>
       <div className="product-action">
         <div className="product-action--price">€ {price}</div>
