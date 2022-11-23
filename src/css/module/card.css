@@ -272,7 +272,7 @@
 
 /* Card Promotion */
 
-.card-promotion {
+.card-promotion--vertical {
     width: 199px;
     height: 206px;
     border-radius: 16px;
@@ -280,7 +280,7 @@
     position: relative;
 }
 
-.card-promotion::after {
+.card-promotion--vertical::after {
     content: "";
     display: block;
     position: absolute;
@@ -297,7 +297,7 @@
 
 }
 
-.card-promotion--top {
+.card-promotion--vertical .top {
     display: flex;
     gap: 12px;
     align-items: center;
@@ -305,28 +305,27 @@
     border-bottom: 1px dashed #CBD5E1;
 }
 
-.card-promotion--content {
+.card-promotion--vertical .top .content {
     font-weight: 800;
-
 }
 
-.card-promotion--title {
+.card-promotion--vertical .top .content .title {
     font-size: 34px;
     line-height: 42px;
     color: var(--app-color-primary-orange);
 }
 
-.card-promotion--name {
+.card-promotion--vertical .top .content .name {
     font-size: 16px;
 }
 
-.card-promotion--bottom {
+.card-promotion--vertical .bottom {
     padding: 12px;
     position: relative;
     
 }
 
-.card-promotion--condition {
+.card-promotion--vertical .bottom .condition {
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 14px;
@@ -334,7 +333,7 @@
     color: #1E293B;
 }
 
-.card-promotion--button {
+.card-promotion--vertical .button {
     position: absolute;
     bottom: 4px;
     right: 4px;
@@ -343,20 +342,94 @@
 }
 
 
-.card-promotion--button span {
+.card-promotion--vertical .button span {
     font-weight: 400;
     font-size: 14px;
 }
 
-.card-promotion--button i {
+.card-promotion--vertical .button i {
     font-size: 34px;
     color: var(--app-color-primary-orange);
 }
 
 .card-promotion--horizontal {
+    background: #fff;
+    border: 1px dashed #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
 }
 
-.card-promotion--horizontal .information {
+.card-promotion--horizontal::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px dashed #ccc;
+    position: absolute;
+    right: -10px;
+    top: 40%;
+    background-color: #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(45deg);
+}
+
+.card-promotion--horizontal .header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-promotion--horizontal .header .header__content {
+    font-weight: 800;
+}
+
+.card-promotion--horizontal .header .header__content .title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--app-color-primary-orange);
+}
+
+.card-promotion--horizontal .header .header__content .name {
+    font-size: 16px;
+}
+
+.card-promotion--horizontal .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-promotion--horizontal .footer .condition {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #1E293B;
+}
+
+.card-promotion--horizontal .footer .button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F172A;
+    display: flex;
+    align-items: center;
+}
+
+.card-promotion--horizontal .footer .button i {
+    font-size: 30px;
+    color: var(--app-color-primary-orange);
+}
+
+/* CARD PROMOTION CAN COPY */
+
+.card-promotion--can-copy {
+}
+
+.card-promotion--can-copy .information {
     background: rgba(255, 109, 16, 0.11);
     border-radius: 16px;
     padding: 8px 12px;
@@ -366,7 +439,7 @@
     position: relative;
 }
 
-.card-promotion--horizontal .information::after {
+.card-promotion--can-copy .information::after {
     content: "";
     display: block;
     border-radius: 50%;
@@ -379,7 +452,7 @@
     z-index: 999;
 }
 
-.card-promotion--horizontal .information::before {
+.card-promotion--can-copy .information::before {
     content: "";
     display: block;
     border-radius: 50%;
@@ -392,14 +465,14 @@
     z-index: 999;
 }
 
-.card-promotion--horizontal .information .information-title {
+.card-promotion--can-copy .information .information-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     color: var(--app-color-primary-orange);
 }
 
-.card-promotion--horizontal .information .information-name {
+.card-promotion--can-copy .information .information-name {
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
@@ -411,7 +484,7 @@
     -webkit-box-orient: vertical;
 }
 
-.card-promotion--horizontal .information .information-condition {
+.card-promotion--can-copy .information .information-condition {
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
@@ -423,7 +496,7 @@
     -webkit-box-orient: vertical;
 }
 
-.card-promotion--horizontal .information .information-footer {
+.card-promotion--can-copy .information .information-footer {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -431,11 +504,11 @@
     align-items: center;
 }
 
-.card-promotion--horizontal .information .information-footer img {
+.card-promotion--can-copy .information .information-footer img {
     width: 100%;
 }
 
-.card-promotion--horizontal .icon {
+.card-promotion--can-copy .icon {
     background: var(--app-color-primary-orange);
     color: var(--app-color-primary-white);
     border-radius: 0px 16px 16px 0px;
@@ -448,7 +521,7 @@
     cursor: pointer;
 }
 
-.card-promotion--horizontal .icon::after {
+.card-promotion--can-copy .icon::after {
     content: "";
     display: block;
     border-radius: 50%;
