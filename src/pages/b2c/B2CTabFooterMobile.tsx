@@ -9,7 +9,7 @@ const B2CTabFooterMobile = () => {
   return (
     <div className="tab-footer">
       <MenuTab type="horizontal">
-        <MenuTab.Item name="home">
+        <MenuTab.Item name="home" active>
           <Badge number={0}>
             <img src={home} alt="icon" className="icon" /> Home
           </Badge>

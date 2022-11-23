@@ -1,6 +1,8 @@
-.badge {
+.menu-tab--item .badge {
     position: relative;
+    color: #4B5563 ;
 }
+
 
 .badge .badge-count {
     position: absolute;
@@ -17,4 +19,5 @@
     right: 0.75rem;
     background: var(--app-color-primary-orange);
     color: var(--app-color-primary-white);
+    bottom: 1.5rem !important;
 }

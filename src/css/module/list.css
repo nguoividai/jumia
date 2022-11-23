@@ -103,6 +103,10 @@ ul.list.list-item {
     line-height: 18px;
 }
 
+.menu-tabs.horizontal .menu-tab--item.active, .menu-tabs.horizontal .menu-tab--item.active span  {
+   color:  var(--app-color-primary-orange)
+}
+
 .menu-tabs.horizontal .menu-tab--item img  {
     display: block;
     margin-left: auto !important;
