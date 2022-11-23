@@ -14,6 +14,12 @@ const AppContent = () => {
   return (
     <div className="app-content">
       <Outlet />
+      <CardPromotion
+        title="Free"
+        name="garlic Pizza"
+        conditionText="When you order 20$ or over"
+        direction="horizontal"
+      />
       {/* <Button
         shape="normal"
         color="white"
