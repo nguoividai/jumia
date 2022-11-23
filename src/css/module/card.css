@@ -652,7 +652,7 @@
 }
 
 .card-product.card-product-to-add-horizontal .product-content {
-    margin-top: 1.5rem
+
 }
 
 .card-product.card-product-to-add-horizontal .icon  {
@@ -668,18 +668,16 @@
 
 .card-product.card-product-to-add-horizontal .product-title  {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: #27272A;
-    min-height: 31px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #18181B;
 }
 
 .card-product.card-product-to-add-horizontal .product-description  {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    color: #71717A;
-    height: 60px;
+    color: #52525B;
 }
 
 .card-product.card-product-to-add-horizontal .product-action {
@@ -689,7 +687,7 @@
 
 .card-product.card-product-to-add-horizontal .product-action .product-action--price {
     width: 30%;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1rem;
     display: flex;
     align-items: center;

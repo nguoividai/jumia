@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import Button from 'src/components/button/Button';
 import CardDescription from 'src/components/card/CardDescription';
 import CardProduct from 'src/components/card/CardProduct';
+import CardProductToAdd from 'src/components/card/CardProductToAdd';
 import CardPromotion from 'src/components/card/CardPromotion';
 import CardPromotionCanCopy from 'src/components/card/CardPromotionCanCopy';
 import CardReview from 'src/components/card/CardReview';
@@ -14,11 +15,18 @@ const AppContent = () => {
   return (
     <div className="app-content">
       <Outlet />
-      <CardPromotion
+      {/* <CardPromotion
         title="Free"
         name="garlic Pizza"
         conditionText="When you order 20$ or over"
         direction="horizontal"
+      /> */}
+      <CardProductToAdd
+        type="vertical"
+        title="top"
+        description="top123"
+        price={30}
+        src={require('../assets/images/jumia/hamburger.png')}
       />
       {/* <Button
         shape="normal"
