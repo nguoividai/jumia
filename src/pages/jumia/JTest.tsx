@@ -12,6 +12,7 @@ import EmptyCart from 'src/components/empty/EmptyCart';
 import Button from 'src/components/button/Button';
 import ListCart from 'src/components/list/ListCart';
 import JCheckoutMobile from './mobile/JCheckoutMobile';
+import ConfirmAddressForm from '../components/ConfirmAddressForm';
 
 const JTest = () => {
   return (
@@ -140,6 +141,22 @@ const JTest = () => {
         <div className="col-6">
           <ModalOverPage trigger={<Button>Checkout</Button>}>
             <JCheckoutMobile />
+          </ModalOverPage>
+        </div>
+      </div>
+      <div className="mt-2">
+        <div className="col-6">
+          <ModalOverPage
+            trigger={<Button>Confirm address</Button>}
+            footer={
+              <div>
+                <Button style={{ width: '100%' }} color="primary">
+                  Confirm
+                </Button>
+              </div>
+            }
+          >
+            <ConfirmAddressForm />
           </ModalOverPage>
         </div>
       </div>
