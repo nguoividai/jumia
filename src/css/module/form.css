@@ -55,3 +55,30 @@ input::-ms-input-placeholder { /* Internet Explorer 10-11 */
 input::-ms-input-placeholder { /* Microsoft Edge */
     color: red;
 }
+
+
+/* MOBILE FORM */
+.form-mobile .form-label {
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 18px;
+    color: #52525B;
+}
+
+.form-mobile .form-control {
+    border: 1px solid #E5E7EB !important;
+    border-radius: 8px  !important;
+    background: #fff !important;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #71717A;
+}
+
+.form-mobile .form-control:focus {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.form-mobile .form-control:not(:placeholder-shown) {
+    background: #fff !important;
+}

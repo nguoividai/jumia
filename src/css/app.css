@@ -18,6 +18,7 @@
 @import url("./module/modal.css");
 @import url("./module/tab.css");
 @import url("./module/switch.css");
+@import url("./module/empty.css");
 
 @import url("./pages/pages.css");
 
@@ -175,4 +176,9 @@ a:hover {
   background: #F8FAFC !important;
   border-color: #F8FAFC !important;
   border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.primary {
+  color: var(--app-color-primary-orange);
 }

@@ -35,6 +35,21 @@ ul.list.list-item {
     color: var(--app-color-link);
 }
 
+/* DIVIDED INSIDE HORIZONTAL */
+.list.list-horizontal.divided-inside {
+    gap: 0.5rem;
+}
+
+.list.list-horizontal.divided-inside .list-item::after {
+    content: "|";
+    padding: 0 0.5rem;
+    color: #E5E7EB;
+}
+
+.list.list-horizontal.divided-inside .list-item:last-child:after {
+    content: none
+}
+
 /* LIST DESCRIPTION */
 .list .list-item.list-description:first-child {
     margin-top: 0;

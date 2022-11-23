@@ -35,6 +35,12 @@ button.button.link {
     font-size: 24px;
 }
 
+.button:disabled, .button:disabled:hover  {
+    background: #F1F5F9 !important;
+    border-radius: 8px;
+    color: #94A3B8 !important;
+}
+
 button.button.primary, button.jumia-primary {
     background: var(--app-color-primary-orange);
     border: 0;
@@ -127,6 +133,7 @@ button.button.lg {
     background: #fafafa !important;
     color: #94a3b8 !important;
 }
+
 
 
 /* CHOOSE BUTTON GROUP */

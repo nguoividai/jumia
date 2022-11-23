@@ -6,6 +6,7 @@ import { Button } from 'react-bootstrap';
 import ButtonGroupSelect from 'src/components/button/ButtonGroupSelect';
 import Switch from 'src/components/switch/Switch';
 import ListCart from 'src/components/list/ListCart';
+import List from 'src/components/list/List';
 
 const sizes = [
   {
@@ -52,14 +53,22 @@ const crust = [
   },
 ];
 
+const maxStep = 3;
+
 const JChooseSizeMobile = () => {
   const [currentStep, setCurrentStep] = useState<number>(0);
+
+  const increaseStep = () => {
+    setCurrentStep((prev) => (prev + 1 <= maxStep ? prev + 1 : maxStep));
+  };
+
+  const decreaseStep = () => {
+    setCurrentStep((prev) => (prev - 1 > 0 ? prev - 1 : 0));
+  };
+
   return (
     <>
-      <Button
-        className="mt-2 back-btn"
-        onClick={() => setCurrentStep((prev) => (prev - 1 > 0 ? prev - 1 : 0))}
-      >
+      <Button className="mt-2 back-btn" onClick={decreaseStep}>
         <i className="icofont-rounded-left"></i>
       </Button>
       <Section
@@ -67,6 +76,19 @@ const JChooseSizeMobile = () => {
         title="Meaty Pizza"
         extra="Holy smokes! Something seriously bad happened."
       >
+        <div className="selected-item">
+          <List className="divided-inside" layout="horizontal">
+            <List.ListItem>
+              Size: <strong>XL</strong>
+            </List.ListItem>
+            <List.ListItem>
+              Crust: <strong>Cheese Stuffed</strong>
+            </List.ListItem>
+            <List.ListItem>
+              Base: <strong>BBQ</strong>
+            </List.ListItem>
+          </List>
+        </div>
         <div className="container">
           <SliderSimple
             className="container"
@@ -105,7 +127,7 @@ const JChooseSizeMobile = () => {
             <img className="thumbnail" src={pizza} alt="product" />
           </SliderSimple>
           <div className="product-price">€6.80 </div>
-          <div className="steps">
+          <div className="steps mt-5">
             {currentStep === 0 && (
               <div className="step-item">
                 <div className="title-type">Select Size</div>
@@ -113,10 +135,7 @@ const JChooseSizeMobile = () => {
                   <ButtonGroupSelect dataSelects={sizes} active="small" />
                 </div>
                 <div className="action">
-                  <Button
-                    className="col-12 jumia-primary"
-                    onClick={() => setCurrentStep((prev) => prev + 1)}
-                  >
+                  <Button className="col-12 jumia-primary" onClick={increaseStep}>
                     Next <i className="icofont-rounded-right"></i>
                   </Button>
                 </div>
@@ -129,10 +148,7 @@ const JChooseSizeMobile = () => {
                   <ButtonGroupSelect dataSelects={crust} active="cheese" />
                 </div>
                 <div className="action">
-                  <Button
-                    className="col-12 jumia-primary"
-                    onClick={() => setCurrentStep((prev) => prev + 1)}
-                  >
+                  <Button className="col-12 jumia-primary" onClick={increaseStep}>
                     Next <i className="icofont-rounded-right"></i>
                   </Button>
                 </div>
@@ -145,17 +161,20 @@ const JChooseSizeMobile = () => {
                   <ButtonGroupSelect dataSelects={crust} active="cheese" />
                 </div>
                 <div className="action">
-                  <Button
-                    className="col-12 jumia-primary"
-                    onClick={() => setCurrentStep((prev) => prev + 1)}
-                  >
+                  <Button className="col-12 jumia-primary" onClick={increaseStep}>
                     Next <i className="icofont-rounded-right"></i>
                   </Button>
                 </div>
               </div>
             )}
             {currentStep === 3 && (
-              <div className="step-item">
+              <div
+                className="step-item"
+                style={{
+                  maxHeight: 'calc(100vh - 600px)',
+                  overflow: 'auto',
+                }}
+              >
                 <div className="list-extra">
                   <div className="list-extra--title">choose salad</div>
                   {[...Array(3)].map((e, idx) => (
@@ -172,7 +191,7 @@ const JChooseSizeMobile = () => {
                 </div>
                 <div className="list-extra">
                   <div className="list-extra--title">choose salad</div>
-                  {[...Array(5)].map((e, idx) => (
+                  {[...Array(10)].map((e, idx) => (
                     <div key={idx} className="list-extra--item">
                       <div className="list-item--title">ketchup</div>
                       <div className="list-item--action">
@@ -185,21 +204,24 @@ const JChooseSizeMobile = () => {
                   ))}
                 </div>
                 <div className="action">
-                  <Button
-                    className="col-12 jumia-primary"
-                    onClick={() => setCurrentStep((prev) => prev + 1)}
-                  >
+                  <Button className="col-12 jumia-primary" onClick={increaseStep}>
                     Add to cart <i className="icofont-rounded-right"></i>
                   </Button>
                 </div>
               </div>
             )}
 
-            {currentStep === 4 && (
-              <div className="step-item">
+            {/* {currentStep === 4 && (
+              <div
+                className="step-item"
+                style={{
+                  maxHeight: 'calc(100vh - 600px)',
+                  overflow: 'auto',
+                }}
+              >
                 <ListCart />
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </Section>
