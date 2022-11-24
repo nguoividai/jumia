@@ -82,6 +82,11 @@ button.button.grey {
     color: #fff;
 }
 
+button.button.transparent {
+    background: transparent;
+    color: #374151;
+}
+
 button.button.sm {
     padding: 6px 15px;
     font-size: 14px;
@@ -118,20 +123,25 @@ button.button.lg {
     justify-content: center;
     border-radius: 1rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
 }
 
 .button-quantity input, .button-quantity input:disabled {
     border: 0;
     width: 30px;
     font-size: 1rem;
-    color: #ccc !important;
+    color: var(--app-color-primary-orange);
     text-align: center;
 }
 
 .button-quantity .button {
     background: #FFFFFF !important;
     color: #94a3b8 !important;
+    width: 32px;
+    height: 32px;
+}
+
+.button-quantity .button i {
+    font-size: 0.75rem;
 }
 
 .button-quantity .button:hover {

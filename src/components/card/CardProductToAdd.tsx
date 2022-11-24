@@ -8,12 +8,17 @@ type CardProductToAddProps = {
   price?: number;
   likeNumber?: number;
   type?: 'vertical' | 'horizontal';
+  shadow?: boolean;
+  style?: React.CSSProperties;
 };
 
 const CardProductToAdd: React.FC<CardProductToAddProps> = (props) => {
-  const { src, title, description, price, type } = props;
+  const { src, title, description, price, type, shadow, style } = props;
   return type === 'vertical' ? (
-    <div className="card-product card-product-to-add-horizontal">
+    <div
+      style={style}
+      className={'card-product card-product-to-add-horizontal' + (shadow ? ' box-shadow' : '')}
+    >
       <div className="product-content">
         <div className="product-title">{title}</div>
         <div className="product-description">{description}</div>
@@ -31,7 +36,7 @@ const CardProductToAdd: React.FC<CardProductToAddProps> = (props) => {
       </div>
     </div>
   ) : (
-    <div className="card-product card-product-to-add">
+    <div style={style} className="card-product card-product-to-add">
       <div className="product-image">
         <img src={src} alt="product" />
       </div>
