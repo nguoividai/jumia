@@ -13,13 +13,16 @@ import Button from 'src/components/button/Button';
 import ListCart from 'src/components/list/ListCart';
 import JCheckoutMobile from './mobile/JCheckoutMobile';
 import ConfirmAddressForm from '../components/ConfirmAddressForm';
+import OffCanvasOverPage from 'src/components/modal/OffCanvasOverPage';
+import { Form } from 'react-bootstrap';
+import SavedBadge from 'src/components/badge/SavedBadge';
 
 const JTest = () => {
   return (
     <>
       <div className="mt-2">
         <div className="row row-gap-2">
-          <div className="col-6 col-md-3 col-lg-2">
+          <div className="col-12 col-sm-6 col-md-3 col-lg-2">
             <CardProductToAdd
               src={pizza}
               title="Peperoni Pizza"
@@ -28,7 +31,7 @@ const JTest = () => {
               price={30}
             />
           </div>
-          <div className="col-6 col-md-3 col-lg-2">
+          <div className="col-12 col-sm-6 col-md-3 col-lg-2">
             <CardProductToAdd
               src={pizza}
               title="Peperoni Pizza"
@@ -37,7 +40,7 @@ const JTest = () => {
               price={30}
             />
           </div>
-          <div className="col-6 col-md-3 col-lg-2">
+          <div className="col-12 col-sm-6 col-md-3 col-lg-2">
             <CardProductToAdd
               src={pizza}
               title="Peperoni Pizza"
@@ -46,7 +49,7 @@ const JTest = () => {
               price={30}
             />
           </div>
-          <div className="col-6 col-md-3 col-lg-2">
+          <div className="col-12 col-sm-6 col-md-3 col-lg-2">
             <CardProductToAdd
               src={pizza}
               title="Peperoni Pizza"
@@ -55,7 +58,7 @@ const JTest = () => {
               price={30}
             />
           </div>
-          <div className="col-6 col-md-3 col-lg-2">
+          <div className="col-12 col-sm-6 col-md-3 col-lg-2">
             <CardProductToAdd
               src={pizza}
               title="Peperoni Pizza"
@@ -89,7 +92,7 @@ const JTest = () => {
       </div>
 
       <div className="mt-2">
-        <div className="col-6">
+        <div className="col-12 col-sm-6">
           <ModalOverPage
             trigger={
               <CardProductToAdd
@@ -107,7 +110,7 @@ const JTest = () => {
       </div>
 
       <div className="mt-2">
-        <div className="col-6">
+        <div className="col-12 col-sm-6">
           <ModalOverPage trigger={<Button>Empty Cart</Button>}>
             <EmptyCart />
           </ModalOverPage>
@@ -115,7 +118,7 @@ const JTest = () => {
       </div>
 
       <div className="mt-2">
-        <div className="col-6">
+        <div className="col-12 col-sm-6">
           <ModalOverPage
             trigger={<Button>Cart</Button>}
             footer={
@@ -138,14 +141,14 @@ const JTest = () => {
       </div>
 
       <div className="mt-2">
-        <div className="col-6">
+        <div className="col-12 col-sm-6">
           <ModalOverPage trigger={<Button>Checkout</Button>}>
             <JCheckoutMobile />
           </ModalOverPage>
         </div>
       </div>
       <div className="mt-2">
-        <div className="col-6">
+        <div className="col-12 col-sm-6">
           <ModalOverPage
             trigger={<Button>Confirm address</Button>}
             footer={
@@ -159,6 +162,44 @@ const JTest = () => {
             <ConfirmAddressForm />
           </ModalOverPage>
         </div>
+      </div>
+      <div className="mt-2">
+        <div className="col-12 col-sm-6">
+          <OffCanvasOverPage
+            style={{ minHeight: '80vh' }}
+            trigger={<Button>Add voucher</Button>}
+            title="Add voucher"
+          />
+        </div>
+      </div>
+      <div className="mt-2">
+        <div className="col-12 col-sm-6">
+          <OffCanvasOverPage
+            style={{ maxHeight: '20vh' }}
+            trigger={<Button>Add voucher text</Button>}
+            title="Add voucher"
+          >
+            <Form.Control type="text" placeholder="Enter your voucher" />
+
+            <Button
+              style={{
+                borderRadius: 0,
+                position: 'absolute',
+                bottom: 0,
+                left: 0,
+                right: 0,
+                height: 50,
+              }}
+              color="primary"
+            >
+              Submit
+            </Button>
+          </OffCanvasOverPage>
+        </div>
+      </div>
+
+      <div className="mt-2">
+        <SavedBadge />
       </div>
     </>
   );

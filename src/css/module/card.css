@@ -427,6 +427,7 @@
 /* CARD PROMOTION CAN COPY */
 
 .card-promotion--can-copy {
+    max-width: 300px;
 }
 
 .card-promotion--can-copy .information {
@@ -579,6 +580,7 @@
     align-items: stretch;
     position: relative;
     margin: 1rem 0;
+    min-height: 125px;
 }
 
 

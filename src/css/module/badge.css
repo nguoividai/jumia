@@ -21,3 +21,12 @@
     color: var(--app-color-primary-white);
     bottom: 1.5rem !important;
 }
+
+.badge.jumia-saved-badge {
+    background: #F4894A !important;
+    border-radius: 16px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
