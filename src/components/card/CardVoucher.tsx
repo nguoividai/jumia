@@ -18,7 +18,7 @@ const CardVoucher: React.FC<CardVoucherProps> = (props) => {
       <div className="right">
         <div className="title">{title}</div>
         <div className="d-flex justify-content-center">
-          <Button shape="normal" size="md" color="grey">
+          <Button style={{ width: '100%' }} shape="normal" size="sm" color="grey">
             Redeem now
           </Button>
         </div>

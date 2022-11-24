@@ -10,13 +10,20 @@ import OrderSummaryMobile from 'src/pages/components/OrderSummaryMobile';
 const JCheckoutMobile = () => (
   <>
     <Form validated={true} className="form-mobile">
-      <DeliveryFormMobile />
-      <OrderSummaryMobile />
-      <ListVoucherMobile />
+      <div style={{ background: '#fff', padding: '1rem', margin: '1rem -12px' }}>
+        <DeliveryFormMobile />
+      </div>
 
-      <CheckoutTotal />
+      <div style={{ background: '#fff', padding: '1rem', margin: '1rem -12px' }}>
+        <OrderSummaryMobile />
+        <ListVoucherMobile />
+        <CheckoutTotal />
+      </div>
 
-      <Card className="border-0">
+      <Card
+        className="border-0"
+        style={{ background: '#fff', padding: '1rem', margin: '1rem -12px' }}
+      >
         <Card.Body>
           <div style={{ fontWeight: 700, fontSize: 14, lineHeight: '20px', color: '#52525B' }}>
             Add Note
@@ -24,40 +31,48 @@ const JCheckoutMobile = () => (
               <Switch />
             </span>
           </div>
-          <Form.Control className="mt-2" type="text" as="textarea" placeholder="add comment..." />
+          <Form.Control
+            className="mt-2"
+            type="text"
+            rows={3}
+            as="textarea"
+            placeholder="add comment..."
+          />
         </Card.Body>
       </Card>
 
-      <ListGroup variant="flush">
-        <ListGroup.Item
-          style={{
-            fontWeight: 400,
-            fontSize: '14px',
-            lineHeight: '20px',
-            color: '#3F3F46',
-            border: 0,
-          }}
-        >
-          <i style={{ marginRight: 10 }} className="icofont-money-bag"></i>
-          Cash
-          <Form.Check className="float-right" type="radio" name="payment" />
-        </ListGroup.Item>
-        <ListGroup.Item
-          style={{
-            fontWeight: 400,
-            fontSize: '14px',
-            lineHeight: '20px',
-            color: '#3F3F46',
-            border: 0,
-          }}
-        >
-          <i style={{ marginRight: 10 }} className="icofont-cash-on-delivery-alt"></i>
-          Pay with card
-          <Form.Check className="float-right" type="radio" name="payment" />
-        </ListGroup.Item>
-      </ListGroup>
+      <div style={{ background: '#fff', padding: '1rem', margin: '1rem -12px' }}>
+        <ListGroup variant="flush">
+          <ListGroup.Item
+            style={{
+              fontWeight: 400,
+              fontSize: '14px',
+              lineHeight: '20px',
+              color: '#3F3F46',
+              border: 0,
+            }}
+          >
+            <i style={{ marginRight: 10 }} className="icofont-money-bag"></i>
+            Cash
+            <Form.Check className="float-right" type="radio" name="payment" />
+          </ListGroup.Item>
+          <ListGroup.Item
+            style={{
+              fontWeight: 400,
+              fontSize: '14px',
+              lineHeight: '20px',
+              color: '#3F3F46',
+              border: 0,
+            }}
+          >
+            <i style={{ marginRight: 10 }} className="icofont-cash-on-delivery-alt"></i>
+            Pay with card
+            <Form.Check className="float-right" type="radio" name="payment" />
+          </ListGroup.Item>
+        </ListGroup>
+      </div>
 
-      <div style={{ gap: '0.5rem' }} className="d-flex">
+      <div style={{ gap: '0.5rem', padding: '1rem', margin: '1rem -12px' }} className="d-flex">
         <Form.Check
           style={{ width: '5%' }}
           className="float-right"
@@ -81,8 +96,8 @@ const JCheckoutMobile = () => (
         </div>
       </div>
 
-      <div className="mt-4">
-        <Button disabled style={{ width: '100%' }} color="primary">
+      <div className="mt-4 mb-4">
+        <Button style={{ width: '100%' }} size="md" color="primary">
           Pay with Cash
         </Button>
       </div>

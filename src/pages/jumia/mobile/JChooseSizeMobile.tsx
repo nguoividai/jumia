@@ -55,14 +55,24 @@ const crust = [
 
 const maxStep = 3;
 
-const JChooseSizeMobile = () => {
+type JChooseSizeMobileProps = {
+  onClose?: () => void;
+};
+
+const JChooseSizeMobile: React.FC<JChooseSizeMobileProps> = ({ onClose }) => {
   const [currentStep, setCurrentStep] = useState<number>(0);
 
   const increaseStep = () => {
+    if (currentStep === maxStep) {
+      onClose?.();
+    }
     setCurrentStep((prev) => (prev + 1 <= maxStep ? prev + 1 : maxStep));
   };
 
   const decreaseStep = () => {
+    if (currentStep === 0) {
+      onClose?.();
+    }
     setCurrentStep((prev) => (prev - 1 > 0 ? prev - 1 : 0));
   };
 
@@ -172,7 +182,8 @@ const JChooseSizeMobile = () => {
                 className="step-item"
                 style={{
                   maxHeight: 'calc(100vh - 600px)',
-                  overflow: 'auto',
+                  overflowY: 'auto',
+                  overflowX: 'hidden',
                 }}
               >
                 <div className="list-extra">

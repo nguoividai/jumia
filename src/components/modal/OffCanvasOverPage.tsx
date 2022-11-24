@@ -29,7 +29,7 @@ const OffCanvasOverPage: React.FC<OffCanvasOverPageProps> = ({
 
   return (
     <>
-      <div onClick={handleShow}>{trigger}</div>
+      <span onClick={handleShow}>{trigger}</span>
 
       <Offcanvas
         backdrop="static"

@@ -6,9 +6,9 @@ import ButtonQuantity from '../button/ButtonQuantity';
 const ListCart = () => {
   return (
     <>
-      <Button className="mt-2 back-btn">
+      {/* <Button className="mt-2 back-btn">
         <i className="icofont-rounded-left"></i>
-      </Button>
+      </Button> */}
       <div className="total-cart">10 Items</div>
       <ListGroup className="list-cart" variant="flush">
         {[...Array(10)].map((e, idx) => (

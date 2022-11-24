@@ -65,7 +65,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     color: #52525B;
 }
 
-.form-mobile .form-control {
+.form-mobile .form-control,  .form-mobile .form-select {
     border: 1px solid #E5E7EB !important;
     border-radius: 8px  !important;
     background: #fff !important;
@@ -75,10 +75,30 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     color: #71717A;
 }
 
+.form-mobile .input-group .input-group-text, .form-mobile .input-group .form-select {
+    /* border-right: 0; */
+    background: #fff;
+    border: 0 !important;
+}
+
+.form-mobile .input-group {
+    border: 1px solid #E5E7EB !important;
+    border-radius: 8px !important;
+    background: #fff !important;
+}
+
 .form-mobile .form-control:focus {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .form-mobile .form-control:not(:placeholder-shown) {
     background: #fff !important;
+}
+
+.form-mobile .form-select option:focus,
+.form-mobile .form-select option:hover ,
+.form-mobile .form-select option:active ,
+.form-mobile .form-select option:checked  {
+    background: rgba(255, 109, 16, 0.11) !important;
+    color: var(--app-color-primary-orange) !important;
 }

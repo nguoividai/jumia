@@ -27,7 +27,7 @@ const ModalOverPage: React.FC<ModalOverPageProps> = ({
 
   return (
     <>
-      <div onClick={handleShow}>{trigger}</div>
+      <span onClick={handleShow}>{trigger}</span>
 
       <Modal
         className="modal-product"
@@ -39,7 +39,7 @@ const ModalOverPage: React.FC<ModalOverPageProps> = ({
         onClose={onClose}
       >
         <Modal.Body>{children}</Modal.Body>
-        <Modal.Footer>{footer}</Modal.Footer>
+        {footer && <Modal.Footer>{footer}</Modal.Footer>}
       </Modal>
     </>
   );

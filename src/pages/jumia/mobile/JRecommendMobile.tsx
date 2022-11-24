@@ -11,7 +11,17 @@ const JRecommendMobile = () => {
   return (
     <>
       <ModalOverPage
-        trigger={<ButtonJumia onClick={() => setVisible(true)}>Recommend</ButtonJumia>}
+        trigger={
+          <a
+            href="#/"
+            onClick={(e) => {
+              e.preventDefault();
+              setVisible(true);
+            }}
+          >
+            Recommend
+          </a>
+        }
         visible={visible}
         onClose={() => setVisible(false)}
         footer={

@@ -4,6 +4,7 @@ import shopping from 'src/assets/images/jumia/icons/shopping.svg';
 import account from 'src/assets/images/jumia/icons/account.png';
 import home from 'src/assets/images/jumia/icons/home.png';
 import Badge from 'src/components/badge/Badge';
+import JCartMobile from '../jumia/mobile/JCartMobile.tsx';
 
 const B2CTabFooterMobile = () => {
   return (
@@ -15,9 +16,13 @@ const B2CTabFooterMobile = () => {
           </Badge>
         </MenuTab.Item>
         <MenuTab.Item name="basket">
-          <Badge number={2}>
-            <img src={shopping} alt="icon" className="icon" /> Basket
-          </Badge>
+          <JCartMobile
+            trigger={
+              <Badge number={2}>
+                <img src={shopping} alt="icon" className="icon" /> Basket
+              </Badge>
+            }
+          />
         </MenuTab.Item>
 
         <MenuTab.Item name="account">

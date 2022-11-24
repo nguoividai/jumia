@@ -19,6 +19,7 @@ import SavedBadge from 'src/components/badge/SavedBadge';
 import CardPromotion from 'src/components/card/CardPromotion';
 import CardReview from 'src/components/card/CardReview';
 import ModalCoupon from 'src/components/modal/ModalCoupon';
+import CardVoucher from 'src/components/card/CardVoucher';
 
 const JTest = () => {
   return (
@@ -218,7 +219,7 @@ const JTest = () => {
         price={30}
         src={require('../assets/images/jumia/hamburger.png')}
       /> */}
-      {/* <CardVoucher validDate="12/12/12" title="incentive for shoppingat "></CardVoucher> */}
+      <CardVoucher validDate="12/12/12" title="incentive for shoppingat "></CardVoucher>
       {/* <Button
         shape="normal"
         color="white"

@@ -1,7 +1,7 @@
 import React from 'react';
 import ButtonQuantity from '../button/ButtonQuantity';
 
-type CardProductToAddProps = {
+export type CardProductToAddProps = {
   src?: string;
   title?: string;
   description?: string;
@@ -30,7 +30,7 @@ const CardProductToAdd: React.FC<CardProductToAddProps> = (props) => {
         <div className="product-action--price">
           <strong>€{price}</strong>
         </div>
-        <div className="product-action--button">
+        <div className="product-action--button" onClick={(e) => e.stopPropagation()}>
           <ButtonQuantity />
         </div>
       </div>
@@ -55,7 +55,7 @@ const CardProductToAdd: React.FC<CardProductToAddProps> = (props) => {
             Start from <strong>€{price}</strong>
           </div>
         </div>
-        <div className="action">
+        <div className="action" onClick={(e) => e.stopPropagation()}>
           <ButtonQuantity />
         </div>
       </div>

@@ -12,6 +12,7 @@ import B2CTabFooterMobile from '../b2c/B2CTabFooterMobile';
 import VoucherListMobile from '../b2c/B2CVoucherListMobile';
 import JRecommendMobile from './mobile/JRecommendMobile';
 import ProductWithPopup from '../components/ProductWithPopup';
+import JCheckoutMobile from './mobile/JCheckoutMobile';
 
 const tabs = [
   {
@@ -93,13 +94,13 @@ const tabs = [
   },
 ];
 
-const JMenu = () => {
+const JCheckout = () => {
   return (
     <>
       <Section
         title={
           <div className="row align-items-center">
-            <div className="col-6">Order Delivery</div>
+            <div className="col-6">Check Out</div>
             <div className="col-6 d-flex justify-content-end">
               <MenuTab>
                 <MenuTab.Item name="collect">
@@ -113,20 +114,10 @@ const JMenu = () => {
           </div>
         }
       >
-        <Alert color="primary" />
-
-        <VoucherListMobile />
-
-        <div className="text-right">
-          <JRecommendMobile />
-        </div>
-
-        <ProductTab active="1" tabs={tabs}></ProductTab>
-
-        <B2CTabFooterMobile />
+        <JCheckoutMobile />
       </Section>
     </>
   );
 };
 
-export default React.memo(JMenu);
+export default React.memo(JCheckout);

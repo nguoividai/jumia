@@ -135,6 +135,10 @@ ul.list.list-item {
     padding: 0.5rem;
 }
 
+.list-extra {
+    padding: 0.25rem
+}
+
 .list-extra .list-extra--title {
     font-weight: 700;
     font-size: 1rem;
