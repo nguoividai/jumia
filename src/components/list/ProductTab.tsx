@@ -35,10 +35,10 @@ const ProductTab: React.FC<ProductTabProps> = ({ tabs, active }) => {
               {
                 breakpoint: 576,
                 settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
                   centerMode: true,
-                  centerPadding: '30px',
+                  centerPadding: '10px',
                 },
               },
               {
