@@ -22,7 +22,9 @@ const CardProductToAdd: React.FC<CardProductToAddProps> = (props) => {
         <img src={src} alt="product" />
       </div>
       <div className="product-action">
-        <div className="product-action--price">€ {price}</div>
+        <div className="product-action--price">
+          <strong>€{price}</strong>
+        </div>
         <div className="product-action--button">
           <ButtonQuantity />
         </div>
@@ -44,7 +46,9 @@ const CardProductToAdd: React.FC<CardProductToAddProps> = (props) => {
         </div>
 
         <div className="text-review">
-          <div className="text-price">Start from € {price}</div>
+          <div className="text-price">
+            Start from <strong>€{price}</strong>
+          </div>
         </div>
         <div className="action">
           <ButtonQuantity />

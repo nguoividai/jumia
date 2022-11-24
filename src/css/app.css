@@ -76,6 +76,7 @@
     --app-color-bg-4: #F0FDF4;
     --app-color-bg-danger: #FEF2F2;
     --app-color-bg-disabled: #F1F5F9;
+    --app-color-body-bg: #fafafa;
 }
 
 html, body {

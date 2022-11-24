@@ -9,6 +9,7 @@ import ProductTab from 'src/components/list/ProductTab';
 import hamburger from 'src/assets/images/jumia/hamburger.png';
 import CardProductToAdd from 'src/components/card/CardProductToAdd';
 import B2CTabFooterMobile from '../b2c/B2CTabFooterMobile';
+import VoucherListMobile from '../b2c/B2CVoucherListMobile';
 
 const tabs = [
   {
@@ -22,28 +23,28 @@ const tabs = [
           title="Peperoni Pizza"
           description="Hot beef with fry"
           price={30}
-          type="vertical"
+          type="horizontal"
         />
         <CardProductToAdd
           src={hamburger}
           title="Peperoni Pizza"
           description="Hot beef with fry"
           price={30}
-          type="vertical"
+          type="horizontal"
         />
         <CardProductToAdd
           src={hamburger}
           title="Peperoni Pizza"
           description="Hot beef with fry"
           price={30}
-          type="vertical"
+          type="horizontal"
         />
         <CardProductToAdd
           src={hamburger}
           title="Peperoni Pizza"
           description="Hot beef with fry"
           price={30}
-          type="vertical"
+          type="horizontal"
         />
       </>
     ),
@@ -95,7 +96,8 @@ const JMenu = () => {
         }
       >
         <Alert color="primary" />
-        <B2CPromotionList />
+
+        <VoucherListMobile />
 
         <ProductTab active="1" tabs={tabs}></ProductTab>
 

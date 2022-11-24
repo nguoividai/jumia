@@ -352,9 +352,20 @@
     color: var(--app-color-primary-orange);
 }
 
+@media screen and (max-width: 568px) {
+    .card-promotion--horizontal {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .card-promotion--horizontal {
+        width: 300px;
+    }
+}
 .card-promotion--horizontal {
     background: #fff;
-    border: 1px dashed #ccc;
+    border: 1px dashed #CBD5E1;
     border-radius: 12px;
     padding: 20px;
     position: relative;
@@ -366,11 +377,11 @@
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    border: 1px dashed #ccc;
+    border: 1px dashed #CBD5E1;
     position: absolute;
     right: -10px;
     top: 40%;
-    background-color: #fff;
+    background-color: var(--app-color-body-bg);
     border-top-color: transparent;
     border-right-color: transparent;
     transform: rotate(45deg);
@@ -391,6 +402,8 @@
     font-size: 24px;
     line-height: 30px;
     color: var(--app-color-primary-orange);
+    padding: 0;
+  
 }
 
 .card-promotion--horizontal .header .header__content .name {
@@ -585,11 +598,13 @@
 
 
 .card-product.card-product-to-add .product-image {
-   width: 15%;
+   width: 20%;
+   display: flex;
+   align-items: center;
 }
 
 .card-product.card-product-to-add .product-text {
-   width: 85%;
+   width: 80%;
 }
 
 .card-product-to-add .product-text {
@@ -618,7 +633,7 @@
 
 .card-product-to-add .product-text .text-review  {
    position: absolute;
-   bottom: 1rem;
+   bottom: 1.5rem;
    display: flex;
 }
 
@@ -632,7 +647,7 @@
 .card-product-to-add .product-text .action {
     position: absolute;
     right: 0.75rem;
-    bottom: 0.75rem;
+    bottom: 1.5rem;
 }
 
 /* HORIZONTAL */

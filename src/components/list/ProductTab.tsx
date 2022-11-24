@@ -35,8 +35,8 @@ const ProductTab: React.FC<ProductTabProps> = ({ tabs, active }) => {
               {
                 breakpoint: 576,
                 settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3,
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
                   centerMode: true,
                   centerPadding: '30px',
                 },
@@ -44,8 +44,8 @@ const ProductTab: React.FC<ProductTabProps> = ({ tabs, active }) => {
               {
                 breakpoint: 768,
                 settings: {
-                  slidesToShow: 4,
-                  slidesToScroll: 4,
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
                   centerMode: true,
                   centerPadding: '0px',
                 },
@@ -64,6 +64,7 @@ const ProductTab: React.FC<ProductTabProps> = ({ tabs, active }) => {
                       borderRadius: '1rem',
                       padding: '0.5rem 0',
                       cursor: 'pointer',
+                      minWidth: 100,
                     }}
                     src={e.src}
                     title={e.title}
