@@ -7,6 +7,7 @@ import CardProductToAdd from 'src/components/card/CardProductToAdd';
 import CardPromotion from 'src/components/card/CardPromotion';
 import CardPromotionCanCopy from 'src/components/card/CardPromotionCanCopy';
 import CardReview from 'src/components/card/CardReview';
+import CardVoucher from 'src/components/card/CardVoucher';
 import List from 'src/components/list/List';
 import SliderSimple from 'src/components/slider/SliderSimple';
 import ModalCoupon from './../components/modal/ModalCoupon';
@@ -21,13 +22,14 @@ const AppContent = () => {
         conditionText="When you order 20$ or over"
         direction="horizontal"
       /> */}
-      <CardProductToAdd
+      {/* <CardProductToAdd
         type="vertical"
         title="top"
         description="top123"
         price={30}
         src={require('../assets/images/jumia/hamburger.png')}
-      />
+      /> */}
+      <CardVoucher validDate="12/12/12" title="incentive for shoppingat "></CardVoucher>
       {/* <Button
         shape="normal"
         color="white"
