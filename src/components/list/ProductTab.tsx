@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import CardImage from '../card/CardImage';
 import SliderSimple from '../slider/SliderSimple';
 
@@ -37,7 +37,6 @@ const ProductTab: React.FC<ProductTabProps> = ({ tabs, active }) => {
                 settings: {
                   slidesToShow: 3,
                   slidesToScroll: 3,
-                  centerMode: true,
                   centerPadding: '10px',
                 },
               },
@@ -46,7 +45,6 @@ const ProductTab: React.FC<ProductTabProps> = ({ tabs, active }) => {
                 settings: {
                   slidesToShow: 3,
                   slidesToScroll: 3,
-                  centerMode: true,
                   centerPadding: '0px',
                 },
               },
@@ -56,30 +54,30 @@ const ProductTab: React.FC<ProductTabProps> = ({ tabs, active }) => {
           {tabs &&
             tabs.length > 0 &&
             tabs?.map((e) => (
-              <>
-                <div key={e.key} onClick={() => setCurrentActive(e.key)}>
-                  <CardImage
-                    style={{
-                      backgroundColor: '#fff',
-                      borderRadius: '1rem',
-                      padding: '0.5rem 0',
-                      cursor: 'pointer',
-                      minWidth: 100,
-                    }}
-                    src={e.src}
-                    title={e.title}
-                    size="sm"
-                    active={currentActive === e.key}
-                  />
-                </div>
-              </>
+              <div key={e.key} onClick={() => setCurrentActive(e.key)}>
+                <CardImage
+                  style={{
+                    backgroundColor: '#fff',
+                    borderRadius: '1rem',
+                    padding: '0.5rem 0',
+                    cursor: 'pointer',
+                    minWidth: 100,
+                  }}
+                  src={e.src}
+                  title={e.title}
+                  size="sm"
+                  active={currentActive === e.key}
+                />
+              </div>
             ))}
         </SliderSimple>
 
         <div className="tab-pane">
           {tabs &&
             tabs.length > 0 &&
-            tabs.map((e) => <>{e.key === currentActive ? e.children : null}</>)}
+            tabs.map((e) => (
+              <Fragment key={e.key}>{e.key === currentActive ? e.children : null}</Fragment>
+            ))}
         </div>
       </div>
     </>

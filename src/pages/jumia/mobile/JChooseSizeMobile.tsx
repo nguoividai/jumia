@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import Section from 'src/components/section/Section';
 import pizza from 'src/assets/images/jumia/pizza-vector.png';
 import SliderSimple from 'src/components/slider/SliderSimple';
-import { Button } from 'react-bootstrap';
+import { Badge, Button } from 'react-bootstrap';
 import ButtonGroupSelect from 'src/components/button/ButtonGroupSelect';
 import Switch from 'src/components/switch/Switch';
-import ListCart from 'src/components/list/ListCart';
 import List from 'src/components/list/List';
 
 const sizes = [
@@ -13,25 +12,25 @@ const sizes = [
     name: 'small',
     main: 'S',
     extra: '(12 inch)',
-    price: 6.8,
+    price: '$6.8',
   },
   {
     name: 'medium',
     main: 'M',
     extra: '(12 inch)',
-    price: 6.8,
+    price: '$6.8',
   },
   {
     name: 'large',
     main: 'L',
     extra: '(12 inch)',
-    price: 6.8,
+    price: '$6.8',
   },
   {
     name: 'extra-large',
     main: 'XL',
     extra: '(12 inch)',
-    price: 6.8,
+    price: '$6.8',
   },
 ];
 
@@ -39,17 +38,17 @@ const crust = [
   {
     name: 'cheese',
     main: 'Cheese Stuffed',
-    price: 6.8,
+    price: '$6.8',
   },
   {
     name: 'pan',
     main: 'Deep Pan',
-    price: 6.8,
+    price: '$6.8',
   },
   {
     name: 'thin',
     main: 'Thin',
-    price: 6.8,
+    price: '$6.8',
   },
 ];
 
@@ -81,6 +80,7 @@ const JChooseSizeMobile: React.FC<JChooseSizeMobileProps> = ({ onClose }) => {
       <Button className="mt-2 back-btn" onClick={decreaseStep}>
         <i className="icofont-rounded-left"></i>
       </Button>
+      <Badge className="danger float-right mt-4">Required</Badge>
       <Section
         className="choose-addon"
         title="Meaty Pizza"
@@ -184,6 +184,7 @@ const JChooseSizeMobile: React.FC<JChooseSizeMobileProps> = ({ onClose }) => {
                   maxHeight: 'calc(100vh - 600px)',
                   overflowY: 'auto',
                   overflowX: 'hidden',
+                  padding: '0 2rem',
                 }}
               >
                 <div className="list-extra">

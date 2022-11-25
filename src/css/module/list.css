@@ -122,12 +122,9 @@ ul.list.list-item {
    color:  var(--app-color-primary-orange)
 }
 
-.menu-tabs.horizontal .menu-tab--item img  {
+.menu-tabs.horizontal .menu-tab--item object  {
     display: block;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin: 0.5rem;
-    max-height: 20px;
+    margin: auto
 }
 
 /* PRODUCT TABS */

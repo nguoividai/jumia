@@ -43,6 +43,7 @@ const JCartMobile: React.FC<JCartMobileProps> = ({ trigger }) => {
                 color="primary"
                 onClick={() => {
                   setVisible(false);
+                  navigate('/checkout');
                 }}
               >
                 Go to Checkout
@@ -51,7 +52,12 @@ const JCartMobile: React.FC<JCartMobileProps> = ({ trigger }) => {
           </div>
         }
       >
-        <Button className="mt-2 back-btn" onClick={() => setVisible(false)}>
+        <Button
+          className="mt-2 back-btn"
+          onClick={() => {
+            setVisible(false);
+          }}
+        >
           <i className="icofont-rounded-left"></i>
         </Button>
         <Section title="Cart">

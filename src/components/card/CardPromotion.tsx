@@ -36,7 +36,13 @@ const CardPromotionVertical: React.FC<CardPromotionProps> = (props) => {
         <div className="condition">{conditionText}</div>
       </div>
       <div className="button">
-        <ModalCoupon trigger={<span>Claim</span>} />
+        <ModalCoupon
+          trigger={<span>Claim</span>}
+          name="voucher RM 10"
+          description="incentive warehouse pahing for shoppingat at JUMIA"
+          validDate="2022/12/05"
+          code="FE CREDIT"
+        />
         <i className="icofont-long-arrow-right"></i>
       </div>
     </div>

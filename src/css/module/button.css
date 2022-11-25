@@ -13,8 +13,9 @@ button.button {
 }
 
 button.button:hover {
-    background-color: var(--app-color-bg-3) !important;
-    color: var(--app-color-primary-white) !important;
+    /* background-color: inherit !important;
+    color:  inherit !important; */
+    opacity: 0.8;
 }
 
 button.button.link {

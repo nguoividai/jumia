@@ -134,3 +134,11 @@
     line-height: 22px;
     color: #3F3F46;
 }
+
+/* Offcanvas config */
+.offcanvas-title {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    color: #475569 !important;
+    font-weight: 700 !important;
+}

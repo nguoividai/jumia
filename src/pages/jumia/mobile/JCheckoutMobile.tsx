@@ -73,16 +73,17 @@ const JCheckoutMobile = () => (
       </div>
 
       <div style={{ gap: '0.5rem', padding: '1rem', margin: '1rem -12px' }} className="d-flex">
-        <Form.Check
-          style={{ width: '5%' }}
-          className="float-right"
-          type="checkbox"
-          name="payment"
-        />
+        <span
+          style={{
+            width: '5%',
+          }}
+        >
+          <Form.Check className="check-term float-right" type="checkbox" name="payment" />
+        </span>
+
         <div
           style={{
             width: '95%',
-            fontWeight: 700,
             fontSize: '12px',
             lineHeight: '18px',
             color: '#71717A',
@@ -90,14 +91,14 @@ const JCheckoutMobile = () => (
         >
           <strong>Terms:</strong>&nbsp; By placing your order, you confrimthat you agree to the
           &nbsp;{' '}
-          <a className="primary" href="#">
+          <a className="primary" href="#/" onClick={(e) => e.preventDefault()}>
             User Terms and Conditions
           </a>
         </div>
       </div>
 
       <div className="mt-4 mb-4">
-        <Button style={{ width: '100%' }} size="md" color="primary">
+        <Button type="button" style={{ width: '100%' }} size="md" color="primary">
           Pay with Cash
         </Button>
       </div>

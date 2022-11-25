@@ -5,6 +5,7 @@ type ItemProps = {
   active?: boolean;
   children?: React.ReactNode;
   name: string;
+  onClick?: () => void;
 };
 
 type MenuTabProps = {
@@ -13,9 +14,13 @@ type MenuTabProps = {
   type?: 'horizontal' | 'vertical';
 };
 
-const Item: React.FC<ItemProps> = ({ className, active, children, name }) => {
+const Item: React.FC<ItemProps> = ({ className, active, children, name, onClick }) => {
   return (
-    <div key={name} className={`menu-tab--item ${className || ''} ${active ? 'active' : ''}`}>
+    <div
+      key={name}
+      className={`menu-tab--item ${className || ''} ${active ? 'active' : ''}`}
+      onClick={onClick}
+    >
       {children}
     </div>
   );

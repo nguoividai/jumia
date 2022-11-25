@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, ButtonGroup, ButtonGroupProps } from 'react-bootstrap';
 
 type ButtonGroupSelectProps = {
-  dataSelects?: { name: string; main?: string; extra?: string; price?: number }[];
+  dataSelects?: { name: string; main?: string; extra?: string; price?: string }[];
   active?: string;
 } & ButtonGroupProps;
 
@@ -25,7 +25,7 @@ const ButtonGroupSelect: React.FC<ButtonGroupSelectProps> = ({
                 <span className="main-name">{e.main}</span>
                 <span className="extra">{e.extra}</span>
               </Button>
-              <span className="price">€${e.price} </span>
+              <span className="price">{e.price} </span>
             </div>
           ))}
       </ButtonGroup>

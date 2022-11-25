@@ -2,7 +2,7 @@ import React from 'react';
 import Alert from 'src/components/alert/Alert';
 import MenuTab from 'src/components/list/MenuTab';
 import Section from 'src/components/section/Section';
-import shopping from 'src/assets/images/jumia/icons/shopping.svg';
+import shopping from 'src/assets/images/jumia/icons/shopping-bag.svg';
 import truck from 'src/assets/images/jumia/icons/truck.svg';
 import B2CPromotionList from '../b2c/B2CPromotionList';
 import ProductTab from 'src/components/list/ProductTab';
@@ -103,10 +103,12 @@ const JMenu = () => {
             <div className="col-6 d-flex justify-content-end">
               <MenuTab>
                 <MenuTab.Item name="collect">
-                  <img src={shopping} alt="icon" className="icon" /> Collect
+                  <object data={shopping} width="20px" aria-labelledby="shopping"></object>
+                  Collect
                 </MenuTab.Item>
                 <MenuTab.Item name="delivery">
-                  <img src={truck} alt="icon" className="icon" /> Delivery
+                  <object data={truck} width="20px" aria-labelledby="truck"></object>
+                  Delivery
                 </MenuTab.Item>
               </MenuTab>
             </div>

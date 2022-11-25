@@ -2,6 +2,7 @@ import React from 'react';
 import { Form, ListGroup } from 'react-bootstrap';
 import addVoucher from 'src/assets/images/jumia/icons/add-voucher.svg';
 import voucherAvailable from 'src/assets/images/jumia/icons/voucher-available.svg';
+import SavedBadge from 'src/components/badge/SavedBadge';
 import Button from 'src/components/button/Button';
 import JAddVoucher from '../jumia/mobile/JAddVoucher';
 import ReedemVoucherList from './ReedemVoucherList';
@@ -93,6 +94,24 @@ const ListVoucherMobile = () => {
         >
           <ReedemVoucherList />
         </JAddVoucher>
+
+        <ListGroup.Item style={{ gap: 10 }} className="d-flex align-items-center border-0">
+          <img
+            style={{ width: 20 }}
+            src={require('../../assets/images/jumia/icons/change-icon.png')}
+            alt="icon"
+          />
+          <span
+            style={{
+              fontWeight: 700,
+              fontSize: '14px',
+              lineHeight: '20px',
+              color: '#F4894A',
+            }}
+          >
+            Change your Voucher
+          </span>
+        </ListGroup.Item>
       </ListGroup>
     </>
   );

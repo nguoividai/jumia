@@ -87,8 +87,13 @@ html, body {
 html {
     font-size: 16px;
     color: #312F30;
-    font-family: Inter;
+    font-family: Inter !important;
     
+}
+
+body {
+  font-family: Inter !important;
+  font-size: 14px;
 }
 
 h1 {
@@ -113,12 +118,9 @@ font-size: 18px;
 font-family: Inter, InterBold;
 }
 
-body {
-font-family: Inter;
-font-size: 14px;
-}
 
-body:has(.backdrop), html:has(.backdrop), html:has(.modal-backdrop.show)  {
+body:has(.backdrop), html:has(.backdrop), html:has(.modal-backdrop.show),
+html:has(.offcanvas-backdrop.show)   {
 overflow: hidden;
 }
 

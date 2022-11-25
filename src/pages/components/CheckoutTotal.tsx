@@ -1,5 +1,6 @@
 import React from 'react';
 import { ListGroup } from 'react-bootstrap';
+import SavedBadge from 'src/components/badge/SavedBadge';
 
 const CheckoutTotal = () => {
   return (
@@ -13,6 +14,18 @@ const CheckoutTotal = () => {
             color: '#A1A1AA',
             border: 0,
             borderTop: '1px dashed #E5E7EB',
+          }}
+        >
+          <SavedBadge />
+        </ListGroup.Item>
+        <ListGroup.Item
+          style={{
+            fontWeight: 700,
+            fontSize: 12,
+            lineHeight: '18px',
+            color: '#A1A1AA',
+            border: 0,
+            // borderTop: '1px dashed #E5E7EB',
           }}
         >
           <span> Subtotal</span>

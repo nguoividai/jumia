@@ -12,14 +12,14 @@ const B2CTabFooterMobile = () => {
       <MenuTab type="horizontal">
         <MenuTab.Item name="home" active>
           <Badge number={0}>
-            <img src={home} alt="icon" className="icon" /> Home
+            <img src={home} alt="icon" className="icon d-block mb-1 mx-auto" /> Home
           </Badge>
         </MenuTab.Item>
         <MenuTab.Item name="basket">
           <JCartMobile
             trigger={
               <Badge number={2}>
-                <img src={shopping} alt="icon" className="icon" /> Basket
+                <img src={shopping} alt="icon" className="icon d-block mb-1 mx-auto" /> Basket
               </Badge>
             }
           />
@@ -27,7 +27,7 @@ const B2CTabFooterMobile = () => {
 
         <MenuTab.Item name="account">
           <Badge number={0}>
-            <img src={account} alt="icon" className="icon" /> Account
+            <img src={account} alt="icon" className="icon d-block mb-1 mx-auto" /> Account
           </Badge>
         </MenuTab.Item>
       </MenuTab>

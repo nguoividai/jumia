@@ -6,12 +6,11 @@
 
 .badge .badge-count {
     position: absolute;
-    top: 0;
+    top: -5px;
     inset-inline-end: 0;
     transform: translate(50%,-50%);
     transform-origin: 100% 0%;
-    padding: 0.15rem 0.3rem;
-    top: 0.5rem;
+    padding: 0.1rem 0.3rem;
     font-weight: 700;
     font-size: 0.75rem;
     line-height: 18px;
@@ -29,4 +28,9 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
+}
+
+.badge.danger {
+    color: #DC2626;
+    background-color: #FEF2F2 !important
 }

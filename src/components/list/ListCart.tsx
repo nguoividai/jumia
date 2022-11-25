@@ -10,7 +10,7 @@ const ListCart = () => {
         <i className="icofont-rounded-left"></i>
       </Button> */}
       <div className="total-cart">10 Items</div>
-      <ListGroup className="list-cart" variant="flush">
+      <ListGroup className="list-cart" variant="flush" onClick={(e) => e.preventDefault()}>
         {[...Array(10)].map((e, idx) => (
           <ListGroup.Item key={idx} className="list-cart-item">
             <div className="list-cart-item--image">

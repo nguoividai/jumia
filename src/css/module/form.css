@@ -75,11 +75,14 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     color: #71717A;
 }
 
+
+
 .form-mobile .input-group .input-group-text, .form-mobile .input-group .form-select {
     /* border-right: 0; */
     background: #fff;
     border: 0 !important;
 }
+
 
 .form-mobile .input-group {
     border: 1px solid #E5E7EB !important;
@@ -101,4 +104,28 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 .form-mobile .form-select option:checked  {
     background: rgba(255, 109, 16, 0.11) !important;
     color: var(--app-color-primary-orange) !important;
+}
+
+.form-check-input.is-valid:checked, .was-validated .form-check-input:valid:checked {
+    background-color: var(--app-color-primary-orange) !important;
+}
+
+.form-check-input.is-valid, .was-validated .form-check-input:valid {
+    border-color: var(--app-color-primary-orange) !important;
+}
+
+.form-select.is-valid:focus, .was-validated .form-select:valid:focus,
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+    box-shadow: none !important;
+}
+
+
+.form-mobile .input-group .form-select {
+    margin-left: -32px !important;
+    z-index: 100 !important;
+    padding-left:35px;
+}
+
+.form-mobile .input-group .input-group-text {
+    z-index: 101 !important;
 }
