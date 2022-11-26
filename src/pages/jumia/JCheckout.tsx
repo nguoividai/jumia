@@ -13,6 +13,7 @@ import VoucherListMobile from '../b2c/B2CVoucherListMobile';
 import JRecommendMobile from './mobile/JRecommendMobile';
 import ProductWithPopup from '../components/ProductWithPopup';
 import JCheckoutMobile from './mobile/JCheckoutMobile';
+import TabTitle from '../components/TabTitle';
 
 const tabs = [
   {
@@ -102,14 +103,7 @@ const JCheckout = () => {
           <div className="row align-items-center">
             <div className="col-6">Check Out</div>
             <div className="col-6 d-flex justify-content-end">
-              <MenuTab>
-                <MenuTab.Item name="collect">
-                  <img src={shopping} alt="icon" className="icon" /> Collect
-                </MenuTab.Item>
-                <MenuTab.Item name="delivery">
-                  <img src={truck} alt="icon" className="icon" /> Delivery
-                </MenuTab.Item>
-              </MenuTab>
+              <TabTitle />
             </div>
           </div>
         }

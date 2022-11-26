@@ -1,16 +1,19 @@
 import React from 'react';
 import MenuTab from 'src/components/list/MenuTab';
-import shopping from 'src/assets/images/jumia/icons/shopping.svg';
-import account from 'src/assets/images/jumia/icons/account.png';
-import home from 'src/assets/images/jumia/icons/home.png';
+import shopping from 'src/assets/images/jumia/icons/shopping-bag.svg';
+import account from 'src/assets/images/jumia/icons/account.svg';
+import home from 'src/assets/images/jumia/icons/home.svg';
 import Badge from 'src/components/badge/Badge';
 import JCartMobile from '../jumia/mobile/JCartMobile.tsx';
+import { useNavigate } from 'react-router-dom';
 
 const B2CTabFooterMobile = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="tab-footer">
       <MenuTab type="horizontal">
-        <MenuTab.Item name="home" active>
+        <MenuTab.Item name="home" onClick={() => navigate('/')}>
           <Badge number={0}>
             <img src={home} alt="icon" className="icon d-block mb-1 mx-auto" /> Home
           </Badge>

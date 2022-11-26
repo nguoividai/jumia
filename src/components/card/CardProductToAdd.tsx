@@ -1,5 +1,6 @@
 import React from 'react';
 import ButtonQuantity from '../button/ButtonQuantity';
+import HeartIcon from '../icon/HeartIcon';
 
 export type CardProductToAddProps = {
   src?: string;
@@ -43,10 +44,8 @@ const CardProductToAdd: React.FC<CardProductToAddProps> = (props) => {
       <div className="product-text">
         <div className="text-title">
           {title}
-          <span className="icon float-right text-center">
-            <i className="d-block icofont-heart"></i>
-            12
-          </span>
+
+          <HeartIcon />
           <div className="text-description">{description}</div>
         </div>
 

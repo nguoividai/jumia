@@ -104,6 +104,11 @@ ul.list.list-item {
     border-color: var(--app-color-primary-orange);
 }
 
+
+.menu-tabs .menu-tab--item.active svg {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%) !important;
+}
+
 .menu-tabs.horizontal {
     gap: 4rem;
 }

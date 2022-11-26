@@ -12,6 +12,7 @@ import B2CTabFooterMobile from '../b2c/B2CTabFooterMobile';
 import VoucherListMobile from '../b2c/B2CVoucherListMobile';
 import JRecommendMobile from './mobile/JRecommendMobile';
 import ProductWithPopup from '../components/ProductWithPopup';
+import TabTitle from '../components/TabTitle';
 
 const tabs = [
   {
@@ -101,16 +102,7 @@ const JMenu = () => {
           <div className="row align-items-center">
             <div className="col-6">Order Delivery</div>
             <div className="col-6 d-flex justify-content-end">
-              <MenuTab>
-                <MenuTab.Item name="collect">
-                  <object data={shopping} width="20px" aria-labelledby="shopping"></object>
-                  Collect
-                </MenuTab.Item>
-                <MenuTab.Item name="delivery">
-                  <object data={truck} width="20px" aria-labelledby="truck"></object>
-                  Delivery
-                </MenuTab.Item>
-              </MenuTab>
+              <TabTitle />
             </div>
           </div>
         }

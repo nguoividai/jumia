@@ -20,6 +20,7 @@ import CardPromotion from 'src/components/card/CardPromotion';
 import CardReview from 'src/components/card/CardReview';
 import ModalCoupon from 'src/components/modal/ModalCoupon';
 import CardVoucher from 'src/components/card/CardVoucher';
+import HeartIcon from '../../components/icon/HeartIcon';
 
 const JTest = () => {
   return (
@@ -276,6 +277,10 @@ const JTest = () => {
         likeNumber={90}
       ></CardProduct>
       <CardReview username="top" reviewText="Order" rate={1.5} />
+
+      <div className="mt-2 mb-2">
+        <HeartIcon />
+      </div>
     </>
   );
 };

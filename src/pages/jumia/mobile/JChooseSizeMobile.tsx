@@ -181,10 +181,10 @@ const JChooseSizeMobile: React.FC<JChooseSizeMobileProps> = ({ onClose }) => {
               <div
                 className="step-item"
                 style={{
-                  maxHeight: 'calc(100vh - 600px)',
+                  maxHeight: 'calc(100vh - 525px)',
                   overflowY: 'auto',
                   overflowX: 'hidden',
-                  padding: '0 2rem',
+                  padding: '0 2rem 0 0',
                 }}
               >
                 <div className="list-extra">

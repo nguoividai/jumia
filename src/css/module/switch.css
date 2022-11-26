@@ -61,3 +61,8 @@
     border-radius: 50%;
   }
   
+
+  /* icon heart */
+  .icofont-heart.active {
+    color: #DC2626;;
+  }
