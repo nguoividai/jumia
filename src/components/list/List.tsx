@@ -7,12 +7,16 @@ type ListProps = {
   style?: React.CSSProperties;
   className?: string;
 };
-type ListItemProps = { children?: React.ReactNode; className?: string };
+type ListItemProps = { children?: React.ReactNode; className?: string; onClick?: () => void };
 type ListDescriptionProps = { title?: string; information?: string; active?: boolean };
 
 const ListItem: React.FC<ListItemProps> = (props) => {
-  const { children, className } = props;
-  return <li className={`list-item ${className || ''}`}>{children}</li>;
+  const { children, className, onClick } = props;
+  return (
+    <li onClick={onClick} className={`list-item ${className || ''}`}>
+      {children}
+    </li>
+  );
 };
 
 const ListDescription: React.FC<ListDescriptionProps> = (props) => {

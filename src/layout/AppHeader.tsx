@@ -7,8 +7,11 @@ import logo from 'src/assets/images/logo.png';
 import home from 'src/assets/images/jumia/icons/home.png';
 import menu from 'src/assets/images/jumia/icons/menu.png';
 import account from 'src/assets/images/jumia/icons/account.png';
+import { useNavigate } from 'react-router-dom';
 
 const AppHeader = () => {
+  const navigate = useNavigate();
+
   return (
     <header className="app-header">
       <div className="side-nav-icon">
@@ -22,10 +25,10 @@ const AppHeader = () => {
 
       <div className="nav-link">
         <List className="list-header" layout="horizontal">
-          <List.ListItem>
+          <List.ListItem onClick={() => navigate('')}>
             <img src={home} alt="icon" style={{ width: 20 }} /> Home
           </List.ListItem>
-          <List.ListItem>
+          <List.ListItem onClick={() => navigate('/menu')}>
             <img src={menu} alt="icon" style={{ width: 20 }} /> Menu
           </List.ListItem>
           <List.ListItem>

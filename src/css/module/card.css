@@ -355,7 +355,7 @@
 
 @media screen and (max-width: 568px) {
     .card-promotion--horizontal {
-        width: 250px;
+        width: 270px;
     }
 }
 
@@ -395,12 +395,12 @@
 }
 
 .card-promotion--horizontal .header .header__content {
-    font-weight: 800;
+    font-family: Inter;
 }
 
 .card-promotion--horizontal .header .header__content .title {
     font-weight: 800;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 30px;
     color: var(--app-color-primary-orange);
     padding: 0;
@@ -408,13 +408,15 @@
 }
 
 .card-promotion--horizontal .header .header__content .name {
-    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .card-promotion--horizontal .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .card-promotion--horizontal .footer .condition {
@@ -422,6 +424,7 @@
     font-size: 12px;
     line-height: 18px;
     color: #1E293B;
+    padding: 0.5rem 0;
 }
 
 .card-promotion--horizontal .footer .button {
