@@ -13,8 +13,9 @@ button.button {
 }
 
 button.button:hover {
-    background-color: var(--app-color-bg-3) !important;
-    color: var(--app-color-primary-white) !important;
+    /* background-color: inherit !important;
+    color:  inherit !important; */
+    opacity: 0.8;
 }
 
 button.button.link {
@@ -33,6 +34,12 @@ button.button.link {
 
 .button.circle i {
     font-size: 24px;
+}
+
+.button:disabled, .button:disabled:hover  {
+    background: #F1F5F9 !important;
+    border-radius: 8px;
+    color: #94A3B8 !important;
 }
 
 button.button.primary, button.jumia-primary {
@@ -66,9 +73,19 @@ button.button.white.black {
     border: 1px solid #000;
 }
 
-button.button.grey {
+button.button.silver {
     background: #F2F2F2;
     color: #005888;
+}
+
+button.button.grey {
+    background: #94A3B8;
+    color: #fff;
+}
+
+button.button.transparent {
+    background: transparent;
+    color: #374151;
 }
 
 button.button.sm {
@@ -107,26 +124,32 @@ button.button.lg {
     justify-content: center;
     border-radius: 1rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
 }
 
 .button-quantity input, .button-quantity input:disabled {
     border: 0;
     width: 30px;
     font-size: 1rem;
-    color: #ccc !important;
+    color: var(--app-color-primary-orange);
     text-align: center;
 }
 
 .button-quantity .button {
     background: #FFFFFF !important;
     color: #94a3b8 !important;
+    width: 32px;
+    height: 32px;
+}
+
+.button-quantity .button i {
+    font-size: 0.75rem;
 }
 
 .button-quantity .button:hover {
     background: #fafafa !important;
     color: #94a3b8 !important;
 }
+
 
 
 /* CHOOSE BUTTON GROUP */

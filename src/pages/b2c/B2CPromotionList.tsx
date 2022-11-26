@@ -18,10 +18,10 @@ const B2CPromotionList = () => {
           {
             breakpoint: 576,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToShow: 1,
+              slidesToScroll: 1,
               centerMode: true,
-              centerPadding: '5px',
+              centerPadding: '70px',
             },
           },
           {

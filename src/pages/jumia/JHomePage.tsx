@@ -9,8 +9,11 @@ import B2CMainBannerDesktop from '../b2c/B2CMainBannerDesktop';
 import B2CMainBannerMobile from '../b2c/B2CMainBannerMobile';
 import CallAction from 'src/components/banner/CallAction';
 import pizza from 'src/assets/images/jumia/pizza-bg.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const JHomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div>
@@ -31,10 +34,10 @@ const JHomePage = () => {
           description="  Order in KFC Restourant and Order in KFC Restou"
           action={
             <>
-              <Button color="primary" shape="normal" size="md">
+              <Button color="primary" shape="normal" size="md" onClick={() => navigate('/menu')}>
                 Order Delivery
               </Button>
-              <Button color="white" shape="normal" size="md">
+              <Button color="white" shape="normal" size="md" onClick={() => navigate('/menu')}>
                 Order Delivery
               </Button>
             </>
@@ -45,10 +48,16 @@ const JHomePage = () => {
           className="d-flex d-md-none d-lg-none text-center"
           style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}
         >
-          <Button color="primary" shape="normal" size="md">
+          <Button color="primary" shape="normal" size="md" onClick={() => navigate('/menu')}>
             Order Delivery
           </Button>
-          <Button color="white" shape="normal" size="md" textColor="orange">
+          <Button
+            color="white"
+            shape="normal"
+            size="md"
+            textColor="orange"
+            onClick={() => navigate('/menu')}
+          >
             Order Delivery
           </Button>
         </div>

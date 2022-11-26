@@ -7,6 +7,10 @@
     border-top: 1px solid #ddd;
 }
 
+.app-content:has(.tab-footer) + .app-footer {
+    margin-bottom: 75px;
+}
+
 .app-footer .footer-5 .icon {
     padding-top:0.5rem;
     display: flex;

@@ -1,4 +1,5 @@
 import React from 'react';
+import JCheckout from './pages/jumia/JCheckout';
 
 const DefaultReact = React.lazy(() => import('./pages/test/DefaultReact'));
 const Login = React.lazy(() => import('./pages/login/Login'));
@@ -17,12 +18,11 @@ const routes = [
   { path: '/login', exact: true, name: 'Login', element: Login },
   { path: '/forgot-password', exact: true, name: 'ForgotPassword', element: ForgotPassword },
   { path: '/sign-up', exact: true, name: 'ForgotPassword', element: CreateAccount },
-  { path: '/recommend/mobile', exact: true, name: 'JRecommendMobile', element: JRecommendMobile },
   {
-    path: '/choose-size/mobile',
+    path: '/checkout',
     exact: true,
-    name: 'JChooseSizeMobile',
-    element: JChooseSizeMobile,
+    name: 'JCheckout',
+    element: JCheckout,
   },
 ];
 

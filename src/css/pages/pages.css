@@ -154,4 +154,56 @@
     right: 1rem;
 }
 
+/* TOTAL CART */
+.total-cart {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #27272A;
+    margin-bottom: 20px;    
+}
 
+.subtotal {
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 20px;
+    color: #3F3F46;
+    margin-bottom: 20px;
+}
+
+.subtotal .main-price {
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 24px;
+    color: #F4894A;
+    position: absolute;
+    right: 1.25rem;;
+}
+
+/* CHECK OUT  */
+.delivery-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 20px;
+    color: #3F3F46;
+    margin-bottom: 22px;
+}
+
+.delivery-title i {
+    font-size: 15px;
+    margin-right: 5px
+}
+
+.edit-address {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #16A34A;
+    position:absolute;
+    right: 1.25rem;
+}
+
+.check-term input.form-check-input {
+    width: 1.25rem;
+    height: 1.25rem;
+}

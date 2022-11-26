@@ -2,13 +2,17 @@ import React from 'react';
 import Alert from 'src/components/alert/Alert';
 import MenuTab from 'src/components/list/MenuTab';
 import Section from 'src/components/section/Section';
-import shopping from 'src/assets/images/jumia/icons/shopping.svg';
+import shopping from 'src/assets/images/jumia/icons/shopping-bag.svg';
 import truck from 'src/assets/images/jumia/icons/truck.svg';
 import B2CPromotionList from '../b2c/B2CPromotionList';
 import ProductTab from 'src/components/list/ProductTab';
 import hamburger from 'src/assets/images/jumia/hamburger.png';
 import CardProductToAdd from 'src/components/card/CardProductToAdd';
 import B2CTabFooterMobile from '../b2c/B2CTabFooterMobile';
+import VoucherListMobile from '../b2c/B2CVoucherListMobile';
+import JRecommendMobile from './mobile/JRecommendMobile';
+import ProductWithPopup from '../components/ProductWithPopup';
+import TabTitle from '../components/TabTitle';
 
 const tabs = [
   {
@@ -17,33 +21,49 @@ const tabs = [
     title: 'Burger 1',
     children: (
       <>
-        <CardProductToAdd
-          src={hamburger}
-          title="Peperoni Pizza"
-          description="Hot beef with fry"
-          price={30}
-          type="vertical"
+        <ProductWithPopup
+          trigger={
+            <CardProductToAdd
+              src={hamburger}
+              title="Peperoni Pizza"
+              description="Hot beef with fry"
+              price={30}
+              type="horizontal"
+            />
+          }
         />
-        <CardProductToAdd
-          src={hamburger}
-          title="Peperoni Pizza"
-          description="Hot beef with fry"
-          price={30}
-          type="vertical"
+        <ProductWithPopup
+          trigger={
+            <CardProductToAdd
+              src={hamburger}
+              title="Peperoni Pizza"
+              description="Hot beef with fry"
+              price={30}
+              type="horizontal"
+            />
+          }
         />
-        <CardProductToAdd
-          src={hamburger}
-          title="Peperoni Pizza"
-          description="Hot beef with fry"
-          price={30}
-          type="vertical"
+        <ProductWithPopup
+          trigger={
+            <CardProductToAdd
+              src={hamburger}
+              title="Peperoni Pizza"
+              description="Hot beef with fry"
+              price={30}
+              type="horizontal"
+            />
+          }
         />
-        <CardProductToAdd
-          src={hamburger}
-          title="Peperoni Pizza"
-          description="Hot beef with fry"
-          price={30}
-          type="vertical"
+        <ProductWithPopup
+          trigger={
+            <CardProductToAdd
+              src={hamburger}
+              title="Peperoni Pizza"
+              description="Hot beef with fry"
+              price={30}
+              type="horizontal"
+            />
+          }
         />
       </>
     ),
@@ -82,20 +102,18 @@ const JMenu = () => {
           <div className="row align-items-center">
             <div className="col-6">Order Delivery</div>
             <div className="col-6 d-flex justify-content-end">
-              <MenuTab>
-                <MenuTab.Item name="collect">
-                  <img src={shopping} alt="icon" className="icon" /> Collect
-                </MenuTab.Item>
-                <MenuTab.Item name="delivery">
-                  <img src={truck} alt="icon" className="icon" /> Delivery
-                </MenuTab.Item>
-              </MenuTab>
+              <TabTitle />
             </div>
           </div>
         }
       >
         <Alert color="primary" />
-        <B2CPromotionList />
+
+        <VoucherListMobile />
+
+        <div className="text-right">
+          <JRecommendMobile />
+        </div>
 
         <ProductTab active="1" tabs={tabs}></ProductTab>
 

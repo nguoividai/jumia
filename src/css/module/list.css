@@ -35,6 +35,21 @@ ul.list.list-item {
     color: var(--app-color-link);
 }
 
+/* DIVIDED INSIDE HORIZONTAL */
+.list.list-horizontal.divided-inside {
+    gap: 0.5rem;
+}
+
+.list.list-horizontal.divided-inside .list-item::after {
+    content: "|";
+    padding: 0 0.5rem;
+    color: #E5E7EB;
+}
+
+.list.list-horizontal.divided-inside .list-item:last-child:after {
+    content: none
+}
+
 /* LIST DESCRIPTION */
 .list .list-item.list-description:first-child {
     margin-top: 0;
@@ -89,6 +104,11 @@ ul.list.list-item {
     border-color: var(--app-color-primary-orange);
 }
 
+
+.menu-tabs .menu-tab--item.active svg {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%) !important;
+}
+
 .menu-tabs.horizontal {
     gap: 4rem;
 }
@@ -103,17 +123,22 @@ ul.list.list-item {
     line-height: 18px;
 }
 
-.menu-tabs.horizontal .menu-tab--item img  {
+.menu-tabs.horizontal .menu-tab--item.active, .menu-tabs.horizontal .menu-tab--item.active span  {
+   color:  var(--app-color-primary-orange)
+}
+
+.menu-tabs.horizontal .menu-tab--item object  {
     display: block;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin: 0.5rem;
-    max-height: 20px;
+    margin: auto
 }
 
 /* PRODUCT TABS */
 .product-tabs .tab-pane {
     padding: 0.5rem;
+}
+
+.list-extra {
+    padding: 0.25rem
 }
 
 .list-extra .list-extra--title {

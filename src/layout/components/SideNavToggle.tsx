@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import List from '../../components/list/List';
 import SideNav from '../../components/sideNav/SideNav';
 
 const SideNavToggle = () => {
   const [visible, setVisible] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -17,9 +19,9 @@ const SideNavToggle = () => {
         }}
       >
         <List className="sidebar-list">
-          <List.ListItem className="active">Home</List.ListItem>
+          <List.ListItem onClick={() => navigate('home')}>Home</List.ListItem>
           <List.ListItem>Login</List.ListItem>
-          <List.ListItem>Delivery Menu</List.ListItem>
+          <List.ListItem onClick={() => navigate('menu')}>Delivery Menu</List.ListItem>
           <List.ListItem>Collection Menu</List.ListItem>
           <List.ListItem>Coupons</List.ListItem>
         </List>

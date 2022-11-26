@@ -19,12 +19,12 @@ const ButtonQuantity = () => {
           <Button size="sm" onClick={decrease}>
             <i className="icofont-minus"></i>
           </Button>
-          <input value={value} disabled />
+          <input className="primary" value={value} disabled />
         </>
       ) : null}
 
       <Button size="sm" onClick={increase}>
-        <i className="icofont-plus"></i>
+        <i className="icofont-plus primary"></i>
       </Button>
     </div>
   );

@@ -9,10 +9,11 @@
     content: '\25CF';
     display: block;
     color: #7d7d7d;
-    font-size: 60px;
+    font-size: 30px;
     position: absolute;
-    right: -18px;
-    top: 28%;
+    /* right: -2rem; */
+    top: 43%;
+    right: -1rem;
     z-index: 9999;
 }
 
@@ -20,10 +21,10 @@
     content: '\25CF';
     display: block;
     color: #7d7d7d;
-    font-size: 60px;
+    font-size: 30px;
     position: absolute;
-    left: -18px;
-    top: 28%;
+    left: -1rem;
+    top: 43%;
     z-index: 9999;
 }
 
@@ -44,6 +45,7 @@
     font-size: 16px;
     line-height: 22px;
     color: #475569;
+    padding: 0.5rem 0;
 }
 
 .modal-coupon .header .valid-date {
@@ -106,9 +108,10 @@
 }
 
 .modal-product .modal-footer {
+    display: block;
     background: #FFFFFF;
     box-shadow: 0px -2px 13px rgba(0, 0, 0, 0.08);
-    padding: 0.25rem;
+    padding: 0.55rem;
 }
 
 .modal-product .product-description{
@@ -132,4 +135,16 @@
     left: 1rem;
     line-height: 22px;
     color: #3F3F46;
+}
+
+.modal-dialog.modal-dialog-centered {
+    padding: 0.75rem;
+}
+
+/* Offcanvas config */
+.offcanvas-title {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    color: #475569 !important;
+    font-weight: 700 !important;
 }

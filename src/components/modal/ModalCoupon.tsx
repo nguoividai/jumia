@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { Button, CloseButton, Modal } from 'react-bootstrap';
+import ButtonCopy from '../button/ButtonCopy';
 
 type ModalCouponProps = {
   name?: string;
   validDate?: string;
   description?: string;
   code?: string;
+  trigger?: React.ReactNode;
 };
 
 const ModalCoupon: React.FC<ModalCouponProps> = (props) => {
-  const { name, validDate, description, code } = props;
+  const { name, validDate, description, code, trigger } = props;
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -17,9 +19,7 @@ const ModalCoupon: React.FC<ModalCouponProps> = (props) => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
+      <span onClick={handleShow}>{trigger}</span>
 
       <Modal show={show} onHide={handleClose} centered>
         <div className="modal-coupon">
@@ -33,10 +33,7 @@ const ModalCoupon: React.FC<ModalCouponProps> = (props) => {
             <div className="description">{description}</div>
             <div className="coupon-wrap">
               <div className="code">{code}</div>
-              <button className="copy-button">
-                <div>Copy</div>
-                <img src={require('../../assets/images/copy.png')} alt="copy-icon" />
-              </button>
+              <ButtonCopy text={code} />
             </div>
           </div>
         </div>

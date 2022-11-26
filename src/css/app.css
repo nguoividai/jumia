@@ -21,6 +21,7 @@
 @import url("./module/stepper.css");
 @import url("./module/checkbox.css");
 @import url("./module/order.css");
+@import url("./module/empty.css");
 
 @import url("./pages/pages.css");
 
@@ -78,6 +79,7 @@
     --app-color-bg-4: #F0FDF4;
     --app-color-bg-danger: #FEF2F2;
     --app-color-bg-disabled: #F1F5F9;
+    --app-color-body-bg: #fafafa;
 }
 
 html, body {
@@ -88,8 +90,13 @@ html, body {
 html {
     font-size: 16px;
     color: #312F30;
-    font-family: Inter;
+    font-family: Inter !important;
     
+}
+
+body {
+  font-family: Inter !important;
+  font-size: 14px;
 }
 
 h1 {
@@ -114,12 +121,9 @@ font-size: 18px;
 font-family: Inter, InterBold;
 }
 
-body {
-font-family: Inter;
-font-size: 14px;
-}
 
-body:has(.backdrop), html:has(.backdrop), html:has(.modal-backdrop.show)  {
+body:has(.backdrop), html:has(.backdrop), html:has(.modal-backdrop.show),
+html:has(.offcanvas-backdrop.show)   {
 overflow: hidden;
 }
 
@@ -162,6 +166,14 @@ a:hover {
   padding: 1.5rem
 }
 
+.slide-product.slick-initialized .slick-slide:not(.slick-active.slick-center.slick-current) {
+  padding: 1.5rem;
+}
+
+.slide-product.slick-initialized .slick-slide.slick-active.slick-center.slick-current {
+  padding: 0;
+}
+
 .back-btn {
   padding: 4px;
   text-decoration: none;
@@ -178,4 +190,9 @@ a:hover {
   background: #F8FAFC !important;
   border-color: #F8FAFC !important;
   border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.primary {
+  color: var(--app-color-primary-orange);
 }

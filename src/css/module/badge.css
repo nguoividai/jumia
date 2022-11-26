@@ -1,15 +1,16 @@
-.badge {
+.menu-tab--item .badge {
     position: relative;
+    color: #4B5563 ;
 }
+
 
 .badge .badge-count {
     position: absolute;
-    top: 0;
+    top: -5px;
     inset-inline-end: 0;
     transform: translate(50%,-50%);
     transform-origin: 100% 0%;
-    padding: 0.15rem 0.3rem;
-    top: 0.5rem;
+    padding: 0.1rem 0.3rem;
     font-weight: 700;
     font-size: 0.75rem;
     line-height: 18px;
@@ -17,4 +18,19 @@
     right: 0.75rem;
     background: var(--app-color-primary-orange);
     color: var(--app-color-primary-white);
+    bottom: 1.5rem !important;
+}
+
+.badge.jumia-saved-badge {
+    background: #F4894A !important;
+    border-radius: 16px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.badge.danger {
+    color: #DC2626;
+    background-color: #FEF2F2 !important
 }

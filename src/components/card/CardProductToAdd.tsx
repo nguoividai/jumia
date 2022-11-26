@@ -1,19 +1,25 @@
 import React from 'react';
 import ButtonQuantity from '../button/ButtonQuantity';
+import HeartIcon from '../icon/HeartIcon';
 
-type CardProductToAddProps = {
+export type CardProductToAddProps = {
   src?: string;
   title?: string;
   description?: string;
   price?: number;
   likeNumber?: number;
   type?: 'vertical' | 'horizontal';
+  shadow?: boolean;
+  style?: React.CSSProperties;
 };
 
 const CardProductToAdd: React.FC<CardProductToAddProps> = (props) => {
-  const { src, title, description, price, type } = props;
+  const { src, title, description, price, type, shadow, style } = props;
   return type === 'vertical' ? (
-    <div className="card-product card-product-to-add-horizontal">
+    <div
+      style={style}
+      className={'card-product card-product-to-add-horizontal' + (shadow ? ' box-shadow' : '')}
+    >
       <div className="product-content">
         <div className="product-title">{title}</div>
         <div className="product-description">{description}</div>
@@ -22,31 +28,33 @@ const CardProductToAdd: React.FC<CardProductToAddProps> = (props) => {
         <img src={src} alt="product" />
       </div>
       <div className="product-action">
-        <div className="product-action--price">€ {price}</div>
-        <div className="product-action--button">
+        <div className="product-action--price">
+          <strong>€{price}</strong>
+        </div>
+        <div className="product-action--button" onClick={(e) => e.stopPropagation()}>
           <ButtonQuantity />
         </div>
       </div>
     </div>
   ) : (
-    <div className="card-product card-product-to-add">
+    <div style={style} className="card-product card-product-to-add">
       <div className="product-image">
         <img src={src} alt="product" />
       </div>
       <div className="product-text">
         <div className="text-title">
           {title}
-          <span className="icon float-right text-center">
-            <i className="d-block icofont-heart"></i>
-            12
-          </span>
+
+          <HeartIcon />
           <div className="text-description">{description}</div>
         </div>
 
         <div className="text-review">
-          <div className="text-price">Start from € {price}</div>
+          <div className="text-price">
+            Start from <strong>€{price}</strong>
+          </div>
         </div>
-        <div className="action">
+        <div className="action" onClick={(e) => e.stopPropagation()}>
           <ButtonQuantity />
         </div>
       </div>
