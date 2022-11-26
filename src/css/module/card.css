@@ -724,7 +724,29 @@
     justify-content: right;
 }
 
+/* CARD DELIVERY */
+.card-delivery-time {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 12px 20px;
+    gap: 10px;
+    background: #F9FAFB;
+    border-radius: 8px;
+}
+
+.card-delivery-time .icon {
+    font-size: 32px;
+    width: 32px;
+}
+
+.card-delivery-time .time {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4B5563;
 /* CARD VOUCHER */
+}
 
 .card-voucher {
     border: 1px dashed #ccc;
