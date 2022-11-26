@@ -5,7 +5,15 @@ const InfoAddProduct = () => {
   return (
     <>
       <div className="selected-item">
-        <List className="divided-inside" layout="horizontal">
+        <List
+          className="divided-inside"
+          layout="horizontal"
+          style={{
+            padding: '0.25rem 1rem',
+            background: '#F8FAFC',
+            borderRadius: '6px',
+          }}
+        >
           <List.ListItem>
             Size: <strong>XL</strong>
           </List.ListItem>

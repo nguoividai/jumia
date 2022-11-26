@@ -46,17 +46,17 @@ const JChooseSizeMobile: React.FC<JChooseSizeMobileProps> = ({ onClose }) => {
         <div className="container">
           <div className="steps mt-5">
             {currentStep === 0 && (
-              <div className="step-item">
+              <div className="step-item slide-img">
                 <StepChooseSize increaseStep={increaseStep} />
               </div>
             )}
             {currentStep === 1 && (
-              <div className="step-item">
+              <div className="step-item slide-img">
                 <StepChooseCrust increaseStep={increaseStep} />
               </div>
             )}
             {currentStep === 2 && (
-              <div className="step-item">
+              <div className="step-item slide-img">
                 <StepChooseBase increaseStep={increaseStep} />
               </div>
             )}
