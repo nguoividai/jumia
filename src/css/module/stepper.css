@@ -1,0 +1,43 @@
+.stepper {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.stepper .step {
+    width: 25%;
+    text-align: center;
+}
+
+.stepper .step .label {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #334155;
+    margin-top: 4px;
+    overflow-wrap: break-word;
+}
+
+.stepper .step .step-icon {
+    position: relative;
+}
+
+.stepper .step:not(:last-child) .step-icon.active:after {
+    content: "";
+    display: block;
+    width: calc(100% - 28px);
+    border: 2px dashed #4ADE80;
+    position: absolute;
+    top: 50%;
+    right: -50%;
+}
+
+.stepper .step:not(:last-child) .step-icon:after {
+    content: "";
+    display: block;
+    width: calc(100% - 28px);
+    border: 2px dashed #E5E7EB;
+    position: absolute;
+    top: 50%;
+    right: -50%;
+}

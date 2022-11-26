@@ -206,3 +206,35 @@ button.button.lg {
     display: block;
     margin-top: 0.5rem;
 }
+
+/* BUTTON ICON */
+
+.button-icon {
+    padding: 8px 6px;
+    margin: auto;
+    width: fit-content;
+    font-size: 34px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-icon.square {
+    border-radius: 8px;
+}
+
+.button-icon.circle {
+    border-radius: 50%;
+}
+
+.button-icon.green {
+    background-color: #22C55E;
+    color: #fff;
+}
+
+.button-icon.silver {
+    background-color: #F1F5F9;
+    color: #64748B;
+}

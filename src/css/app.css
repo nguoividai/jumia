@@ -18,6 +18,9 @@
 @import url("./module/modal.css");
 @import url("./module/tab.css");
 @import url("./module/switch.css");
+@import url("./module/stepper.css");
+@import url("./module/checkbox.css");
+@import url("./module/order.css");
 
 @import url("./pages/pages.css");
 

@@ -1,89 +1,75 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Button from 'src/components/button/Button';
+import ButtonIcon from 'src/components/button/ButtonIcon';
+import CardDeliveryTime from 'src/components/card/CardDeliveryTime';
 import CardDescription from 'src/components/card/CardDescription';
 import CardProduct from 'src/components/card/CardProduct';
 import CardProductToAdd from 'src/components/card/CardProductToAdd';
 import CardPromotion from 'src/components/card/CardPromotion';
 import CardPromotionCanCopy from 'src/components/card/CardPromotionCanCopy';
 import CardReview from 'src/components/card/CardReview';
+import Checkbox from 'src/components/checkbox/Checkbox';
 import List from 'src/components/list/List';
+import OrderInfomation from 'src/components/order/OrderInfomation';
+import OrderPriceContainer from 'src/components/order/OrderPriceContainer';
+import OrderSummary from 'src/components/order/OrderSummary';
 import SliderSimple from 'src/components/slider/SliderSimple';
+import Stepper from 'src/components/stepper/Stepper';
 import ModalCoupon from './../components/modal/ModalCoupon';
 
 const AppContent = () => {
   return (
     <div className="app-content">
       <Outlet />
-      {/* <CardPromotion
-        title="Free"
-        name="garlic Pizza"
-        conditionText="When you order 20$ or over"
-        direction="horizontal"
+      {/* <ButtonIcon color="silver" shape="square" icon={<i className="icofont-clock-time"></i>} /> */}
+      {/* <Stepper
+        steps={[
+          {
+            label: 'Awaiting confirmation',
+            icon: <i className="icofont-clock-time"></i>,
+            active: true,
+          },
+          { label: 'In the Kitchen', icon: <i className="icofont-clock-time"></i>, active: false },
+          { label: 'Delivering', icon: <i className="icofont-clock-time"></i>, active: false },
+          { label: 'Delivered', icon: <i className="icofont-clock-time"></i>, active: false },
+        ]}
       /> */}
-      <CardProductToAdd
-        type="vertical"
-        title="top"
-        description="top123"
-        price={30}
-        src={require('../assets/images/jumia/hamburger.png')}
+      <CardDeliveryTime icon={<i className="icofont-delivery-time"></i>} time="1 hourse 2 min" />
+      <Checkbox label="top" />
+      <OrderInfomation
+        orderInformations={[
+          {
+            name: 'Order Number',
+            information: '#33651',
+          },
+          {
+            name: 'Order Number',
+            information: '#33651',
+          },
+          {
+            name: 'Order Number',
+            information: '#33651',
+          },
+          {
+            name: 'Order Number',
+            information: '#33651',
+          },
+        ]}
       />
-      {/* <Button
-        shape="normal"
-        color="white"
-        size="md"
-        textColor="black"
-        startIcon={<i className="icofont-bag"></i>}
-      >
-        Delivery
-      </Button> */}
-      {/* <CardPromotionCanCopy
-        title="Free"
-        name="Garlic bread pizza asd as das as asd asd asdasda s dasd asd asdas"
-        conditionText="When you order $20 or over When you order $20 or over"
-        code="AAA-98765-123"
-      /> */}
-      {/* <ModalCoupon
-        name="voucher RM 10"
-        description="incentive warehouse pahing for shoppingat at JUMIA"
-        validDate="2022/12/05"
-        code="FE CREDIT"
-      /> */}
-      {/* Slider */}
-      {/* <SliderSimple>
-        {Array.from(new Array(5)).map((item, index) => (
-          <div className="w-full" key={index}>
-            <img src={require('../assets/images/panorama.jpg')} alt="banner" />
-          </div>
-        ))}
-      </SliderSimple> */}
-      {/* Card */}
-      {/* <List title="" layout="horizontal">
-        <CardDescription icon="icofont-telegram" title="top" subTitle="top123" />
-        <CardDescription icon="icofont-telegram" title="top" subTitle="top123" />
-        <CardDescription icon="icofont-telegram" title="top" subTitle="top123" />
-        <CardDescription icon="icofont-telegram" title="top" subTitle="top123" />
-      </List> */}
-      {/* Promotion */}
-      {/* <CardPromotion
-        title="20% off"
-        name="all orders"
-        conditionText="20$20$20$20$20$20$ 20$20$20$"
+      <OrderSummary
+        listItem={[
+          {
+            uid: '1',
+            name: 'McSaver Chicken Strips',
+            description: 'hot feature',
+            size: 'Medium',
+            quantity: 2,
+            price: 123,
+          },
+        ]}
       />
-      <Button color="primary" shape="normal" size="md">
-        Order Delivery
-      </Button>
-      <Button color="white" shape="normal" size="md">
-        Order Delivery
-      </Button>
-      <CardProduct
-        src={require('../assets/images/panorama.jpg')}
-        title="Order"
-        description="Order description"
-        price={30}
-        likeNumber={90}
-      ></CardProduct>
-      <CardReview username="top" reviewText="Order" rate={1.5} /> */}
+      <OrderPriceContainer listPrice={[{ label: 'total', price: '133', type: 'discount' }]} />
     </div>
   );
 };
