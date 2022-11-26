@@ -8,6 +8,7 @@ const CreateAccount = React.lazy(() => import('./pages/createAccount/CreateAccou
 const JHomePage = React.lazy(() => import('./pages/jumia/JHomePage'));
 const JMenu = React.lazy(() => import('./pages/jumia/JMenu'));
 const JTest = React.lazy(() => import('./pages/jumia/JTest'));
+const JConfirm = React.lazy(() => import('./pages/jumia/JConfirm'));
 const JRecommendMobile = React.lazy(() => import('./pages/jumia/mobile/JRecommendMobile'));
 const JChooseSizeMobile = React.lazy(() => import('./pages/jumia/mobile/JChooseSizeMobile'));
 
@@ -23,6 +24,12 @@ const routes = [
     exact: true,
     name: 'JCheckout',
     element: JCheckout,
+  },
+  {
+    path: '/confirm',
+    exact: true,
+    name: 'JConfirm',
+    element: JConfirm,
   },
 ];
 

@@ -207,3 +207,24 @@
     width: 1.25rem;
     height: 1.25rem;
 }
+
+/* CONFIRM */
+.confirm-checkbox label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #52525B;
+    font-variation-settings: 'slnt' 0;
+}
+
+.confirm-checkbox .form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px
+}
+
+.confirm-checkbox .form-check-input:checked  {
+    background-color: #22C55E;
+    border-color: #22C55E;
+}
+

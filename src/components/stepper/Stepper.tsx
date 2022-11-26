@@ -3,6 +3,7 @@ import ButtonIcon from '../button/ButtonIcon';
 
 export interface Step {
   label?: string;
+  description?: string;
   icon?: React.ReactNode;
   active?: boolean;
 }
@@ -25,7 +26,12 @@ const Stepper: React.FC<StepperProps> = (props) => {
                 color={step.active ? 'green' : 'silver'}
               />
             </div>
-            <div className="label">{step.label}</div>
+            <div>
+              <div className="label">{step.label}</div>
+              <div className="step-description d-block d-sm-block d-md-block d-lg-none">
+                {step.description}
+              </div>
+            </div>
           </div>
         ))}
     </div>

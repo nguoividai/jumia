@@ -214,3 +214,62 @@ ul.list.list-item {
     right: 1rem;
     bottom: 0.5rem;
 }
+
+
+/* LIST CONFIRM */
+.list-confirm .confirm-quantity {
+    background: #E2E8F0;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #334155;
+}
+
+.list-confirm .confirm-name {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #18181B;
+    width: 80%;
+}
+
+.list-confirm .confirm-price {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #27272A;
+}
+
+.list-confirm .list-confirm-extra {
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #A1A1AA;
+}
+
+.list-confirm .list-confirm-extra div {
+   margin-top: 4px;
+}
+
+/* LIST DELIVERY */
+.list-delivery .list-group-item {
+    border: 0;
+    padding: 0.75rem 0.5rem;
+}
+
+.list-delivery .list-delivery-title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #52525B;
+}
+
+.list-delivery .list-delivery-extra {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #71717A;
+}

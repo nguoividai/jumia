@@ -1,43 +1,115 @@
-.stepper {
-    display: flex;
-    gap: 20px;
-    width: 100%;
+@media screen and (max-width: 768px) {
+    .stepper {
+        display: block;
+    }
+
+    .stepper .step {
+        width: 100%;
+        display: flex;
+        gap: 0.5rem;
+        margin: 3rem 0;
+        align-items: center;
+    }
+
+    .stepper .step .step-icon {
+        width: 10%;
+    }
+
+    .stepper .step .step-icon .button-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .stepper .step .step-icon .button-icon svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .stepper .step .step-icon .button-icon i {
+        font-size: 1rem;
+    }
+
+    .stepper .step .label {
+        font-weight: 700;
+    }
+
+    .stepper .step .label, .stepper .step .step-description {
+        font-size: 12px;
+        line-height: 20px;
+        color: #334155;
+        overflow-wrap: break-word;
+    }
+
+    .stepper .step:not(:last-child) .step-icon:after {
+        content: "";
+        display: block;
+        width: calc(100% - 28px);
+        border: 1px dashed #E5E7EB;
+        position: absolute;
+        top: 2rem;
+        right: 45%;
+        width: 0;
+        height: 55px;
+    }
+
+    .stepper .step:not(:last-child) .step-icon.active:after {
+        border: 1px dashed #4ADE80;
+    }
+
+
 }
 
-.stepper .step {
-    width: 25%;
-    text-align: center;
+@media screen and (min-width: 768px) {
+    .stepper {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+    }
+
+    
+    .stepper .step {
+        width: 25%;
+        text-align: center;
+    }
+    
+    .stepper .step .label {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+        color: #334155;
+        margin-top: 4px;
+        overflow-wrap: break-word;
+    }
+
+    .stepper .step:not(:last-child) .step-icon.active:after {
+        content: "";
+        display: block;
+        width: calc(100% - 28px);
+        border: 1px dashed #4ADE80;
+        position: absolute;
+        top: 50%;
+        right: -50%;
+    }
+    
+    .stepper .step:not(:last-child) .step-icon:after {
+        content: "";
+        display: block;
+        width: calc(100% - 28px);
+        border: 1px dashed #E5E7EB;
+        position: absolute;
+        top: 50%;
+        right: -50%;
+    }
+
 }
 
-.stepper .step .label {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 20px;
-    color: #334155;
-    margin-top: 4px;
-    overflow-wrap: break-word;
-}
+
 
 .stepper .step .step-icon {
     position: relative;
 }
 
-.stepper .step:not(:last-child) .step-icon.active:after {
-    content: "";
-    display: block;
-    width: calc(100% - 28px);
-    border: 2px dashed #4ADE80;
-    position: absolute;
-    top: 50%;
-    right: -50%;
+.stepper .step .step-icon.active svg {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
 }
 
-.stepper .step:not(:last-child) .step-icon:after {
-    content: "";
-    display: block;
-    width: calc(100% - 28px);
-    border: 2px dashed #E5E7EB;
-    position: absolute;
-    top: 50%;
-    right: -50%;
-}
