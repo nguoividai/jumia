@@ -19,7 +19,7 @@ const SideNavToggle = () => {
         }}
       >
         <List className="sidebar-list">
-          <List.ListItem onClick={() => navigate('home')}>Home</List.ListItem>
+          <List.ListItem onClick={() => navigate('/')}>Home</List.ListItem>
           <List.ListItem>Login</List.ListItem>
           <List.ListItem onClick={() => navigate('menu')}>Delivery Menu</List.ListItem>
           <List.ListItem>Collection Menu</List.ListItem>

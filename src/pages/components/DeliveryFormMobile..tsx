@@ -1,12 +1,14 @@
 import React from 'react';
 import { Form, InputGroup } from 'react-bootstrap';
+import TruckDeliveryIcon from 'src/components/icon/TruckDeliveryIcon';
 import JConfirmAddress from '../jumia/mobile/JConfirmAddress';
 
 const DeliveryFormMobile = () => {
   return (
     <>
-      <div className="delivery-title">
-        <i className="icofont-truck-alt primary"></i> Delivery
+      <div className="delivery-title d-flex gap-2">
+        <TruckDeliveryIcon />
+        Delivery
       </div>
 
       <JConfirmAddress trigger={<span className="edit-address">Edit Address</span>} />
