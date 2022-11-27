@@ -1,7 +1,7 @@
 import React from 'react';
 
 type CardDescriptionProps = {
-  icon?: string;
+  icon?: React.ReactNode;
   title: string;
   subTitle: string;
 };
@@ -11,7 +11,7 @@ const CardDescription: React.FC<CardDescriptionProps> = (props) => {
 
   return (
     <div className="card-description">
-      <i className={icon}></i>
+      {icon}
       <div className="card-description--content">
         <div className="card-description--title">{title}</div>
         <div className="card-description--subtitle">{subTitle}</div>

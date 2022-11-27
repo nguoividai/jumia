@@ -6,9 +6,10 @@ type ButtonCopyProps = {
 
 const ButtonCopy: React.FC<ButtonCopyProps> = ({ text }) => {
   const [clicked, setClicked] = useState<boolean>(false);
-  const handleCopy = () => {
+
+  const handleCopy = async () => {
     // Get the text field
-    navigator.clipboard.writeText(text || '');
+    await navigator.clipboard.writeText(text || '');
     setClicked(true);
   };
 

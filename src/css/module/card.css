@@ -248,7 +248,8 @@
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 8px;
+    gap: 20px;
+    width: 200px;
 
 }
 
@@ -260,6 +261,9 @@
     color: #27272A;
     font-size: 14px;
     line-height: 20px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
 .card-description--title {
@@ -311,9 +315,20 @@
 }
 
 .card-promotion--vertical .top .content .title {
-    font-size: 34px;
+    font-weight: 800;
+    font-size: 2rem;
     line-height: 42px;
     color: var(--app-color-primary-orange);
+    font-family: InterBold;
+}
+
+.card-promotion--vertical .top .content .small-title {
+    font-weight: 800;
+    margin-left: 5px;
+    font-size: 1.5rem;
+    line-height: 42px;
+    color: var(--app-color-primary-orange);
+    font-family: InterBold;
 }
 
 .card-promotion--vertical .top .content .name {
@@ -561,6 +576,7 @@
     width: 100%;
     background: #FAFAFA;
     border-radius: 16px;
+    min-width: 250px;
 }
 
 .card-review .header {

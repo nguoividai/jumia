@@ -16,12 +16,21 @@ const B2CPromotionList = () => {
         slidesToScroll: 4,
         responsive: [
           {
+            breakpoint: 375,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: true,
+              centerPadding: '50px',
+            },
+          },
+          {
             breakpoint: 576,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
               centerMode: true,
-              centerPadding: '70px',
+              centerPadding: '50px',
             },
           },
           {
@@ -46,16 +55,16 @@ const B2CPromotionList = () => {
       }}
     >
       <div>
-        <CardPromotion title="20% OFF" conditionText="When you order £20 or over" />
+        <CardPromotion title="20%" smallTitle="OFF" conditionText="When you order £20 or over" />
       </div>
       <div>
-        <CardPromotion title="20% OFF" conditionText="When you order £20 or over" />
+        <CardPromotion title="20%" smallTitle="OFF" conditionText="When you order £20 or over" />
       </div>
       <div>
-        <CardPromotion title="20% OFF" conditionText="When you order £20 or over" />
+        <CardPromotion title="20%" smallTitle="OFF" conditionText="When you order £20 or over" />
       </div>
       <div>
-        <CardPromotion title="20% OFF" conditionText="When you order £20 or over" />
+        <CardPromotion title="20%" smallTitle="OFF" conditionText="When you order £20 or over" />
       </div>
     </SliderSimple>
   );

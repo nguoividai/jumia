@@ -17,7 +17,7 @@ const ListVoucherMobile = () => {
         variant="flush"
       >
         <JAddVoucher
-          style={{ height: '20vh' }}
+          style={{ minHeight: '20vh' }}
           trigger={
             <ListGroup.Item style={{ gap: 10 }} className="d-flex align-items-center border-0">
               <img

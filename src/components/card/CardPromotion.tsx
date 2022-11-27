@@ -3,13 +3,14 @@ import ModalCoupon from '../modal/ModalCoupon';
 
 type CardPromotionProps = {
   title?: string;
+  smallTitle?: string;
   name?: string;
   conditionText?: string;
   direction?: 'horizontal' | 'vertical';
 };
 
 const CardPromotionVertical: React.FC<CardPromotionProps> = (props) => {
-  const { title, name, conditionText } = props;
+  const { title, name, conditionText, smallTitle } = props;
   return (
     <div className="card-promotion--vertical">
       <div className="top">
@@ -28,7 +29,10 @@ const CardPromotionVertical: React.FC<CardPromotionProps> = (props) => {
           />
         </svg>
         <div className="content">
-          <div className="title">{title}</div>
+          <div className="title">
+            {title}
+            <span className="small-title">{smallTitle} </span>
+          </div>
           <div className="name">{name}</div>
         </div>
       </div>
@@ -52,7 +56,7 @@ const CardPromotionVertical: React.FC<CardPromotionProps> = (props) => {
 };
 
 const CardPromotionHorizontal: React.FC<CardPromotionProps> = (props) => {
-  const { title, name, conditionText } = props;
+  const { title, name, conditionText, smallTitle } = props;
   return (
     <div className="card-promotion--horizontal">
       <div className="header">
@@ -71,7 +75,9 @@ const CardPromotionHorizontal: React.FC<CardPromotionProps> = (props) => {
           />
         </svg>
         <div className="header__content">
-          <div className="title">{title}</div>
+          <div className="title">
+            {title} <span className="small-title">{smallTitle} </span>
+          </div>
           <div className="name">{name}</div>
         </div>
       </div>
@@ -93,11 +99,21 @@ const CardPromotionHorizontal: React.FC<CardPromotionProps> = (props) => {
 };
 
 const CardPromotion: React.FC<CardPromotionProps> = (props) => {
-  const { title, name, conditionText, direction } = props;
+  const { title, name, conditionText, direction, smallTitle } = props;
   return direction && direction === 'horizontal' ? (
-    <CardPromotionHorizontal title={title} name={name} conditionText={conditionText} />
+    <CardPromotionHorizontal
+      title={title}
+      name={name}
+      conditionText={conditionText}
+      smallTitle={smallTitle}
+    />
   ) : (
-    <CardPromotionVertical title={title} name={name} conditionText={conditionText} />
+    <CardPromotionVertical
+      title={title}
+      name={name}
+      conditionText={conditionText}
+      smallTitle={smallTitle}
+    />
   );
 };
 

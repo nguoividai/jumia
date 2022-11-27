@@ -18,6 +18,15 @@ const B2CMostFoodList = () => {
           slidesToScroll: 3,
           responsive: [
             {
+              breakpoint: 375,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '50px',
+              },
+            },
+            {
               breakpoint: 576,
               settings: {
                 slidesToShow: 1,

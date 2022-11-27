@@ -108,8 +108,8 @@ const JCheckoutMobile = () => {
               color: '#71717A',
             }}
           >
-            <strong>Terms:</strong>&nbsp; By placing your order, you confrimthat you agree to the
-            &nbsp;{' '}
+            <strong>Terms:</strong>&nbsp; By placing your order, you confirm that you agree to the
+            &nbsp;
             <a className="primary" href="#/" onClick={(e) => e.preventDefault()}>
               User Terms and Conditions
             </a>

@@ -19,9 +19,23 @@ const SideNavToggle = () => {
         }}
       >
         <List className="sidebar-list">
-          <List.ListItem onClick={() => navigate('/')}>Home</List.ListItem>
+          <List.ListItem
+            onClick={() => {
+              navigate('/');
+              setVisible(false);
+            }}
+          >
+            Home
+          </List.ListItem>
           <List.ListItem>Login</List.ListItem>
-          <List.ListItem onClick={() => navigate('menu')}>Delivery Menu</List.ListItem>
+          <List.ListItem
+            onClick={() => {
+              navigate('menu');
+              setVisible(false);
+            }}
+          >
+            Delivery Menu
+          </List.ListItem>
           <List.ListItem>Collection Menu</List.ListItem>
           <List.ListItem>Coupons</List.ListItem>
         </List>

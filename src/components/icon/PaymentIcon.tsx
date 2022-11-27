@@ -1,8 +1,19 @@
 import React from 'react';
 
-const PaymentIcon = () => {
+type PaymentIconProps = {
+  width?: number;
+  height?: number;
+};
+
+const PaymentIcon: React.FC<PaymentIconProps> = ({ width, height }) => {
   return (
-    <svg width="16" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width || 16}
+      height={height}
+      viewBox="0 0 22 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M3.5 0.75C1.84315 0.75 0.5 2.09315 0.5 3.75V4.5H21.5V3.75C21.5 2.09315 20.1569 0.75 18.5 0.75H3.5Z"
         fill="#0F172A"

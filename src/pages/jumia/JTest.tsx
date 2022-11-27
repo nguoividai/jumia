@@ -248,7 +248,7 @@ const JTest = () => {
       <div className="mt-2">
         <div className="col-12 col-sm-6">
           <OffCanvasOverPage
-            style={{ maxHeight: '20vh' }}
+            style={{ minHeight: '200px' }}
             trigger={<Button>Add voucher text</Button>}
             title="Add voucher"
           >
