@@ -166,7 +166,7 @@ a:hover {
   padding: 1.5rem
 }
 
-.steps .step-item.slide-img {
+.steps .step-item.slide-img .slide-container {
   margin-right: -2.5rem;
   margin-left: -2.5rem;
 }
