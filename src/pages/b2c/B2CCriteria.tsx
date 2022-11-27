@@ -20,12 +20,21 @@ const B2CCriteria = () => {
         slidesToScroll: 4,
         responsive: [
           {
-            breakpoint: 576,
+            breakpoint: 414,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
               centerMode: true,
-              centerPadding: '50px',
+              centerPadding: '60px',
+            },
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              centerMode: true,
+              centerPadding: '20px',
             },
           },
           {

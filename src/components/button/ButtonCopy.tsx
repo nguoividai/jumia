@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import copy from 'copy-to-clipboard';
 
 type ButtonCopyProps = {
   text?: string;
@@ -9,7 +10,7 @@ const ButtonCopy: React.FC<ButtonCopyProps> = ({ text }) => {
 
   const handleCopy = async () => {
     // Get the text field
-    await navigator.clipboard.writeText(text || '');
+    copy(text || '');
     setClicked(true);
   };
 
