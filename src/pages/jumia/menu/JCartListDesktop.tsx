@@ -90,7 +90,7 @@ const JCartListDesktop = () => {
             £90
           </div>
         </div>
-        <div className="mt-4 p-3">
+        <div className="mt-2 p-3">
           <Button
             style={{
               width: '100%',

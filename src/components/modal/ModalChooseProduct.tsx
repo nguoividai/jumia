@@ -4,17 +4,39 @@ import pizzaVector from 'src/assets/images/jumia/pizza-vector.png';
 import Button from '../button/Button';
 import JumiaTab from '../tab/JumiaTab';
 
-const ModalChooseProduct = () => {
+type ModalChooseProductProps = {
+  trigger?: React.ReactNode;
+};
+
+const maxStep = 3;
+
+const ModalChooseProduct: React.FC<ModalChooseProductProps> = ({ trigger }) => {
   const [show, setShow] = useState<boolean>(false);
+  const [currentStep, setCurrentStep] = useState<number>(0);
+
+  const increaseStep = () => {
+    if (currentStep < maxStep) setCurrentStep(currentStep + 1);
+  };
+
+  const decreaseStep = () => {
+    if (currentStep > 0) {
+      setCurrentStep(currentStep - 1);
+    }
+  };
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
     <>
-      <Button onClick={handleShow}>Launch demo modal</Button>
+      <div onClick={handleShow}>{trigger}</div>
 
-      <Modal className="modal-product" show={show} onHide={handleClose}>
+      <Modal
+        backdrop="static"
+        className="modal-product modal-product-choose"
+        show={show}
+        onHide={handleClose}
+      >
         <Modal.Header closeButton>
           <Modal.Title>Peperoni Pizza</Modal.Title>
         </Modal.Header>
@@ -26,14 +48,27 @@ const ModalChooseProduct = () => {
             <img alt="product" src={pizzaVector} />
           </div>
           <div className="product-body">
-            <JumiaTab />
+            <JumiaTab step={currentStep} />
           </div>
         </Modal.Body>
         <Modal.Footer>
           <span className="total">Total : €22.23</span>
-          <Button color="primary" onClick={handleClose}>
-            Add To Cart
-          </Button>
+
+          {currentStep > 0 && (
+            <Button color="link" onClick={decreaseStep}>
+              Back
+            </Button>
+          )}
+          {currentStep < maxStep && (
+            <Button color="primary" onClick={increaseStep}>
+              Next
+            </Button>
+          )}
+          {currentStep === maxStep && (
+            <Button color="primary" onClick={handleClose}>
+              Add To Cart
+            </Button>
+          )}
         </Modal.Footer>
       </Modal>
     </>

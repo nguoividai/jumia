@@ -9,7 +9,7 @@ const JTab = () => {
       <div className="jumia-tab-vertical">
         <Tab.Container defaultActiveKey="recommended">
           <Row>
-            <Col sm={3}>
+            <Col sm={4}>
               <Nav variant="pills" className="flex-column">
                 <Nav.Item>
                   <Nav.Link eventKey="recommended">Recommended</Nav.Link>
@@ -34,7 +34,7 @@ const JTab = () => {
                 </Nav.Item>
               </Nav>
             </Col>
-            <Col sm={9}>
+            <Col sm={8}>
               <Tab.Content>
                 <Tab.Pane eventKey="recommended">
                   <Section title="Burgers & Wraps" extra="7 ITEMS">

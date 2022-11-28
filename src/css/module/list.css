@@ -278,6 +278,7 @@ ul.list.list-item {
 .list-product-with-description .list-group-item {
     background-color: transparent;
     padding-top: 1rem;
+    border: 0;
 }
 
 .list-product-with-description .list-group-item .product-title {

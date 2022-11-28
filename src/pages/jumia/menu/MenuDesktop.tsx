@@ -4,6 +4,7 @@ import Alert from 'src/components/alert/Alert';
 import B2CPromotionList from 'src/pages/b2c/B2CPromotionList';
 import JPromotionListDesktop from '../homepage/JPromotionListDesktop';
 import JCartListDesktop from './JCartListDesktop';
+import JCartListEmptyDesktop from './JCartListEmptyDesktop';
 import JTab from './JTab';
 
 const MenuDesktop = () => {
@@ -11,11 +12,11 @@ const MenuDesktop = () => {
     <>
       <JPromotionListDesktop />
       <div className="container mt-4">
-        <div className="row ">
+        <div className="row">
           <div className="col-8">
             <div className="row">
-              <div className="col-3"></div>
-              <div className="col-9">
+              <div className="col-4"></div>
+              <div className="col-8">
                 <Alert color="primary" />
               </div>
             </div>
@@ -23,13 +24,14 @@ const MenuDesktop = () => {
           <div className="col-4"></div>
         </div>
       </div>
-      <div className="container mt-4 mb-4">
-        <div className="row ">
+      <div className="container mt-4 pb-4">
+        <div className="row">
           <div className="col-8">
             <JTab />
           </div>
           <div className="col-4">
             <JCartListDesktop />
+            <JCartListEmptyDesktop />
           </div>
         </div>
       </div>

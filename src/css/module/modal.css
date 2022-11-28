@@ -114,6 +114,10 @@
     padding: 0.55rem;
 }
 
+.modal-product-choose .modal-footer {
+    display: flex;
+}
+
 .modal-product .product-description{
     font-weight: 400;
     font-size: 14px;
@@ -136,6 +140,7 @@
     line-height: 22px;
     color: #3F3F46;
 }
+
 
 .modal-dialog.modal-dialog-centered {
     padding: 0.75rem;

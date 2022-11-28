@@ -43,6 +43,24 @@
     color: #DC2626;
 }
 
+.jumia-size .badge.secondary {
+    background: #F8FAFC !important;
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 18px;
+    color: #475569;
+}
+
+.jumia-size .badge.success {
+    background: #F0FDF4 !important;
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 18px;
+    color: #16A34A;
+}
+
 .jumia-list .list-group-item {
     padding: 0.75rem;
 }

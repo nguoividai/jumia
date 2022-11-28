@@ -1,19 +1,21 @@
-import React, { useState } from 'react';
+import React, { ButtonHTMLAttributes, useState } from 'react';
 import Button from './Button';
 
 type ButtonQuantityProps = {
   textZero?: string;
   style?: React.CSSProperties;
-};
+} & ButtonHTMLAttributes<HTMLButtonElement>;
 
 const ButtonQuantity: React.FC<ButtonQuantityProps> = ({ textZero, style }) => {
   const [value, setValue] = useState<number>(0);
 
-  const increase = () => {
+  const increase = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.stopPropagation();
     setValue((prev) => prev + 1);
   };
 
-  const decrease = () => {
+  const decrease = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.stopPropagation();
     setValue((prev) => (prev > 0 ? prev - 1 : 0));
   };
 
