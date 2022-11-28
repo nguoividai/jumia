@@ -157,9 +157,28 @@ a:hover {
 }
 
 /* CUSTOM LIBRARY REACT_SLICK */
+
 .slick-slider .slick-arrow::after, .slick-slider .slick-arrow::before{
   color: var(--app-color-text-2);
   display: none;
+}
+
+.slick-slider.show-arrow .slick-arrow::after, .slick-slider.show-arrow  .slick-arrow::before{
+  color: #475569;
+  display: block;
+}
+
+.slick-slider.show-arrow .slick-prev:before {
+
+  content:  url("src/assets/images/jumia/icons/arrow-left.svg");
+  color: red;
+  font-size: 30px;
+}
+
+.slick-slider.show-arrow .slick-next:before {
+  content: url("src/assets/images/jumia/icons/arrow-right.svg");
+  color: red;
+  font-size: 30px;
 }
 
 .slick-initialized .slick-slide {

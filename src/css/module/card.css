@@ -459,7 +459,7 @@
 /* CARD PROMOTION CAN COPY */
 
 .card-promotion--can-copy {
-    max-width: 300px;
+    width: 300px;
 }
 
 .card-promotion--can-copy .information {
@@ -476,7 +476,7 @@
     content: "";
     display: block;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: var(--app-color-body-bg);
     width: 20px;
     height: 20px;
     position: absolute;
@@ -489,7 +489,7 @@
     content: "";
     display: block;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: var(--app-color-body-bg);
     width: 20px;
     height: 20px;
     position: absolute;
@@ -558,7 +558,7 @@
     content: "";
     display: block;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: var(--app-color-body-bg);
     width: 20px;
     height: 20px;
     position: absolute;

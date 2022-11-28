@@ -6,12 +6,13 @@ type CardProductProps = {
   description?: string;
   price?: number;
   likeNumber?: number;
+  style?: React.CSSProperties;
 };
 
 const CardProduct: React.FC<CardProductProps> = (props) => {
-  const { src, title, description, price, likeNumber } = props;
+  const { src, title, description, price, likeNumber, style } = props;
   return (
-    <div className="card-product">
+    <div style={style} className="card-product">
       <div className="product-text">
         <div className="text-title">{title}</div>
         <div className="text-description">{description}</div>

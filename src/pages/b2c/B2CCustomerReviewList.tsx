@@ -6,7 +6,7 @@ import SliderSimple from 'src/components/slider/SliderSimple';
 const B2CCustomerReviewList = () => {
   return (
     <Section
-      title="Customer Reviews"
+      title="Reviews Customer"
       style={{
         background: '#FFFFFF',
       }}

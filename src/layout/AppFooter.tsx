@@ -8,7 +8,7 @@ const AppFooter = () => {
   return (
     <div role="contentinfo" className="app-footer">
       <div className="row">
-        <div className="col-md-12 col-lg-6">
+        <div className="col-md-12 col-lg-5">
           <img className="logo" src={logo} alt="logo" style={{ width: 125 }} />
           <p className="description-logo">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum dolor, fermentum

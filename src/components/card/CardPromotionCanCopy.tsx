@@ -1,5 +1,8 @@
+import copy from 'copy-to-clipboard';
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Toast } from 'react-bootstrap';
+import InfoCircleIcon from '../icon/InfoCircleIcon';
+import VoucherIcon from '../icon/VoucherIcon';
 
 type CardPromotionCanCopyProps = {
   title?: string;
@@ -10,6 +13,13 @@ type CardPromotionCanCopyProps = {
 
 const CardPromotionCanCopy: React.FC<CardPromotionCanCopyProps> = (props) => {
   const { title, name, conditionText, code } = props;
+
+  const handleCopy = async () => {
+    // Get the text field
+    copy(code || '');
+    alert('Copy ' + code);
+  };
+
   return (
     <Container>
       <Row className="card-promotion--can-copy">
@@ -17,20 +27,28 @@ const CardPromotionCanCopy: React.FC<CardPromotionCanCopyProps> = (props) => {
           <div className="information-title">{title}</div>
           <div className="information-name">{name}</div>
           <div className="information-condition">{conditionText}</div>
-          <Row className="information-footer">
-            <Col xs={2} sm={2} md={2} lg={2} xl={2}>
-              <img src={require('../../assets/images/coupon-1.png')} alt="coupon" />
+          <Row className="information-footer align-items-center">
+            <Col xs={2} sm={2} md={1} lg={1} xl={1}>
+              <VoucherIcon />
             </Col>
-            <Col xs={7} sm={7} md={7} lg={7} xl={7}>
+            <Col style={{ fontWeight: 500 }} xs={7} sm={7} md={8} lg={8} xl={8}>
               {code}
             </Col>
             <Col xs={2} sm={2} md={2} lg={2} xl={2}>
-              <i className="icofont-info-circle"></i>
+              <InfoCircleIcon />
             </Col>
           </Row>
         </Col>
-        <Col xs={3} sm={3} md={3} lg={3} xl={3} className="icon" onClick={() => console.log(123)}>
+        <Col xs={3} sm={3} md={3} lg={3} xl={3} className="icon" onClick={handleCopy}>
           <img src={require('../../assets/images/coupon.png')} alt="coupon" />
+          <span
+            style={{
+              fontWeight: 700,
+              fontSize: '14px',
+              lineHeight: '20px',
+              color: '#FFFFFF',
+            }}
+          ></span>
           Copy
         </Col>
       </Row>
