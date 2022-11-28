@@ -340,3 +340,54 @@ ul.list.list-item {
     bottom: 0.5px;
     border-radius: 8px;
 }
+
+/* LIST CART WITH MODIFY QUANTITY */
+.list-cart-item-modify-quantity .list-group-item{
+    background: transparent !important;
+    border: 0;
+}
+
+
+.list-cart-item-modify-quantity .list-item--title {
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 20px;
+    color: #27272A;
+}
+
+.list-cart-item-modify-quantity .list-item--extra {
+    margin-top: 0.75rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 18px;
+    color: #A1A1AA;
+}
+
+.list-cart-item-modify-quantity .list-item--action {
+    /* margin-top: 1rem; */
+    display: flex;
+    gap: 1rem;
+}
+
+.list-cart-item-modify-quantity .list-item--action .price {
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #262626;
+    width: 50%;
+}
+
+.list-cart-item-modify-quantity .list-item--action .button-area {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+
+.list-cart-item-modify-quantity .list-item--action .button-quantity {
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #262626;
+}

@@ -28,10 +28,10 @@ const ButtonQuantity: React.FC<ButtonQuantityProps> = ({ textZero, style }) => {
         </>
       ) : null}
 
-      {value === 0 && textZero ? (
+      {value === 0 ? (
         <>
           <Button size="sm" onClick={increase}>
-            {(
+            {textZero ? (
               <span
                 style={{
                   color: '#F4894A',
@@ -39,7 +39,9 @@ const ButtonQuantity: React.FC<ButtonQuantityProps> = ({ textZero, style }) => {
               >
                 {textZero}
               </span>
-            ) || <i className="icofont-plus primary"></i>}
+            ) : (
+              <i className="icofont-plus primary"></i>
+            )}
           </Button>
         </>
       ) : null}
