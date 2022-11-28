@@ -27,6 +27,7 @@ import Checkbox from 'src/components/checkbox/Checkbox';
 import OrderInfomation from 'src/components/order/OrderInfomation';
 import OrderPriceContainer from 'src/components/order/OrderPriceContainer';
 import OrderSummary from 'src/components/order/OrderSummary';
+import JTab from './menu/JTab';
 
 const steps = [
   {
@@ -392,6 +393,10 @@ const JTest = () => {
         ]}
       />
       <OrderPriceContainer listPrice={[{ label: 'total', price: '133', type: 'discount' }]} />
+
+      <div className="mt-3">
+        <JTab />
+      </div>
     </>
   );
 };

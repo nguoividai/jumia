@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import Button from './Button';
 
-const ButtonQuantity = () => {
+type ButtonQuantityProps = {
+  textZero?: string;
+  style?: React.CSSProperties;
+};
+
+const ButtonQuantity: React.FC<ButtonQuantityProps> = ({ textZero, style }) => {
   const [value, setValue] = useState<number>(0);
 
   const increase = () => {
@@ -13,7 +18,7 @@ const ButtonQuantity = () => {
   };
 
   return (
-    <div className="button-quantity">
+    <div style={style} className="button-quantity">
       {value > 0 ? (
         <>
           <Button size="sm" onClick={decrease}>
@@ -23,9 +28,27 @@ const ButtonQuantity = () => {
         </>
       ) : null}
 
-      <Button size="sm" onClick={increase}>
-        <i className="icofont-plus primary"></i>
-      </Button>
+      {value === 0 && textZero ? (
+        <>
+          <Button size="sm" onClick={increase}>
+            {(
+              <span
+                style={{
+                  color: '#F4894A',
+                }}
+              >
+                {textZero}
+              </span>
+            ) || <i className="icofont-plus primary"></i>}
+          </Button>
+        </>
+      ) : null}
+
+      {value > 0 ? (
+        <Button size="sm" onClick={increase}>
+          <i className="icofont-plus primary"></i>
+        </Button>
+      ) : null}
     </div>
   );
 };
