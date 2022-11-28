@@ -22,7 +22,6 @@ const JConfirm = () => {
         style={{
           background: '#fff',
           padding: '0.5rem',
-          margin: '0 -12px ',
         }}
       >
         <JStepper />
@@ -33,7 +32,6 @@ const JConfirm = () => {
         style={{
           background: '#fff',
           padding: '0.5rem',
-          margin: '0 -12px ',
         }}
       >
         <Form.Check inline label="Notify on order status" name="group1" type="checkbox" />
@@ -44,7 +42,6 @@ const JConfirm = () => {
         style={{
           background: '#fff',
           padding: '0.5rem',
-          margin: '0 -12px ',
         }}
       >
         <JOrderList />
@@ -56,7 +53,6 @@ const JConfirm = () => {
         style={{
           background: '#fff',
           padding: '0.5rem',
-          margin: '0 -12px ',
         }}
       >
         <JDeliveryConfirm />

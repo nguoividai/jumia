@@ -1,3 +1,7 @@
+.section .title-area {
+    padding: 0.75rem
+}
+
 .section .title {
     font-weight: 800;
     font-size: 1.25rem;

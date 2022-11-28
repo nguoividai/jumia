@@ -61,7 +61,10 @@ const JHomePage = () => {
             Order Delivery
           </Button>
         </div>
-        <B2CCustomerReviewList />
+
+        <div className="mt-4">
+          <B2CCustomerReviewList />
+        </div>
       </div>
     </>
   );

@@ -16,21 +16,30 @@ const B2CPromotionList = () => {
         slidesToScroll: 4,
         responsive: [
           {
-            breakpoint: 414,
+            breakpoint: 400,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
               centerMode: true,
-              centerPadding: '60px',
+              centerPadding: '40px',
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: true,
+              centerPadding: '70px',
             },
           },
           {
             breakpoint: 576,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
+              slidesToShow: 2,
+              slidesToScroll: 2,
               centerMode: true,
-              centerPadding: '80px',
+              centerPadding: '15px',
             },
           },
           {

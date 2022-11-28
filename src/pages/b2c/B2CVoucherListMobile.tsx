@@ -18,7 +18,7 @@ const VoucherListMobile = () => {
           slidesToScroll: 3,
           responsive: [
             {
-              breakpoint: 375,
+              breakpoint: 400,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -27,7 +27,7 @@ const VoucherListMobile = () => {
               },
             },
             {
-              breakpoint: 576,
+              breakpoint: 480,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -36,12 +36,21 @@ const VoucherListMobile = () => {
               },
             },
             {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '90px',
+              },
+            },
+            {
               breakpoint: 768,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
-                centerPadding: '40px',
+                centerPadding: '100px',
               },
             },
             {

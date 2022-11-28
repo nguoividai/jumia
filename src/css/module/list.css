@@ -106,7 +106,7 @@ ul.list.list-item {
 
 
 .menu-tabs .menu-tab--item.active svg {
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%) !important;
+    filter: invert(50%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%) !important;
 }
 
 .menu-tabs.horizontal {

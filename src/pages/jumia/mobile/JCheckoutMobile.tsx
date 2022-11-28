@@ -16,20 +16,17 @@ const JCheckoutMobile = () => {
   return (
     <>
       <Form validated={true} className="form-mobile">
-        <div style={{ background: '#fff', padding: '1rem', margin: '1rem -12px' }}>
+        <div style={{ background: '#fff', padding: '1rem' }}>
           <DeliveryFormMobile />
         </div>
 
-        <div style={{ background: '#fff', padding: '1rem', margin: '1rem -12px' }}>
+        <div style={{ background: '#fff', padding: '1rem' }}>
           <OrderSummaryMobile />
           <ListVoucherMobile />
           <CheckoutTotal />
         </div>
 
-        <Card
-          className="border-0"
-          style={{ background: '#fff', padding: '1rem', margin: '1rem -12px' }}
-        >
+        <Card className="border-0" style={{ background: '#fff', padding: '1rem' }}>
           <Card.Body>
             <div style={{ fontWeight: 700, fontSize: 14, lineHeight: '20px', color: '#52525B' }}>
               Add Note
