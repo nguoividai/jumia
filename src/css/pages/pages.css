@@ -209,13 +209,27 @@
 }
 
 /* CONFIRM */
-.confirm-checkbox label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #52525B;
-    font-variation-settings: 'slnt' 0;
-}
+
+
+@media screen and (max-width: 576px) {
+    .confirm-checkbox label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #52525B;
+        font-variation-settings: 'slnt' 0;
+    }
+ }
+
+@media screen and (min-width: 576px) {
+    .confirm-checkbox label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #52525B;
+        margin-top: 2px;
+    }
+ }
 
 .confirm-checkbox .form-check-input {
     width: 20px;
@@ -228,3 +242,43 @@
     border-color: #22C55E;
 }
 
+
+/* CONFIRM DESKTOP */
+
+.confirm-desktop {
+    display: flex;
+    justify-content: center;
+}
+
+.confirm-desktop .section-content {
+    border: 0.916143px dashed #94A3B8;
+    border-radius: 16px 16px 0px 0px;
+    padding: 3.75rem;
+}
+
+.confirm-desktop.confirm-desktop-back .section-content {
+    margin-top: 3rem;
+    border: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.confirm-desktop.confirm-desktop-back .section-content i {
+    font-size: 18px;
+}
+
+
+@media screen and (min-width: 972px) {
+    .confirm-desktop .section-content {
+        width: 975px;
+    }
+ }
+
+@media screen and (max-width: 972px) {
+    .confirm-desktop {
+        justify-content: start;
+    }
+    .confirm-desktop .section-content {
+        width: 800px;
+    }
+ }

@@ -220,3 +220,7 @@ a:hover {
 .primary {
   color: var(--app-color-primary-orange);
 }
+
+hr {
+  border: 1px solid #D1D5DB !important;
+}
