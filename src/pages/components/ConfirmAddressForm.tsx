@@ -4,19 +4,8 @@ import { Form } from 'react-bootstrap';
 const ConfirmAddressForm = () => {
   return (
     <>
-      <div
-        className="title"
-        style={{
-          fontWeight: 800,
-          fontSize: '24px',
-          lineHeight: '30px',
-          color: '#27272A',
-        }}
-      >
-        Confirm Address
-      </div>
-      <div className="mt-3">
-        <Form className="form-mobile">
+      <div>
+        <Form className="form-mobile form-jumia">
           <Form.Group className="mb-3">
             <Form.Label>Bussiness or Bulding Name</Form.Label>
             <Form.Control type="text" placeholder="Enter text" />

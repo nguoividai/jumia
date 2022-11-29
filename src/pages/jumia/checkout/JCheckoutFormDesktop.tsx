@@ -5,6 +5,9 @@ import CashIcon from 'src/components/icon/CashIcon';
 import PaymentIcon from 'src/components/icon/PaymentIcon';
 import ShoppingBagDelivery from 'src/components/icon/ShoppingBagDelivery';
 import TruckDeliveryIcon from 'src/components/icon/TruckDeliveryIcon';
+import ModalOverPage from 'src/components/modal/ModalOverPage';
+import ConfirmAddressForm from 'src/pages/components/ConfirmAddressForm';
+import JConfirmAddress from '../mobile/JConfirmAddress';
 
 const JCheckoutFormDesktop = () => {
   return (
@@ -65,7 +68,19 @@ const JCheckoutFormDesktop = () => {
             }}
           >
             Delivery address
-            <Badge className="secondary float-right"> Edit </Badge>
+            <ModalOverPage
+              fullscreen="sm-down"
+              centered
+              title="Confirm Address?"
+              trigger={<Badge className="secondary float-right"> Edit </Badge>}
+            >
+              <ConfirmAddressForm />
+              <div className="mt-4">
+                <Button style={{ width: '100%' }} color="primary">
+                  Confirm
+                </Button>
+              </div>
+            </ModalOverPage>
           </div>
           <div
             style={{

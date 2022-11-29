@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, InputGroup, ListGroup } from 'react-bootstrap';
 import Button from 'src/components/button/Button';
+import ModalOverPage from 'src/components/modal/ModalOverPage';
 import Section from 'src/components/section/Section';
 import JGroupButtonDelivery from '../desktop/JGroupButtonDelivery';
 
@@ -18,6 +19,75 @@ const JCheckoutTotalDesktop = () => {
         title={<div style={{ marginTop: -12 }}>Checkout</div>}
       >
         <div className="mt-3">
+          <div className="voucher-active">
+            <div
+              style={{
+                border: '0.5px solid #ddd',
+                borderRadius: '8px',
+                padding: '1rem',
+              }}
+              className="add-promotion d-flex gap-2 align-items-center mb-2"
+            >
+              <div style={{ width: '10%' }} className="voucher-icon">
+                <i style={{ fontSize: 26 }} className="icofont-tag primary"></i>
+              </div>
+              <div style={{ width: '70%' }} className="voucher-content">
+                <div
+                  style={{
+                    fontWeight: 500,
+                    fontSize: 16,
+                    lineHeight: '22px',
+                    color: '#262626',
+                  }}
+                >
+                  Voucher lozells
+                </div>
+                <div
+                  className="mt-1"
+                  style={{
+                    fontWeight: 400,
+                    fontSize: 12,
+                    lineHeight: '18px',
+                    color: '#71717A',
+                  }}
+                >
+                  20% off your first order
+                </div>
+              </div>
+              <div style={{ width: '20%' }} className="voucher-action">
+                <Button
+                  style={{
+                    fontSize: 14,
+                    padding: '10px 10px',
+                  }}
+                  color="primary"
+                >
+                  Change
+                </Button>
+              </div>
+            </div>
+
+            <div className="mt-2 mb-2">
+              <div
+                className="d-flex gap-2 align-items-center"
+                style={{
+                  fontSize: 14,
+                  padding: '1rem',
+                  background: 'rgba(255, 109, 16, 0.11)',
+                  borderRadius: 8,
+                  color: '#F4894A',
+                }}
+              >
+                <div className="icon">
+                  <i className="icofont-fire-burn"></i>
+                </div>
+                <div className="content">
+                  You have saved <strong>£1.20</strong> on the bill
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="add-promotion">
             <InputGroup
               className="mb-3"
@@ -47,7 +117,20 @@ const JCheckoutTotalDesktop = () => {
                   backgroundColor: 'transparent',
                 }}
               >
-                <Button color="primary">Add</Button>
+                <ModalOverPage
+                  fullscreen="sm-down"
+                  centered
+                  title="Have a Promo Code ?"
+                  trigger={<Button color="primary">Add</Button>}
+                >
+                  <Form.Control type="text" placeholder="Add promo code" />
+
+                  <div className="mt-4">
+                    <Button style={{ width: '100%' }} color="primary">
+                      Apply
+                    </Button>
+                  </div>
+                </ModalOverPage>
               </InputGroup.Text>
             </InputGroup>
           </div>

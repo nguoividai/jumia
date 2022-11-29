@@ -39,6 +39,17 @@ const JConfirmAddress: React.FC<JConfirmAddressProps> = ({ trigger }) => {
         <Button className="mt-2 back-btn" onClick={() => setVisible(false)}>
           <i className="icofont-rounded-left"></i>
         </Button>
+        <div
+          className="title"
+          style={{
+            fontWeight: 800,
+            fontSize: '24px',
+            lineHeight: '30px',
+            color: '#27272A',
+          }}
+        >
+          Confirm Address
+        </div>
         <ConfirmAddressForm />
       </ModalOverPage>
     </>
