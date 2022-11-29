@@ -11,7 +11,7 @@ const JCheckoutDesktop = () => {
       <JPromotionListDesktop />
 
       <Section style={{ padding: '2rem' }}>
-        <div className="container">
+        <div className="jumia-container">
           <div className="row">
             <div className="col-12 col-md-8">
               <JCheckoutFormDesktop />

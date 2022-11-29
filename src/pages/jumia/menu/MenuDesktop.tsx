@@ -11,7 +11,7 @@ const MenuDesktop = () => {
   return (
     <>
       <JPromotionListDesktop />
-      <div className="container mt-4">
+      <div className="jumia-container mt-4">
         <div className="row">
           <div className="col-8">
             <div className="row">
@@ -24,7 +24,7 @@ const MenuDesktop = () => {
           <div className="col-4"></div>
         </div>
       </div>
-      <div className="container mt-4 pb-4">
+      <div className="jumia-container mt-4 pb-4">
         <div className="row">
           <div className="col-8">
             <JTab />
