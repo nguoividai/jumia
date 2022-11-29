@@ -1,5 +1,4 @@
 import React from 'react';
-import { Alert } from 'react-bootstrap';
 import ProductTab from 'src/components/list/ProductTab';
 import Section from 'src/components/section/Section';
 import B2CTabFooterMobile from 'src/pages/b2c/B2CTabFooterMobile';
@@ -9,6 +8,7 @@ import JRecommendMobile from '../mobile/JRecommendMobile';
 import hamburger from 'src/assets/images/jumia/hamburger.png';
 import CardProductToAdd from 'src/components/card/CardProductToAdd';
 import ProductWithPopup from 'src/pages/components/ProductWithPopup';
+import Alert from 'src/components/alert/Alert';
 
 const tabs = [
   {

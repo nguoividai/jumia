@@ -56,7 +56,7 @@ const JCheckoutMobile = () => {
             </Card.Body>
           </Card>
 
-          <div style={{ background: '#fff', padding: '1rem', margin: '1rem -12px' }}>
+          <div style={{ background: '#fff', padding: '1rem' }}>
             <div className="d-flex gap-2 align-items-center mb-3">
               <CreditCardIcon />{' '}
               <span
@@ -115,6 +115,7 @@ const JCheckoutMobile = () => {
                 fontSize: '12px',
                 lineHeight: '18px',
                 color: '#71717A',
+                marginTop: 4,
               }}
             >
               <strong>Terms:</strong>&nbsp; By placing your order, you confirm that you agree to the
@@ -127,7 +128,7 @@ const JCheckoutMobile = () => {
 
           <div className="mt-4 mb-4">
             <Button
-              type="button"
+              type="submit"
               style={{ width: '100%' }}
               size="md"
               color="primary"

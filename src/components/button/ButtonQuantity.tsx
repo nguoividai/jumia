@@ -35,7 +35,7 @@ const ButtonQuantity: React.FC<ButtonQuantityProps> = ({ textZero, style }) => {
     >
       {value > 0 ? (
         <>
-          <Button size="sm" onClick={decrease}>
+          <Button type="button" size="sm" onClick={decrease}>
             <i className="icofont-minus"></i>
           </Button>
           <input className="primary" value={value} disabled />
@@ -44,7 +44,7 @@ const ButtonQuantity: React.FC<ButtonQuantityProps> = ({ textZero, style }) => {
 
       {value === 0 ? (
         <>
-          <Button size="sm" onClick={increase}>
+          <Button type="button" size="sm" onClick={increase}>
             {textZero ? (
               <span
                 style={{
@@ -61,7 +61,7 @@ const ButtonQuantity: React.FC<ButtonQuantityProps> = ({ textZero, style }) => {
       ) : null}
 
       {value > 0 ? (
-        <Button size="sm" onClick={increase}>
+        <Button type="button" size="sm" onClick={increase}>
           <i className="icofont-plus primary"></i>
         </Button>
       ) : null}
