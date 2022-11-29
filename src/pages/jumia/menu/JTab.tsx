@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Nav, Row, Tab } from 'react-bootstrap';
 import ListProductWithDescription from 'src/components/list/ListProductWithDescription';
 import Section from 'src/components/section/Section';
+import JRecommentDesktop from '../desktop/JRecommentDesktop';
 
 const JTab = () => {
   return (
@@ -37,6 +38,7 @@ const JTab = () => {
             <Col sm={8}>
               <Tab.Content>
                 <Tab.Pane eventKey="recommended">
+                  <JRecommentDesktop />
                   <Section title="Burgers & Wraps" extra="7 ITEMS">
                     <ListProductWithDescription />
                   </Section>

@@ -129,3 +129,10 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 .form-mobile .input-group .input-group-text {
     z-index: 101 !important;
 }
+
+
+/* CUSTOM FORM INPUT CSS */
+.modal-product-choose .form-check-input:checked {
+    background-color: #1F2937;
+    border-color: #1F2937;
+}

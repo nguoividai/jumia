@@ -153,3 +153,8 @@
     color: #475569 !important;
     font-weight: 700 !important;
 }
+
+/* CSS MODAL */
+.modal-product .modal-header .modal-title {
+    font-size: 1.5rem;
+}

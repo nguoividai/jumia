@@ -36,16 +36,15 @@ const CardProductToAdd: React.FC<CardProductToAddProps> = (props) => {
           </>
         )}
 
-        {!layout ||
-          (layout === 'title-first' && (
-            <>
-              <div className="product-title">{title}</div>
-              <div className="product-description">{description}</div>
-              <div className="product-image">
-                <img src={src} alt="product" />
-              </div>
-            </>
-          ))}
+        {(layout === undefined || layout === 'title-first') && (
+          <>
+            <div className="product-title">{title}</div>
+            <div className="product-description">{description}</div>
+            <div className="product-image">
+              <img src={src} alt="product" />
+            </div>
+          </>
+        )}
       </div>
 
       <div className="product-action">
