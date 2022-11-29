@@ -11,7 +11,7 @@ import JChooseSizeMobile from './mobile/JChooseSizeMobile';
 import EmptyCart from 'src/components/empty/EmptyCart';
 import Button from 'src/components/button/Button';
 import ListCart from 'src/components/list/ListCart';
-import JCheckoutMobile from './mobile/JCheckoutMobile';
+import JCheckoutMobile from './checkout/JCheckoutMobile';
 import ConfirmAddressForm from '../components/ConfirmAddressForm';
 import OffCanvasOverPage from 'src/components/modal/OffCanvasOverPage';
 import { Form } from 'react-bootstrap';

@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = (props) => {
       {...buttonProps}
       className={`d-flex align-items-center justify-content-center button link ${
         shape === 'circle' ? 'circle' : ''
-      } ${color || ''} ${textColor || ''} ${size || ''}`}
+      } ${color || ''} ${textColor || ''} ${size || ''} ${buttonProps?.className}`}
     >
       {startIcon && <div className="mx-1">{startIcon}</div>}
       {children}

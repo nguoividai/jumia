@@ -1,49 +1,14 @@
 import React from 'react';
 import Button from 'src/components/button/Button';
-import ShoppingBagDelivery from 'src/components/icon/ShoppingBagDelivery';
 import TrashIcon from 'src/components/icon/TrashIcon';
-import TruckDeliveryIcon from 'src/components/icon/TruckDeliveryIcon';
-import ListCart from 'src/components/list/ListCart';
 import ListCartModifyQuantity from 'src/components/list/ListCartModifyQuantity';
 import Section from 'src/components/section/Section';
+import JGroupButtonDelivery from '../desktop/JGroupButtonDelivery';
 
 const JCartListDesktop = () => {
   return (
     <>
-      <div className="d-flex mt-2 mb-4 gap-2">
-        <Button
-          color="outline-dark"
-          style={{
-            width: '50%',
-          }}
-        >
-          <span
-            className="d-flex gap-1"
-            style={{
-              fontSize: '0.9rem',
-            }}
-          >
-            <TruckDeliveryIcon />
-            Collection
-          </span>
-        </Button>
-        <Button
-          color="outline-dark"
-          style={{
-            width: '50%',
-          }}
-        >
-          <span
-            className="d-flex gap-1"
-            style={{
-              fontSize: '0.9rem',
-            }}
-          >
-            <ShoppingBagDelivery />
-            Delivery
-          </span>
-        </Button>
-      </div>
+      <JGroupButtonDelivery />
 
       <Section
         style={{

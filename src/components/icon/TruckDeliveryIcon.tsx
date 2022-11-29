@@ -1,8 +1,21 @@
 import React from 'react';
 
-const TruckDeliveryIcon = () => {
+type TruckDeliveryIconProps = {
+  width?: number;
+  height?: number;
+  style?: React.CSSProperties;
+};
+
+const TruckDeliveryIcon: React.FC<TruckDeliveryIconProps> = ({ style, height, width }) => {
   return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      style={style}
+      width={width || 20}
+      height={height || 20}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M6.5 3C5.4488 3 4.40669 3.03958 3.37512 3.11734C2.58952 3.17656 2 3.83452 2 4.60628V10.5H11V4.60628C11 3.83452 10.4105 3.17656 9.62488 3.11734C8.59331 3.03958 7.5512 3 6.5 3Z"
         fill="#0F172A"
