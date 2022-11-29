@@ -9,7 +9,7 @@ const JMostWantedFoodsDesktop = () => {
       <Section title="Most Wanted Foods">
         <div className="row row-gap-2 p-3">
           {[...Array(6)].map((x, i) => (
-            <div key={i} className="col-2">
+            <div key={i} className="col-3 col-md-3 col-lg-2">
               <CardProductToAdd
                 layout="img-first"
                 src={pizza}

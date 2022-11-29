@@ -9,7 +9,7 @@ import SliderSimple from 'src/components/slider/SliderSimple';
 const B2CCriteria = () => {
   return (
     <SliderSimple
-      className="container"
+      className="criteria-container"
       settings={{
         speed: 500,
         autoplay: true,

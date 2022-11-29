@@ -7,15 +7,15 @@ const JPromotionListDesktop = () => {
   return (
     <>
       <SliderSimple
-        className="container show-arrow"
+        className="show-arrow"
         settings={{
           speed: 500,
           autoplay: true,
           autoplaySpeed: 5000,
           infinite: true,
           dots: false,
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 5,
+          slidesToScroll: 5,
           centerMode: true,
           centerPadding: '50px',
           responsive: [
@@ -49,8 +49,8 @@ const JPromotionListDesktop = () => {
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                slidesToShow: 2,
+                slidesToScroll: 2,
                 centerMode: true,
                 centerPadding: '30px',
               },
@@ -58,10 +58,37 @@ const JPromotionListDesktop = () => {
             {
               breakpoint: 992,
               settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                slidesToShow: 2,
+                slidesToScroll: 2,
                 centerMode: true,
-                centerPadding: '10px',
+                centerPadding: '40px',
+              },
+            },
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                centerMode: true,
+                centerPadding: '20px',
+              },
+            },
+            {
+              breakpoint: 1400,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                centerMode: true,
+                centerPadding: '50px',
+              },
+            },
+            {
+              breakpoint: 1700,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                centerMode: true,
+                centerPadding: '20px',
               },
             },
           ],
