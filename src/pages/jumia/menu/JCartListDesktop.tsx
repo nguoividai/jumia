@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from 'src/components/button/Button';
 import TrashIcon from 'src/components/icon/TrashIcon';
 import ListCartModifyQuantity from 'src/components/list/ListCartModifyQuantity';
@@ -6,6 +7,8 @@ import Section from 'src/components/section/Section';
 import JGroupButtonDelivery from '../desktop/JGroupButtonDelivery';
 
 const JCartListDesktop = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <JGroupButtonDelivery />
@@ -18,7 +21,7 @@ const JCartListDesktop = () => {
         title="Cart"
         extra={
           <>
-            <div className="d-flex">
+            <div className="d-flex align-items-center">
               <div style={{ padding: 0 }} className="col-6">
                 2 ITEMS
               </div>
@@ -66,6 +69,7 @@ const JCartListDesktop = () => {
               lineHeight: '24px',
             }}
             color="primary"
+            onClick={() => navigate('/checkout')}
           >
             Checkout
           </Button>

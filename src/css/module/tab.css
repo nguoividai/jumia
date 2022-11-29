@@ -52,6 +52,15 @@
     color: #475569;
 }
 
+.jumia-size .badge.light {
+    background: #F1F5F9 !important;
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 18px;
+    color: #334155;
+}
+
 .jumia-size .badge.success {
     background: #F0FDF4 !important;
     border-radius: 16px;

@@ -224,3 +224,7 @@ a:hover {
 hr {
   border: 1px solid #D1D5DB !important;
 }
+
+a {
+  text-decoration: none !important;
+}

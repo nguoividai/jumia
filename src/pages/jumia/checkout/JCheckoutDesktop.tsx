@@ -11,12 +11,14 @@ const JCheckoutDesktop = () => {
       <JPromotionListDesktop />
 
       <Section style={{ padding: '2rem' }}>
-        <div className="row">
-          <div className="col-12 col-md-8">
-            <JCheckoutFormDesktop />
-          </div>
-          <div className="col-12 col-md-4">
-            <JCheckoutTotalDesktop />
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-8">
+              <JCheckoutFormDesktop />
+            </div>
+            <div className="col-12 col-md-4">
+              <JCheckoutTotalDesktop />
+            </div>
           </div>
         </div>
       </Section>

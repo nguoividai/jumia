@@ -13,8 +13,35 @@ const JCheckoutFormDesktop = () => {
   return (
     <>
       <div className="row align-items-center">
-        <div className="col-12 d-flex align-items-center">
-          <TruckDeliveryIcon width={26} />
+        <div className="col-12 d-flex align-items-center gap-2">
+          <svg
+            width="28"
+            height="22"
+            viewBox="0 0 28 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.21875 0.625C1.92433 0.625 0.875 1.67433 0.875 2.96875V11.875H15.875V2.96875C15.875 1.67433 14.8257 0.625 13.5312 0.625H3.21875Z"
+              fill="#18181B"
+            />
+            <path
+              d="M15.875 13.75H0.875V17.0312C0.875 18.3257 1.92433 19.375 3.21875 19.375H3.6875C3.6875 17.3039 5.36643 15.625 7.4375 15.625C9.50857 15.625 11.1875 17.3039 11.1875 19.375H14.9375C15.4553 19.375 15.875 18.9553 15.875 18.4375V13.75Z"
+              fill="#18181B"
+            />
+            <path
+              d="M9.3125 19.375C9.3125 18.3395 8.47303 17.5 7.4375 17.5C6.40197 17.5 5.5625 18.3395 5.5625 19.375C5.5625 20.4105 6.40197 21.25 7.4375 21.25C8.47303 21.25 9.3125 20.4105 9.3125 19.375Z"
+              fill="#18181B"
+            />
+            <path
+              d="M18.6875 3.4375C18.1697 3.4375 17.75 3.85723 17.75 4.375V18.4375C17.75 18.546 17.7684 18.6502 17.8023 18.7471C18.1011 16.975 19.6429 15.625 21.5 15.625C23.5552 15.625 25.2243 17.2783 25.2497 19.3275C26.3164 19.1087 27.153 18.1583 27.08 16.9743C26.7888 12.2488 25.0969 7.90127 22.4155 4.34362C21.9725 3.75578 21.2832 3.4375 20.5776 3.4375H18.6875Z"
+              fill="#18181B"
+            />
+            <path
+              d="M23.375 19.375C23.375 18.3395 22.5355 17.5 21.5 17.5C20.4645 17.5 19.625 18.3395 19.625 19.375C19.625 20.4105 20.4645 21.25 21.5 21.25C22.5355 21.25 23.375 20.4105 23.375 19.375Z"
+              fill="#18181B"
+            />
+          </svg>
 
           <span
             style={{
@@ -42,7 +69,7 @@ const JCheckoutFormDesktop = () => {
         Shiping method
       </div>
 
-      <div className="d-flex align-items-center gap-2 mt-5">
+      <div className="d-flex align-items-center gap-3 mt-5">
         <div className="icon">
           <svg
             width="18"
@@ -72,7 +99,12 @@ const JCheckoutFormDesktop = () => {
               fullscreen="sm-down"
               centered
               title="Confirm Address?"
-              trigger={<Badge className="secondary float-right"> Edit </Badge>}
+              trigger={
+                <Badge className="light float-right" style={{ cursor: 'pointer' }}>
+                  {' '}
+                  Edit{' '}
+                </Badge>
+              }
             >
               <ConfirmAddressForm />
               <div className="mt-4">
@@ -204,7 +236,7 @@ const JCheckoutFormDesktop = () => {
         >
           Add Note
         </div>
-        <div className="mt-1">
+        <div className="mt-2">
           <Form.Control
             as="textarea"
             aria-label="With textarea"

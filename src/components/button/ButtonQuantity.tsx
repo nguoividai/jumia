@@ -9,18 +9,30 @@ type ButtonQuantityProps = {
 const ButtonQuantity: React.FC<ButtonQuantityProps> = ({ textZero, style }) => {
   const [value, setValue] = useState<number>(0);
 
-  const increase = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  const increase = (
+    e:
+      | React.MouseEvent<HTMLButtonElement, MouseEvent>
+      | React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
     e.stopPropagation();
     setValue((prev) => prev + 1);
   };
 
-  const decrease = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  const decrease = (
+    e:
+      | React.MouseEvent<HTMLButtonElement, MouseEvent>
+      | React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
     e.stopPropagation();
     setValue((prev) => (prev > 0 ? prev - 1 : 0));
   };
 
   return (
-    <div style={style} className="button-quantity">
+    <div
+      style={style}
+      className="button-quantity"
+      onClick={(e) => (value === 0 ? increase(e) : '')}
+    >
       {value > 0 ? (
         <>
           <Button size="sm" onClick={decrease}>

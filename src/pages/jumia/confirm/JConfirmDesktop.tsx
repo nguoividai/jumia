@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, ListGroup } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import OrderInfomation from 'src/components/order/OrderInfomation';
 import OrderPriceContainer from 'src/components/order/OrderPriceContainer';
 import OrderSummary from 'src/components/order/OrderSummary';
@@ -7,6 +8,7 @@ import Section from 'src/components/section/Section';
 import JStepper from './JStepper';
 
 const JConfirmDesktop = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div>
@@ -15,7 +17,7 @@ const JConfirmDesktop = () => {
           style={{ padding: 0, border: 0 }}
         >
           <div className="confirm-desktop justify-content-start">
-            <div>
+            <div style={{ cursor: 'pointer' }} onClick={() => navigate('/menu')}>
               <i className="icofont-long-arrow-left"></i> back to order
             </div>
           </div>
