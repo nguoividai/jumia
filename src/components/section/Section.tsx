@@ -15,7 +15,7 @@ const Section: React.FC<SectionProps> = (props) => {
       {(title || extra) && (
         <div className="title-area">
           {title ? <h1 className="title"> {title} </h1> : null}
-          {extra ? <p className="extra"> {extra} </p> : null}
+          {extra ? <div className="extra"> {extra} </div> : null}
         </div>
       )}
       <div className="section-content">{children}</div>

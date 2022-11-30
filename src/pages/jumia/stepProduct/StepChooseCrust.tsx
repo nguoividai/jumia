@@ -31,12 +31,12 @@ const StepChooseCrust: React.FC<StepChooseCrustProps> = ({ increaseStep }) => {
     <>
       <div className="slide-container">
         <SliderSimple
-          className="container slide-product"
+          className="jumia-container slide-product"
           settings={{
             dots: false,
             swipe: false,
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             responsive: [
               {
                 breakpoint: 576,
@@ -44,16 +44,25 @@ const StepChooseCrust: React.FC<StepChooseCrustProps> = ({ increaseStep }) => {
                   slidesToShow: 1,
                   slidesToScroll: 1,
                   centerMode: true,
-                  centerPadding: '70px',
+                  centerPadding: '90px',
+                },
+              },
+              {
+                breakpoint: 650,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  centerMode: true,
+                  centerPadding: '120px',
                 },
               },
               {
                 breakpoint: 768,
                 settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
                   centerMode: true,
-                  centerPadding: '40px',
+                  centerPadding: '150px',
                 },
               },
             ],

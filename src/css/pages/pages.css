@@ -336,3 +336,20 @@
  }
 
 
+ /* MENU */
+
+ .modal-body:has(.choose-addon) {
+    overflow-x: hidden;
+ }
+
+ .slide-container .slick-slider img {
+    max-height: 300px;
+    object-fit: contain;
+ }
+
+ .steps .step-item.slide-img .slide-container {
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+
+

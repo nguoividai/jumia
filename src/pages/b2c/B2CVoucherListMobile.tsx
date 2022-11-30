@@ -7,7 +7,7 @@ const VoucherListMobile = () => {
   return (
     <>
       <SliderSimple
-        className="container p-0"
+        className="jumia-container p-0"
         settings={{
           speed: 500,
           autoplay: false,
@@ -15,7 +15,7 @@ const VoucherListMobile = () => {
           infinite: true,
           dots: false,
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           responsive: [
             {
               breakpoint: 400,
@@ -45,12 +45,21 @@ const VoucherListMobile = () => {
               },
             },
             {
-              breakpoint: 768,
+              breakpoint: 655,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
-                centerPadding: '100px',
+                centerPadding: '130px',
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '30px',
               },
             },
             {

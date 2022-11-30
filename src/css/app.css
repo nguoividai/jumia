@@ -185,10 +185,10 @@ a:hover {
   padding: 1.5rem
 }
 
-.steps .step-item.slide-img .slide-container {
+/* .steps .step-item.slide-img .slide-container {
   margin-right: -2.5rem;
   margin-left: -2.5rem;
-}
+} */
 
 .slide-product.slick-initialized .slick-slide:not(.slick-active.slick-center.slick-current) {
   padding: 1.5rem;

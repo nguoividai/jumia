@@ -43,7 +43,7 @@ const JRecommendMobile = () => {
           <i className="icofont-rounded-left"></i>
         </Button>
         <Section title="Recommend">
-          <div className="container">
+          <div className="jumia-container">
             <div className="row row-gap-2 mt-4 pb-5">
               {[...Array(10)].map((x, i) => (
                 <div key={i} className="col-6 col-sm-6">

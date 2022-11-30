@@ -43,7 +43,7 @@ const JChooseSizeMobile: React.FC<JChooseSizeMobileProps> = ({ onClose }) => {
       >
         <InfoAddProduct />
 
-        <div className="container">
+        <div className="jumia-container">
           <div className="steps mt-5">
             {currentStep === 0 && (
               <div className="step-item slide-img">
