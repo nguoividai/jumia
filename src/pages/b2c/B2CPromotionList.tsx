@@ -5,7 +5,7 @@ import SliderSimple from 'src/components/slider/SliderSimple';
 const B2CPromotionList = () => {
   return (
     <SliderSimple
-      className="container"
+      className="jumia-container"
       settings={{
         speed: 500,
         autoplay: true,
@@ -34,28 +34,28 @@ const B2CPromotionList = () => {
             },
           },
           {
-            breakpoint: 576,
+            breakpoint: 650,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToScroll: 1,
               centerMode: true,
-              centerPadding: '15px',
+              centerPadding: '30px',
             },
           },
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToShow: 3,
+              slidesToScroll: 1,
               centerMode: true,
-              centerPadding: '30px',
+              centerPadding: '20px',
             },
           },
           {
             breakpoint: 992,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToScroll: 1,
               centerMode: true,
               centerPadding: '30px',
             },
@@ -63,6 +63,9 @@ const B2CPromotionList = () => {
         ],
       }}
     >
+      <div>
+        <CardPromotion title="20%" smallTitle="OFF" conditionText="When you order £20 or over" />
+      </div>
       <div>
         <CardPromotion title="20%" smallTitle="OFF" conditionText="When you order £20 or over" />
       </div>

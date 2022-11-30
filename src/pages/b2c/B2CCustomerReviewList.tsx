@@ -19,7 +19,7 @@ const B2CCustomerReviewList = () => {
           infinite: true,
           dots: false,
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           responsive: [
             {
               breakpoint: 375,
@@ -49,6 +49,17 @@ const B2CCustomerReviewList = () => {
                 infinite: true,
                 dots: false,
                 slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '50px',
+              },
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                infinite: true,
+                dots: false,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 centerMode: true,
                 centerPadding: '50px',

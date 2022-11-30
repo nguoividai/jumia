@@ -15,7 +15,7 @@ const JPromotionListDesktop = () => {
           infinite: true,
           dots: false,
           slidesToShow: 5,
-          slidesToScroll: 5,
+          slidesToScroll: 1,
           centerMode: true,
           centerPadding: '50px',
           responsive: [
@@ -41,7 +41,7 @@ const JPromotionListDesktop = () => {
               breakpoint: 576,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 centerMode: true,
                 centerPadding: '15px',
               },
@@ -50,7 +50,7 @@ const JPromotionListDesktop = () => {
               breakpoint: 768,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 centerMode: true,
                 centerPadding: '30px',
               },
@@ -59,7 +59,7 @@ const JPromotionListDesktop = () => {
               breakpoint: 992,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 centerMode: true,
                 centerPadding: '40px',
               },
@@ -68,7 +68,7 @@ const JPromotionListDesktop = () => {
               breakpoint: 1200,
               settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
                 centerMode: true,
                 centerPadding: '20px',
               },
@@ -77,7 +77,7 @@ const JPromotionListDesktop = () => {
               breakpoint: 1400,
               settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
                 centerMode: true,
                 centerPadding: '50px',
               },
@@ -86,7 +86,7 @@ const JPromotionListDesktop = () => {
               breakpoint: 1700,
               settings: {
                 slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToScroll: 1,
                 centerMode: true,
                 centerPadding: '20px',
               },

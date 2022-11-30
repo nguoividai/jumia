@@ -28,7 +28,6 @@
     margin: -24px -36px;
 }
 
-
 .hompage-banner .slick-dots {
     display: block;
     bottom: 50px;
@@ -36,7 +35,6 @@
     left: 50px;
    
 }
-
 
 .hompage-banner .slick-dots button {
     outline: none;
@@ -58,7 +56,6 @@
    
 }
 
-
 .hompage-banner .slick-dots li.slick-active button {
     position: relative;
     display: inline-block;
@@ -73,17 +70,23 @@
     height: 8px;
 }
 
-
 .hompage-banner .slick-dots .slick-active button::before {
     display: none;
 }
 
-.hompage-banner  .slick-dots li button:before {
+.hompage-banner .slick-dots li button:before {
     color: #E5E7EB;
     width: 16px;
     height: 16px;
     opacity: 1;
 }
+
+@media screen and (max-width: 768px) {
+    .hompage-banner .slick-list img {
+        max-height: 275px;
+        object-fit: cover;
+    }
+ }
 
 /* for desktop */
 
