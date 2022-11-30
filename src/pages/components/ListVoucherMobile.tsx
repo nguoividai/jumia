@@ -2,7 +2,6 @@ import React from 'react';
 import { Form, ListGroup } from 'react-bootstrap';
 import addVoucher from 'src/assets/images/jumia/icons/add-voucher.svg';
 import voucherAvailable from 'src/assets/images/jumia/icons/voucher-available.svg';
-import SavedBadge from 'src/components/badge/SavedBadge';
 import Button from 'src/components/button/Button';
 import JAddVoucher from '../jumia/mobile/JAddVoucher';
 import ReedemVoucherList from './ReedemVoucherList';
@@ -17,7 +16,7 @@ const ListVoucherMobile = () => {
         variant="flush"
       >
         <JAddVoucher
-          style={{ minHeight: '20vh' }}
+          style={{ height: '20vh' }}
           trigger={
             <ListGroup.Item style={{ gap: 10 }} className="d-flex align-items-center border-0">
               <img

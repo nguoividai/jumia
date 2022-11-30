@@ -126,7 +126,7 @@ const JCheckoutMobile = () => {
             </div>
           </div>
 
-          <div className="mt-4 mb-4">
+          <div className="mt-4 mb-4 p-2">
             <Button
               type="submit"
               style={{ width: '100%' }}
